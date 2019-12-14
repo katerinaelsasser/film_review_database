@@ -1,6 +1,5 @@
-<html>
-    <head></head>
-    <body>
+{% extends 'base.html' %}
+{% block content %}
         {% for film in films %}
             {{film.film_name}}
             {{film.film_year}}
@@ -9,5 +8,4 @@
             {{film.film_rating}}
             {{film.film_length}}
         {% endfor %}
-    </body>
-</html>
+{% endblock %}

@@ -1,11 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-  });
-
-  // Or with jQuery
-
+//nav bar
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-        
+     
+  //collapisable
+  $(document).ready(function(){
+    $('.collapsible').collapsible();
+  });

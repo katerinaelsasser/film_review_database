@@ -11,9 +11,9 @@
     <title>Document</title>
 </head>
 <body>
-<header></header>
-<main>
 {% block content %}
+<header>
+
 <nav>
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">Logo</a>
@@ -34,8 +34,11 @@
     <li><a href="mobile.html">Mobile</a></li>
   </ul>
 
+</header>
+<main>
 
-{% endblock %}
+
+
 <!-- Footer -->
     <footer>
 
@@ -57,5 +60,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="assets/js/script.js"></script>
+{% endblock %}
 </body>
 </html>

@@ -4,14 +4,9 @@ $(document).ready(function(){
   });
 
   //autocomplete
-  $(document).ready(function(){
-    $('input.autocomplete').autocomplete({
-      data: {
-        "Apple": null,
-        "Microsoft": null,
-        "Google": 'https://placehold.it/250x250'
-      },
-    });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.autocomplete');
+    var instances = M.Autocomplete.init(elems, options);
   });
   
 
@@ -19,3 +14,7 @@ $(document).ready(function(){
    $(document).ready(function(){
     $('select').formSelect();
   });
+
+  //review text box
+  $('#textarea1').val('New Text');
+  M.textareaAutoResize($('#textarea1'));

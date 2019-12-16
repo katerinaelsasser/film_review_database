@@ -14,3 +14,8 @@ $(document).ready(function(){
     });
   });
   
+
+  //select options
+   $(document).ready(function(){
+    $('select').formSelect();
+  });

@@ -1,9 +1,15 @@
 //nav bar
-  $(document).ready(function(){
+$(document).ready(function(){
     $('.sidenav').sidenav();
   });
-     
-  //collapisable
+
+  //autocomplete
   $(document).ready(function(){
-    $('.collapsible').collapsible();
+    $('input.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'https://placehold.it/250x250'
+      },
+    });
   });

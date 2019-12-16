@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-{% block content %}
-
-{{film.film_director}}
-        {{film.film_genre}}
-        {{film.film_rating}}
-        {{film.film_length}}
-<main>
-
-
-
-<!-- Footer -->
-    <footer>
-
-        <!-- Bar at the bottom of the page -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="breadcrumb-item float-lg-right"><a href="https://github.com/katerinaelsasser/st-lucia-destination">Created by Katerina Elsasser</a></div>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right">Watch & Review</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="sass.html"><i class="material-icons">search</i></a></li>
+                </ul>
+            </div>
         </nav>
-        <!-- End of Bar at the bottom of the page -->
+    </header>
+    <main>
 
-    </footer>
-    <!-- End of Footer -->
+        <!-- Footer -->
+        <footer>
 
-</main>
-    
+            <!-- Bar at the bottom of the page -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="breadcrumb-item float-lg-right"><a href="https://github.com/katerinaelsasser/st-lucia-destination">Created by Katerina Elsasser</a></div>
+            </nav>
+            <!-- End of Bar at the bottom of the page -->
 
+        </footer>
+        <!-- End of Footer -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js""></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="assets/js/script.js"></script>
-{% endblock %}
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js "></script>
+<script src="assets/js/script.js "></script>
 </body>
 </html>

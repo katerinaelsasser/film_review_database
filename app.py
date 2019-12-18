@@ -12,7 +12,7 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/get_films')
 def get_films():
-    return render_template("films.html", films=mongo.db.films.find())
+    return render_template("review.html", film=mongo.db.films.find())
 
 
 if __name__ == '__main__':

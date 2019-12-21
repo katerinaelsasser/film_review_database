@@ -10,9 +10,9 @@ app.config["MONGO_URI"] = 'mongodb+srv://kit_22:Nsos2015@filmreviews-dqtff.mongo
 mongo = PyMongo(app)
 
 @app.route('/')
-@app.route('/get_films')
-def get_films():
-    return render_template("review.html", film=mongo.db.films.find())
+@app.route('/get_tasks')
+def get_tasks():
+    return render_template("review.html", film=mongo.tasks.find())
 
 
 if __name__ == '__main__':

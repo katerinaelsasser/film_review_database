@@ -1,21 +1,23 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
-from flask_pymongo import PyMongo
-from bson.objectid import ObjectId 
+from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
-app.config["MONGO_DBNAME"] = 'film_database'
-app.config["MONGO_URI"] = 'mongodb+srv://kit_22:Nsos2015@filmreviews-dqtff.mongodb.net/film_database?retryWrites=true&w=majority'
 
-mongo = PyMongo(app)
-
+# Home page
 @app.route('/')
-@app.route('/get_tasks')
-def get_tasks():
-    return render_template("review.html", film=mongo.tasks.find())
+def home_page():
+        return render_template(
+                'index.html',
+                active='home',
+                title="Home")
 
+# Review page
+@app.route('/review)
+def review_page():
+        return render_template(
+                'review.html',
+                active='review',
+                title="Review")
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
-            debug=True)
+        app.run(host=os.getenv('IP'), port=os.getenv('PORT'), debug=True)

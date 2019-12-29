@@ -7,20 +7,16 @@ External Users must be able to find films and the site owner must be able to ear
 ### Surface
 
 
-#### Mockup 1
-Mobile Version
+#### wireframes
+### Page 1
+[Mobile Version]()
 
-Laptop Version
+[Laptop Version]()
 
-#### Mockup 2
-Mobile Version
+### Page 2
+[Mobile Version]()
 
-Laptop Version
-
-#### Mockup 3
-Mobile Version
-
-Laptop Version
+[Laptop Version]()
 
 ### Strategy
 

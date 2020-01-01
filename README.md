@@ -9,14 +9,14 @@ External Users must be able to find films and the site owner must be able to ear
 
 #### wireframes
 ### Page 1
-[Mobile Version]()
+[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/mobile_mockup_1.jpg)
 
-[Laptop Version]()
+[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/laptop_mockup_1.jpg)
 
 ### Page 2
-[Mobile Version]()
+[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/mobile_mockup_2.jpg)
 
-[Laptop Version]()
+[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/laptop_mockup_2.jpg)
 
 ### Strategy
 

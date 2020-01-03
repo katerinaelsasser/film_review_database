@@ -1,11 +1,11 @@
-# Film Review Databade
+# Film Review Database
 
 This project is a website database full of information about films. Users of this website can browser information about these films and also can add reviews to the films.
 External Users must be able to find films and the site owner must be able to earn money on each film purchased.
 
 ## UX
 ### Surface
-
+I put together mock ups of what the database would look like. For the two mockups I have created two versions: a mobile and a laptop version. The first mockup is of what the main page containing the database of the movies. In the second mockups, this is for the page where users can input info to the database.
 
 #### wireframes
 ### Page 1
@@ -19,22 +19,24 @@ External Users must be able to find films and the site owner must be able to ear
 [Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/laptop_mockup_2.jpg)
 
 ### Strategy
+The aim of this website is so users can find films and the site owner can earn money from users buying the films. The information and the images that will be on the page must link to the films in the database. The infomation in the database must be inform the user about the films.
 
 ### Structure
-
+The website will be structured so there is a link between two pages which will both be linked to the database. The website must be structured so that users can buy the films.
 
 ### Skeleton
-
+The database will be the skeleton of this website as both pages will link to the database as this is what the site owner wants the website to have the main focus on it.
 
 ### Scope
-
+Before creating the website, I put together all the infomation that the site owner wants to be din the database. I also found images of the movie posters that will be the icon of the films.
 
 ### User Stories
-As a user, 
-As a user,
-As a user,
-As a user,
-As a user, 
+As a user, I want to be able to navigation between the pages easily.
+As a user, I want to see a clean layout of all the information.
+As a user, I want to see images of the movies.
+As a user, I want to see information about the films.
+As a user, I want to be able to review the movies.
+As a user, I want to be able to buy the film.
 
 ## Features
 

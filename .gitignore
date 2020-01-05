@@ -3,4 +3,5 @@ settings.json
 
 #folders
 .vscode
-env
+env/
+env.py

@@ -10,7 +10,7 @@ if path.exists("env.py"):
 #mongodb
 app = Flask(__name__)
 app.config['MONGO_URI'] = os.environ["MONGO_URI"]
-app.config['MONGO_DBNAME'] = app.config['MONGO_DBNAME']
+app.config['MONGO_DBNAME'] = os.environ['MONGO_DBNAME']
 mongo = PyMongo(app)
 
 #connecting the index file

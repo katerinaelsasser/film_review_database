@@ -20,6 +20,6 @@ def index():
     return render_template('index.html', locks=context)
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get(os.environ["IP"])),
-            port=(os.environ.get(os.environ["PORT"])),
-            debug=True)
+    app.run(host=os.environ.get('IP'),
+        port=int(os.environ.get('PORT')),
+        debug=True)

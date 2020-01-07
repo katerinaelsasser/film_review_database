@@ -13,10 +13,12 @@ app.config['MONGO_URI'] = os.environ["MONGO_URI"]
 app.config['MONGO_DBNAME'] = os.environ['MONGO_DBNAME']
 mongo = PyMongo(app)
 
+#linking the index
 @app.route('/')
 @app.route('/get_films')
 def get_films():
     return render_template("index.html")
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

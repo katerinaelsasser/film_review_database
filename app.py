@@ -17,8 +17,8 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    context = mongo.db.Locks.find()
-    return render_template('index.html', locks=context)
+    context = mongo.db.films.find()
+    return render_template('index.html', films=context)
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

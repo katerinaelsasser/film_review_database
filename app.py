@@ -15,10 +15,21 @@ mongo = PyMongo(app)
 
 #linking the index
 @app.route('/')
-@app.route('/get_films')
-def get_films():
+@app.route('/display_films')
+def display_films():
     return render_template("index.html")
 
+@app.route('/add_reviews')
+def add_reviews():
+    return render_template('review.html',
+                           categories=mongo.db.reviews.find())
+
+
+@app.route('/insert_review', methods=['POST'])
+def insert_task():
+    reviews =  mongo.db.reviews
+    reviewss.insert_one(request.form.to_dict())
+    return redirect(url_for('display_films'))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

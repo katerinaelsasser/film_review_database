@@ -15,7 +15,7 @@ mongo = PyMongo(app)
 
 #linking the index
 @app.route('/')
-@app.route('/display_films')
+@app.route('/films_bank')
 def display_films():
     return render_template("index.html")
 

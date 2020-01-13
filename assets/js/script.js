@@ -3,19 +3,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
   });
 
-  //autocomplete
-  $(document).ready(function(){
-    $('input.autocomplete').autocomplete({
-      data: {
-        "Apple": null,
-        "Microsoft": null,
-        "Google": 'https://placehold.it/250x250'
-      },
-    });
-  });
-  
-
-  //select options
+    //select options
    $(document).ready(function(){
     $('select').formSelect();
   });
@@ -24,4 +12,23 @@ $(document).ready(function(){
   $('#textarea1').val('New Text');
   M.textareaAutoResize($('#textarea1'));
 
-  
+  //search bar
+  function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}

@@ -19,9 +19,9 @@ mongo = PyMongo(app)
 def get_films():
     return render_template("index.html")
 
-@app.route("/add_review")
-def add_review():
-    return render_template("add_review.html") 
+@app.route("/review")
+def review():
+    return render_template("review.html") 
 
 @app.route('/update_film/<film_id>', methods=["POST"])
 def update_film(film_id):

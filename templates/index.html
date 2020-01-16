@@ -1,20 +1,13 @@
 {% extends 'base.html' %} {% block content %}
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
-</div>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
-    <div class="content">
-      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
+<div>
+{% for film in film %}
+       {{film.name}}
+       {{film.year}}
+       {{film.director}}
+       {{film.genre}}
+       {{film.rating}}
+       {{film.length}}
+       {{film.description}}      
+{% endfor%}
 </div>
 {% endblock %}

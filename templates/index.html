@@ -1,13 +1,40 @@
 {% extends 'base.html' %} {% block content %}
-<div>
-{% for film in film %}
-       {{film.name}}
-       {{film.year}}
-       {{film.director}}
-       {{film.genre}}
-       {{film.rating}}
-       {{film.length}}
-       {{film.description}}      
-{% endfor%}
+
+<div class="pagemenu"></div>
+
+<div class="film-listing">
+
+{each Product}
+
+<div class="nopadding">
+    <div class="film-display-image">
+        <img class="scaleAll" src="${film.film_poster}" alt="${film.film_name}"/>                             
+    </div>
+                                                                            
+<div class="product-name">
+    <h4 title="${film.film_name}"></h4>
 </div>
+</div>
+       {{/each}}                                 
+                              
+                                </div>
+
+    
+                    
+            
+
+
+
+
+
+
+
+
+
+
+</div>
+
 {% endblock %}
+
+                    
+                        

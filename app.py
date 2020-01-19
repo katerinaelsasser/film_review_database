@@ -13,12 +13,19 @@ app.config['MONGO_URI'] = os.environ["MONGO_URI"]
 app.config['MONGO_DBNAME'] = os.environ['MONGO_DBNAME']
 mongo = PyMongo(app)
 
-#linking the index
+#Home Page
 @app.route('/')
+@app.route("/home_page")
+def home_page():
+    return render_template("index.html") 
+
+#Film Database
 @app.route('/get_films')
 def get_films():
-    return render_template("index.html")
+    return render_template("film_listing.html", 
+                           film-review=mongo.db.film.find())
 
+#Review Page
 @app.route("/add_review")
 def add_review():
     return render_template("add_review.html") 

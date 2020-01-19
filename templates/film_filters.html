@@ -1,0 +1,41 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- Genre Options -->
+<label for="categorySelect" class="pt-2">Genre</label>
+                <select id="categorySelect" name="categories" class="form-control custom-select custom-select-sm">
+                    <option value="all" selected>All</option>
+                    <option value="cartoon">Cartoon</option>
+                </select>
+<!-- Age Rating Options -->
+<label for="categorySelect" class="pt-2">Age Rating</label>
+                <select id="categorySelect" name="categories" class="form-control custom-select custom-select-sm">
+                    <option value="all" selected>All</option>
+                    <option value="u-rating">U</option>
+                    <option value="pg-rating">PG</option>
+                    <option value="12-rating">12</option>
+                    <option value="12a-rating">12A</option>
+                    <option value="15-rating">15</option>#                    <option value="15-rating">15</option>
+                    <option value="18-rating">18</option>
+                </select>
+<!-- Length of Film Options -->
+<label for="categorySelect" class="pt-2">Rating</label>
+                <select id="categorySelect" name="categories" class="form-control custom-select custom-select-sm">
+                    <option value="all" selected>All</option>
+                    <option value="one-hour">1 Hour</option>
+                    <option value="two-hour">2 Hours</option>
+                    <option value="three-three">3 Hours</option>
+                </select>
+<!-- View RatingOptions -->
+<label for="categorySelect" class="pt-2">Viewer Rating</label>
+                <select id="categorySelect" name="categories" class="form-control custom-select custom-select-sm">
+                    <option value="all" selected>All</option>
+                    <option value="one-star">1 Star</option>
+                    <option value="two-star">2 Star</option>
+                    <option value="three-star">3 Star</option>
+                    <option value="four-star">4 Star</option>
+                    <option value="five-star">5 Star</option>
+                </select>
+<!-- Clear filter -->
+<button type="button" class="btn btn-search clear-filters mb-3">Clear filters</button>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+<div id="wrapper">
+		<div id="container">
+			<div class="film-container">
+				<ul class="film-list">
+				    {each Product}
+                    <li>
+						<div class="movie">
+						    <a href="#" class="product-image">
+							<img src="{{ film_poster }}" alt="${{ film_name }}">
+							</a>
+                            <h4>{{ film_name }}</h4>
+                            <p>{{ film_description }}</p>
+                            <p><b>Year of Release: </b>{{ film_year }}<p>
+                            <p><b>Director: </b>{{ film_director }}<p>
+                            <p><b>Genre: </b>{{ film_genre }}<p>
+                            <p><b>Rating: </b>{{ film_rating }}<p>
+                            <p><b>Length of Film: </b>{{ film_length }}<p>
+						</div>
+					</li>
+                    {{/each}} 
+				</ul>
+			</div>
+		</div>
+	</div>

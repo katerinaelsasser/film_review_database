@@ -22,8 +22,7 @@ def home_page():
 #Film Database
 @app.route('/get_films')
 def get_films():
-    return render_template("film_listing.html", 
-                           film-review=mongo.db.find())
+    return render_template("film_listing.html")
 
 #Review Page
 @app.route("/add_review")

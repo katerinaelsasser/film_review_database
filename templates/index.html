@@ -1,12 +1,34 @@
-{% extends 'base.html' %} {% block content %}
-<h2>Watch Films & Leave A Review!</h2>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Review Movies</title>
+</head> 
+<body>
+    <!-- Navbar -->
+    <header>
+<nav>
+    <div class="nav-wrapper">
+      <a href="{{url_for('get_films')}}" class="brand-logo center">Movies</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      <li><a href="{{url_for('add_review')}}">Review</a></li>
+      </ul>
+    </div>
+  </nav>
+    </header>
+    <!-- End of Navbar -->
+<h4>Watch Films & Leave A Review!</h4>
 
 <p>Don't know what to watch next? We have put together a wide range of films from all genres! Keep an eye out for new releases! We update our films every Friday.</p>
 
 <!--New release carousel-->
 
 <div class="container-fluid">
-  <h1 class="text-center mb-3">New Releases</h1>
+  <h4>New Releases</h4>
   <div class="carousel slide">
     <div class="row">
         <div class="card">
@@ -14,6 +36,22 @@
           <div class="card-body">
             <h4 class="card-title">Card 1</h4>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img-fluid" src="assets/images/movie-posters/first-man.jpg" alt="poster">
+          <div class="card-body">
+            <h4 class="card-title">First Man</h4>
+            <p class="card-text">A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="img-fluid" src="assets/images/movie-posters/moonlight.jpg" alt="poster">
+          <div class="card-body">
+            <h4 class="card-title">Moonlight</h4>
+            <p class="card-text">A young African-American man grapples with his identity and sexuality while experiencing the everyday struggles of childhood, adolescence, and burgeoning adulthood.</p>
             <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
@@ -28,14 +66,5 @@
     </a>
   </div>
 </div>
-
-
-
-
-
-
-
-{% endblock %}
-
-                    
+              
                         

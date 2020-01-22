@@ -82,3 +82,17 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+// index image image carousel
+ var instance = M.Carousel.init({
+    fullWidth: true,
+    indicators: true
+  });
+
+  // Or with jQuery
+
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+       

@@ -11,11 +11,14 @@
 <body>
     <!-- Navbar -->
     <header>
+
+
 <nav>
     <div class="nav-wrapper">
-      <a href="{{url_for('home_page')}}" class="brand-logo center">Movies</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-      <li><a href="{{url_for('add_review')}}">Review</a></li>
+      <a href="#" class="brand-logo">Review Movies</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="{{url_for('get_films')}}">Movies</a></li>
+        <li><a href="{{url_for('add_review')}}">Review</a></li>
       </ul>
     </div>
   </nav>

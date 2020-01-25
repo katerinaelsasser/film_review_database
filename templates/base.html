@@ -12,7 +12,7 @@
     <!-- Navbar -->
     <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Review Movies</a>
+  <a class="navbar-brand" href="{{url_for('homepage')}}">Review Movies</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -20,16 +20,16 @@
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="{{url_for('homepage')}}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{url_for('get_films')}}">View Our Movies</a>
+        <a class="nav-link" href="{{url_for('viewfilms')}}">View Our Movies</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{url_for('')}}">View Other Reviews</a>
+        <a class="nav-link" href="{{url_for('viewreviews')}}">View Other Reviews</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{url_for('add_review')}}">Leave A Review</a>
+        <a class="nav-link" href="{{url_for('addreviews')}}">Leave A Review</a>
       </li>
     </ul>
   </div>

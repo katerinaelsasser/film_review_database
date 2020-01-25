@@ -15,18 +15,22 @@ mongo = PyMongo(app)
 
 #Home Page
 @app.route('/', methods=['GET', 'POST'])
-@app.route('/home_page', methods=['GET', 'POST'])
+@app.route('/homepage', methods=['GET', 'POST'])
 def home_page():
     return render_template("index.html") 
 
 #Film Database
-@app.route('/get_films')
-def get_films():
-    return render_template("film_listing.html")
+@app.route('/viewfilms')
+def viewfilms():
+    return render_template("viewfilms.html")
 
-@app.route("/add_review")
-def add_review():
-    return render_template("add_review.html") 
+@app.route("/viewreviews")
+def viewreviews():
+    return render_template("viewreviews.html") 
+
+@app.route("/addreviews")
+def addreviews():
+    return render_template("addreview.html") 
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

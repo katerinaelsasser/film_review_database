@@ -16,7 +16,7 @@ mongo = PyMongo(app)
 #Home Page
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/homepage', methods=['GET', 'POST'])
-def home_page():
+def homepage():
     return render_template("index.html") 
 
 #Film Database

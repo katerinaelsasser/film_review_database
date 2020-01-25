@@ -12,7 +12,7 @@
     <!-- Navbar -->
     <header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Review Movies</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -23,28 +23,17 @@
         <a class="nav-link" href="#">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{url_for('get_films')}}">Movies</a>
+        <a class="nav-link" href="{{url_for('get_films')}}">View Our Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('')}}">View Other Reviews</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{url_for('add_review')}}">Leave A Review</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
-
-<nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">Review Movies</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="{{url_for('get_films')}}">Movies</a></li>
-        <li><a href="{{url_for('add_review')}}">Review</a></li>
-      </ul>
-    </div>
-  </nav>
     </header>
     <!-- End of Navbar -->
     <!-- Main content -->

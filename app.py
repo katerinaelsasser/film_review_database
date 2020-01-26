@@ -20,17 +20,17 @@ def homepage():
     return render_template("pages/index.html") 
 
 #viewfilms page
-@app.route('/viewfilms')
+@app.route('/viewfilms', methods=['GET', 'POST'])
 def viewfilms():
     return render_template("pages/viewfilms.html")
 
 #viewreviews page
-@app.route('/viewreviews')
+@app.route('/viewreviews', methods=['GET', 'POST'])
 def viewfilms():
     return render_template("pages/viewreviews.html")
 
 #addreviews page
-@app.route('/addreviews')
+@app.route('/addreviews', methods=['GET', 'POST'])
 def viewfilms():
     return render_template("pages/addreviews.html")
 

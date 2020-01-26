@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <!--display screen-->
-<div class="header-image slides">
+<div class="header-image slides col-12">
 <img class="mySlides" alt="header-img" src="static/assets/images/film-slideshow-shots/film-slideshow-image1.jpg">
 <img class="mySlides" alt="header-img" src="static/assets/images/film-slideshow-shots/film-slideshow-image2.jpg">
 <img class="mySlides" alt="header-img" src="static/assets/images/film-slideshow-shots/film-slideshow-image3.jpg">
@@ -84,7 +84,9 @@
           <a href="{{url_for('viewfilms')}}" class="stretched-link">View other films</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-<img alt="film-home-display bd-placeholder-img" src="static/assets/images/movie-poster/pulp-fiction.jpg">        
+<svg class="bd-placeholder-img"  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+<img alt="film-home-display" src="static/assets/images/movie-poster/pulp-fiction.jpg">        
 </div>
       </div>
     </div>

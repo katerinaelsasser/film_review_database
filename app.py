@@ -17,12 +17,22 @@ mongo = PyMongo(app)
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/homepage', methods=['GET', 'POST'])
 def homepage():
-    return render_template("index.html") 
+    return render_template("pages/index.html") 
 
 #viewfilms page
 @app.route('/viewfilms')
 def viewfilms():
-    return render_template("viewfilms.html")
+    return render_template("pages/viewfilms.html")
+
+#viewreviews page
+@app.route('/viewreviews')
+def viewfilms():
+    return render_template("pages/viewreviews.html")
+
+#addreviews page
+@app.route('/addreviews')
+def viewfilms():
+    return render_template("pages/addreviews.html")
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

@@ -14,23 +14,23 @@ app.config['MONGO_DBNAME'] = os.environ['MONGO_DBNAME']
 mongo = PyMongo(app)
 
 #Home Page
-@app.route('/', methods=['GET', 'POST'])
-@app.route('/homepage', methods=['GET', 'POST'])
+@app.route('/')
+@app.route('/homepage')
 def homepage():
-    return render_template("pages/index.html") 
+    return render_template("pages/index.html")
 
 #viewfilms page
-@app.route('/viewfilms', methods=['GET', 'POST'])
+@app.route('/viewfilms')
 def viewfilms():
     return render_template("pages/viewfilms.html")
 
 #viewreviews page
-@app.route('/viewreviews', methods=['GET', 'POST'])
+@app.route('/viewreviews')
 def viewfilms():
     return render_template("pages/viewreviews.html")
 
 #addreviews page
-@app.route('/addreviews', methods=['GET', 'POST'])
+@app.route('/addreviews')
 def viewfilms():
     return render_template("pages/addreviews.html")
 

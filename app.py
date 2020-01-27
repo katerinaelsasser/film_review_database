@@ -26,12 +26,12 @@ def viewfilms():
 
 #viewreviews page
 @app.route('/viewreviews')
-def viewfilms():
+def viewreviews():
     return render_template("pages/viewreviews.html")
 
 #addreviews page
 @app.route('/addreviews')
-def viewfilms():
+def addreviews():
     return render_template("pages/addreviews.html")
 
 if __name__ == '__main__':

@@ -20,7 +20,7 @@ def homepage():
     return render_template("pages/index.html")
 
 #viewfilms page
-@app.route('/viefilma')
+@app.route('/viewfilms')
 def viewfilms():
     return render_template("pages/viewfilms.html")
 

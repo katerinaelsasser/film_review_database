@@ -33,6 +33,11 @@ def viewreviews():
 @app.route('/addreviews')
 def addreviews():
     return render_template("pages/addreviews.html")
+    
+#addreviews page
+@app.route('/register')
+def register():
+    return render_template("pages/register.html")
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

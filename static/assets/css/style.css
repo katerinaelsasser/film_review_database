@@ -1,5 +1,9 @@
+/*---navbar ----*/
+.navbar-brand {
+    font-size: 30px;
+}
+/*--- header ----*/
 .card-img,
 .col-sm-12 {
     padding: 0;
 }
-

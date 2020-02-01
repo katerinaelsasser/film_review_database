@@ -1,7 +1,22 @@
 {% block navbar %}
 <footer>
+<!--mini nav bar-->
+<div class="col-4">
+</div>
+<!--subscribe-->
+<div class="col-4">
+<div class="form-email text-center">
+      <label for="InputEmail">Email address</label>
+      <input type="email" class="form-control" id="email-form" aria-describedby="emailHelp" placeholder="Enter your email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+<!--creator-->
+<div class="col-4">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="nav-item" href="https://github.com/katerinaelsasser/film_review_database">Created by Katerina Elsasser</a>
 </nav>
+</div>
 </footer>
 {% endblock %}

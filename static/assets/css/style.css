@@ -1,3 +1,7 @@
+html {
+    padding: 0;
+}
+
 /*---navbar ----*/
 .navbar-brand {
     font-size: 30px;

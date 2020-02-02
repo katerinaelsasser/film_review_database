@@ -1,10 +1,20 @@
 {% extends 'layout/base.html' %} {% block content %}
-<div class="col-sm-12">
-<!--display screen-->
-<div class="col-md-12">
+<div class="container-fluid">
       <img src="static/assets/images/headers/header-1.jpg" class="card-img" alt="film-header">
-    </div>
-<!--Intro text-->
-<div class="intro-text text-center">Welcome! Review Movies is the website where millions of film lovers find films to watch and rate them! Finding movies and reviews has never been so simple.</div>    
+
+<div class="title">
+Review Movies
 </div>
+<div>
+<a class="btn btn-lg btn-successful" href="{{url_for('viewfilms')}}">View all movies</a>
+<a class="btn btn-lg btn-successful" href="{{url_for('viewreviews')}}">View Reviews</a>
+<p>Welcome! Review Movies is the website where millions of film lovers find films to watch and rate them! Finding movies and reviews has never been so simple.</p>
+</div>
+</div>
+
+
+
+
+
+
 {% endblock %}

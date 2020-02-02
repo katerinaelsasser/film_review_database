@@ -3,6 +3,22 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <!--mini nav bar-->
 <div class="col-4 block-1 text-center">
+ <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('homepage')}}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('viewfilms')}}">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('viewreviews')}}">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{url_for('addreviews')}}">Add Review</a>
+      </li>
+    </ul>
+  </div>
 </div>
 <!--subscribe-->
 <div class="col-4 block-2 text-center">
@@ -15,7 +31,10 @@
 </div>
 <!--creator-->
 <div class="col-4 block-3 text-center">
-  <a class="nav-item" href="https://github.com/katerinaelsasser/film_review_database">Created by Katerina Elsasser</a>
+    <h4 class="card-title">Review Movies</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Data Centric Development</h6>
+    <a href="https://github.com/katerinaelsasser/film_review_database">Created by Katerina Elsasser</a>
+  </div>
 </div>
 </nav>
 </footer>

@@ -29,7 +29,7 @@ html {
   transition: .5s ease;
   background-color: #008CBA;
 }
-.container:hover .overlay {
+.container-fluid:hover .overlay {
   opacity: 1;
 }
 .text {

@@ -1,10 +1,7 @@
 html {
     padding: 0;
 }
-.container {
-  position: relative;
-  width: 50%;
-}
+
 
 
 /*---navbar ----*/
@@ -16,6 +13,9 @@ html {
   display: block;
   width: 100%;
   height: auto;
+}
+.container-fluid {
+  position: relative;
 }
 .overlay {
   position: absolute;

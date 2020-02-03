@@ -2,7 +2,7 @@
 <footer>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <!--mini nav bar-->
-<div class="col-6 block-1 text-center">
+<div class="col-6 text-center">
  <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
@@ -21,14 +21,7 @@
   </div>
 </div>
 <!--subscribe-->
-<div class="col-6 block-2 text-center">
-<div class="form-email">
-      <h6 for="InputEmail">Subscribe for </h6>
-      <input type="email" class="form-control col-md-8" id="email-form" aria-describedby="emailHelp" placeholder="Enter your email">
-    </div>
-<button type="submit" class="btn btn-primary col-md-4">Submit</button>
-</div>
-</div>
+{% include 'components/subscribe.html' %}
 </nav>
 </footer>
 {% endblock %}

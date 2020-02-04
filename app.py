@@ -33,6 +33,16 @@ def viewreviews():
 @app.route('/addreviews')
 def addreviews():
     return render_template("pages/addreviews.html")
+
+#login page
+@app.route('/login')
+def login():
+    return render_template("pages/login.html")
+
+#user home page
+@app.route('/userhome')
+def userhome():
+    return render_template("pages/userhome.html")
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

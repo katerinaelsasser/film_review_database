@@ -10,6 +10,11 @@ img {
 .navbar-brand {
     font-size: 30px;
 }
+
+/*-- footer ---*/
+.form-email {
+    padding: 0;
+}
 /*--- header ----*/
 .header-image {
   display: block;

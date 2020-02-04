@@ -23,6 +23,7 @@ img {
 }
 .container-fluid {
   position: relative;
+  padding: 0;
 }
 .overlay {
   position: absolute;

@@ -19,7 +19,7 @@ img {
 .header-image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 700px;
 }
 .container-fluid {
   position: relative;

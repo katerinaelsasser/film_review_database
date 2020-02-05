@@ -54,17 +54,6 @@ img {
   text-align: center;
 }
 
-/*---Intro text ---*/
-.intro-text {
-    padding: 25px
-}
-
-/*---new arrivals---*/
-
-.new-arrivals {
-    padding: 15px;
-}
-
 /*--- login page ---*/
 .login-page {
     padding: 100px;

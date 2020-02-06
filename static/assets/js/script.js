@@ -1,0 +1,4 @@
+function getMovies(film) {
+  fetch('')
+    
+}

@@ -21,8 +21,9 @@ img {
   width: 100%;
   position: relative;
 }
-.intro-text {
+.fas {
     padding: 20px;
+    size: 15px;
 }
 .container-fluid {
   position: relative;

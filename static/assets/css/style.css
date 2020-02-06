@@ -19,7 +19,7 @@ img {
 .header-image {
   display: block;
   width: 100%;
-  height: 700px;
+  position: relative;
 }
 .intro-text {
     padding: 20px;

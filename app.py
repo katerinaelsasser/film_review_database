@@ -34,6 +34,11 @@ def viewreviews():
 def addreviews():
     return render_template("pages/addreviews.html")
 
+#subscribe page
+@app.route('/subscribe')
+def subscribe():
+    return render_template("pages/subscribe.html")
+
 #login page
 @app.route('/login')
 def login():

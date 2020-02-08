@@ -1,0 +1,21 @@
+{% block userpages %}
+<header>
+<div class="container">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="{{url_for('subscribe')}}">Subscribe</a>
+      <h1><a class="p-2 text-muted" href="{{url_for('homepage')}}">Review Movies</a></h1>
+      <a class="p-2 text-muted" href="#">Signed In</a>
+    </nav>
+  </div>
+  </header>
+
+  <div class="container">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted text-center" href="{{url_for('homepage')}}">Home</a>
+      <a class="p-2 text-muted text-center" href="{{url_for('viewfilms')}}">Movies</a>
+      <a class="p-2 text-muted text-center" href="{{url_for('viewreviews')}}">Reviews</a>
+      <a class="p-2 text-muted text-center" href="{{url_for('addreviews')}}">Add A Review</a>
+      <a class="p-2 text-muted text-center" href="{{url_for('addfilms')}}">Add Films</a>
+    </nav>
+  </div>
+    {% endblock %}

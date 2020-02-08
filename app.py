@@ -34,6 +34,11 @@ def viewreviews():
 def addreviews():
     return render_template("pages/addreviews.html")
 
+#addreviews page
+@app.route('/addfilms')
+def addfilms():
+    return render_template("pages/addfilm.html")
+
 #subscribe page
 @app.route('/subscribe')
 def subscribe():

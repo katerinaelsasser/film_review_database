@@ -1,14 +1,14 @@
 {% block navbar %}
  <header>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <a class="navbar-brand" href="{{url_for('homepage')}}">Review Movies</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarColor02">
+  <div class="collapse navbar-collapse" id="navbarsExample03">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+           <li class="nav-item">
         <a class="nav-link" href="{{url_for('homepage')}}">Home</a>
       </li>
       <li class="nav-item">
@@ -20,11 +20,20 @@
       <li class="nav-item">
         <a class="nav-link" href="{{url_for('addreviews')}}">Add Review</a>
       </li>
+      <li class="nav-item">
+          <a class="btn btn-secondary my-2 my-sm-0" href="{{url_for('login')}}">Login</a>
+      </li>
     </ul>
-    <div class="my-2 my-lg-0">
-    <a class="btn btn-secondary my-2 my-sm-0" href="{{url_for('login')}}">Login</a>
-  </div>
   </div>
 </nav>
+
+
+
+
+
+
+
+
+
     </header>
     {% endblock %}

@@ -1,9 +1,10 @@
 {% block navbar %}
 <footer>
-<!--mini nav bar-->
-<div class="col-6 text-center">
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Bottom navbar</a>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="{{url_for('homepage')}}">Home</a>
       </li>
       <li class="nav-item">
@@ -17,5 +18,6 @@
       </li>
     </ul>
   </div>
+</nav>
 </footer>
 {% endblock %}

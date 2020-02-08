@@ -67,3 +67,8 @@ img {
 .login-page {
     padding: 100px;
 }
+
+/*--- subscribe page ---*/
+.subscribe-background {
+    background-color: #008B8B;
+}

@@ -11,6 +11,10 @@ img {
     margin: 0;
 }
 
+.container{
+padding: 15px;
+}
+
 .col-4 {
     padding: 0;
 }

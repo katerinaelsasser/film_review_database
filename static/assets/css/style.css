@@ -40,6 +40,34 @@ padding: 15px;
   position: relative;
   padding: 0;
 }
+.overlay-home {
+background-color: #008B8B;
+}
+
+.overlay-login {
+background-color: #ADD8E6;
+}
+
+.overlay-addfilm {
+background-color: #20B2AA;
+}
+
+.overlay-addreview {
+background-color: #66CDAA;
+}
+
+.overlay-subscribe {
+background-color: #3CB371;
+}
+
+.overlay-viewfilm {
+background-color: #48D1CC;
+}
+
+.overlay-viewreview {
+background-color: #2E8B57;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -50,7 +78,6 @@ padding: 15px;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008B8B;
 }
 .container-fluid:hover .overlay {
   opacity: 1;

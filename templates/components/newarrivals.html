@@ -1,43 +1,19 @@
-{% block navbar %}
-<div class="new-arrivals">
-<div>New Arrivals</div>
+{% block newarrivals %}
+<div class="container-fluid new-arrivals">
+<h4 class="text-center">Recently added</h4>
 <div class="row">
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/dark-knight.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/first-man.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/four-weddings-and-a-funeral.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/inception.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/kiki-s-delivery-service.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/la-la-land.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/moonlight.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/pulp-fiction.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/singin-in-the-rain.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/sleeping-beauty.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/spectre.jpg" class="card-img" alt="homepage-film">
-    </div>
-    <div class="col-md-2">
-      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/wizard-of-oz.jpg" class="card-img" alt="homepage-film">
-    </div>
-  </div>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/dark-knight.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+    <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/first-man.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+      <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/four-weddings.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+        <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/inception.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/kiki-delivery.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/la-la-land.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/moonlight.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/pulp-fiction.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/singin-in-the-rain.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/sleeping-beauty.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/spectre.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+  <a href="{{url_for('viewfilms')}}"><img src="static/assets/images/movie-poster/wizard-of-oz.jpg" alt="recent-poster" class="thumbernail col-3"></a>
+</div>
 </div>
     {% endblock %}

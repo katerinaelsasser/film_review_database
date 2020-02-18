@@ -76,7 +76,11 @@ padding: 15px;
     background-color: #008B8B;
 }
 
-/*--- subscribe page ---*/
+/*--- new arrivals ---*/
 .new-arrivals-text {
 padding: 15px;
+}
+
+.recent-poster {
+    padding: 20px;
 }

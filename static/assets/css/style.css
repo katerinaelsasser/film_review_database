@@ -107,6 +107,9 @@ background-color: #2E8B57;
     font-size: 50px;
 }
 
+.recent {
+    padding: 10px;
+}
 /*--- login page ---*/
 .login-page {
     padding: 100px;

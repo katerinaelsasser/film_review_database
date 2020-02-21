@@ -93,6 +93,11 @@ background-color: #2E8B57;
   text-align: center;
 }
 
+/*--- index page---*/
+.index-review {
+    font-size: 50px;
+}
+
 /*--- login page ---*/
 .login-page {
     padding: 100px;

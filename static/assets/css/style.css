@@ -15,6 +15,10 @@ img {
 padding: 15px;
 }
 
+.row {
+    margin: 0;
+}
+
 .col-4 {
     padding: 0;
 }

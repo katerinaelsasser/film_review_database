@@ -110,6 +110,13 @@ background-color: #2E8B57;
 .recent {
     padding: 10px;
 }
+
+/*--- viewfilms page ---*/
+
+.fa-tv {
+padding-bottom: 15px;
+}
+
 /*--- login page ---*/
 .login-page {
     padding: 100px;

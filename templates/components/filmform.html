@@ -1,16 +1,3 @@
-film name
-film_year
-
-film_director
-
-film_genre
-
-film_age
-
-film_length
-
-film description
-
 {% block filmform %}
 <div class="text-center container">
       <h4 class="mb-3">Add a film</h4>
@@ -21,11 +8,61 @@ film description
  <label for="filmname">Film Title</label><br>
   <input type="text" id="filmname" name="filmname">
 </div>
+
+film_year
+
+
+
+
 <!--film description-->
 <div class="form-group">
       <label for="exampleTextarea">Film Description</label>
       <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
     </div>
+<!--film director-->
+<div class="form-group">
+ <label for="filmname">Film Title</label><br>
+  <input type="text" id="filmname" name="filmname">
+</div>
+
+<!--film genre-->
+<input type="radio" id="action" name="genre" value="action">
+  <label for="action">Action</label><br>
+  <input type="radio" id="adventure" name="genre" value="adventure">
+  <label for="adventure">Adventure</label><br>
+  <input type="radio" id="animation" name="genre" value="animation">
+  <label for="animation">Animation</label>
+<input type="radio" id="comedy" name="genre" value="comedy">
+  <label for="comedy">Comedy</label>
+<input type="radio" id="crime" name="genre" value="crime">
+  <label for="crime">crime</label>
+  <input type="radio" id="documentary" name="genre" value="documentary">
+  <label for="documentary">Documentary</label>
+  <input type="radio" id="drama" name="genre" value="drama">
+  <label for="drama">Drama</label>
+  <input type="radio" id="fantasy" name="genre" value="fantasy">
+  <label for="fantasy">fantasy</label>
+  <input type="radio" id="historical" name="genre" value="historical">
+  <label for="historical">Historical</label>
+  <input type="radio" id="horror" name="genre" value="horror">
+  <label for="horror">Horror</label>
+  <input type="radio" id="indie" name="genre" value="indie">
+  <label for="indie">indie</label>
+  <input type="radio" id="musical" name="genre" value="musical">
+  <label for="musical">musical</label>
+  <input type="radio" id="romance" name="genre" value="romance">
+  <label for="romance">romance</label>
+  <input type="radio" id="sci-fi" name="genre" value="sci-fi">
+  <label for="sci-fi">sci-fi</label>
+  <input type="radio" id="thriller" name="genre" value="thriller">
+  <label for="thriller">thriller</label>
+  <input type="radio" id="western" name="genre" value="western">
+  <label for="western">western</label>
+ 
+
+film_age
+
+film_length
 
 
 <!--Submit button-->

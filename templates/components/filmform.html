@@ -10,3 +10,26 @@ film_age
 film_length
 
 film description
+
+{% block filmform %}
+<div class="text-center container">
+      <h4 class="mb-3">Add a film</h4>
+
+<form class="needs-validation" novalidate="">
+<!--film title-->
+ <div class="form-group">
+ <label for="filmname">Film Title</label><br>
+  <input type="text" id="filmname" name="filmname">
+</div>
+<!--film description-->
+<div class="form-group">
+      <label for="exampleTextarea">Film Description</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+
+
+<!--Submit button-->
+<button type="submit" class="btn btn-primary">Submit</button>
+
+        </div>
+    {% endblock %}

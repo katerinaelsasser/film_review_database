@@ -1,5 +1,5 @@
 function getMovies(film) {
-  fetch('')
+  fetch('http://www.omdbapi.com/?i=tt3896198&apikey=8fb317f8')
     .then(res => res.json)
     .then(data => {
       console.log(data);

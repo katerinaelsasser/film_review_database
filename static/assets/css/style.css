@@ -19,6 +19,8 @@ img {
 padding: 15px;
 }
 
+.card,
+.card-deck,
 .row {
     margin: 0;
 }

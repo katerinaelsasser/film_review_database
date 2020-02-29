@@ -1,44 +1,41 @@
 {% block reviewform %}
-<!--Review field-->
 <div class="text-center container">
+      <!--Title-->
       <h4 class="mb-3">Add a review</h4>
-         
-      <form class="needs-validation" novalidate="">
-<!--title of film-->
- <div class="form-group">
- <label for="filmname">Film Title</label><br>
-  <input type="text" id="filmname" name="filmname">
-</div>
-<!--star rating-->
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-      <label class="custom-control-label" for="customRadio1">5 Stars</label>
+
+<form class="needs-validation" novalidate="">
+        <div class="row">
+        <!--Film name-->
+          <div class="col-md-6 mb-3">
+            <label for="filmName">Film name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid film title is required.
+            </div>
     </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio2">4 Stars</label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" checked="">
-      <label class="custom-control-label" for="customRadio3">3 Stars</label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-      <label class="custom-control-label" for="customRadio4">2 Stars</label>
-    </div>
-    <div class="custom-control custom-radio">
-      <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input" checked="">
-      <label class="custom-control-label" for="customRadio5">1 Star</label>
-    </div>
-  
-<!--text review-->
-       <div class="form-group">
-      <label for="reviewtext">Review:</label>
-      <textarea class="form-control" id="reviewtext" rows="3"></textarea>
-    </div>
+    <!--Star Rating-->
+          <div class="col-md-6 mb-3">
+            <label for="StarRating">Star Rating</label>
+            <select class="custom-select d-block w-100" id="StarRating" required="">
+        <option>1 Star</option>
+        <option>2 Star</option>
+        <option>3 Star</option>
+        <option>4 Star</option>
+        <option>5 Star</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a rating.
+            </div>
+          </div>     
+          <!--Review Text-->
+        <div class="col-md-12 mb-3">
+          <label for="ReviewText">Leave your thoughts below</label>
+          <input type="text" class="form-control" id="ReviewText" placeholder="" required="">
+        </div>
+      </div></form>
+
 <!--Submit button-->
 <button type="submit" class="btn btn-primary">Submit</button>
-</div>
 
         </div>
         {% endblock %}

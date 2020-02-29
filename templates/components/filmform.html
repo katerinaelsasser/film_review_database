@@ -1,8 +1,6 @@
 {% block filmform %}
-
-
-
 <div class="text-center container">
+      <!--Title-->
       <h4 class="mb-3">Add a film</h4>
 
 <form class="needs-validation" novalidate="">
@@ -13,32 +11,22 @@
             <div class="invalid-feedback">
               Valid film title is required.
             </div>
-          </div>
+    </div>
           <div class="col-md-6 mb-3">
             <label for="directorName">Name of Director</label>
             <input type="text" class="form-control" id="directorName" placeholder="" value="" required="">
             <div class="invalid-feedback">
               Valid name of director is required.
             </div>
-          </div>
-        </div>
-
-        
-
-        
-
-        <div class="mb-3">
+          </div>     
+        <div class="col-md-12 mb-3">
           <label for="description">Film Description</label>
           <input type="text" class="form-control" id="description" placeholder="Description of Film" required="">
           <div class="invalid-feedback">
             Please enter the description of the film.
           </div>
         </div>
-
-        
-
-        <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-md-4 mb-3">
             <label for="YearofRelease">Year of Release</label>
             <select class="custom-select d-block w-100" id="YearofRelease" required="">
         <option>1900</option>
@@ -64,7 +52,7 @@
         <option>1920</option>
         <option>1921</option>
         <option>1922</option>
-        
+        <option>1923</option>
         <option>1924</option>
         <option>1925</option>
         <option>1926</option>
@@ -177,14 +165,21 @@
               Please select a valid country.
             </div>
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-4 mb-3">
+    <label for"agerating"="">Age Rating</label>
             
             <div class="invalid-feedback">
               Please select at least one option.
             </div>
+  </div>
+          <div class="col-md-4 mb-3">
+    <label for"agerating"="">Length of Film</label>
+            
+            <div class="invalid-feedback">
+              Please type in the length of film in hrs and mins.
+            </div>
           </div>
-          
-        </div>
+        
         
         
         
@@ -197,11 +192,7 @@
         
         
         
-      </form>
-film_age
-
-film_length
-
+      </div></form>
 
 <!--Submit button-->
 <button type="submit" class="btn btn-primary">Submit</button>

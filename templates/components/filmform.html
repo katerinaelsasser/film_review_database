@@ -218,15 +218,23 @@
           <!--Film Age Rating-->
           <div class="col-md-4 mb-3">
     <label for="agerating">Age Rating</label>
-            
+            <select class="custom-select d-block w-100" id="agerating" required="">
+        <option>U</option>
+        <option>PG</option>
+        <option>12A</option>
+        <option>12</option>
+        <option>15</option>
+        <option>18</option>
+            </select>
             <div class="invalid-feedback">
-              Please select at least one option.
+              Please select from the dropdown.
             </div>
   </div>
 <!--Film length-->
           <div class="col-md-4 mb-3">
     <label for="filmlength">Length of Film</label>
-            
+    <input type="text" class="form-control" id="filmlength" placeholder="" value="" required="">
+
             <div class="invalid-feedback">
               Please type in the length of film in hrs and mins.
             </div>

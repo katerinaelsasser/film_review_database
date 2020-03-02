@@ -4,31 +4,31 @@
   <h2 class="text-center">User Dashboard</h2>
   </div>
 <div class="row">
-      <div class="col-sm-3 text-center card dashboard-card">
-        <div class="card-body">
+      <div class="col-sm-3 card dashboard-card">
+        <div class="card-body text-center">
         <h2>View Films</h2>
-        <p>View all films that have been added to the database.</p>
+        <p class="dash-text">View all films that have been added to the database.</p>
         <p><a class="btn btn-secondary" href="{{url_for('viewfilms')}}" role="button">View all films</a></p>
         </div>
       </div>
-      <div class="col-sm-3 text-center card dashboard-card">
-        <div class="card-body">
+      <div class="col-sm-3 card dashboard-card">
+        <div class="card-body text-center">
         <h2>Add Films</h2>
-        <p>As a user, you can add a film to the database. Only you can add to the database.</p>
+        <p class="dash-text">As a user, you can add a film to the database. Only you can add to the database.</p>
         <p><a class="btn btn-secondary" href="{{url_for('addfilms')}}" role="button">Add films</a></p>
         </div>
       </div>
-<div class="col-sm-3 text-center card dashboard-card">
-        <div class="card-body">
+<div class="col-sm-3 card dashboard-card">
+        <div class="card-body text-center">
         <h2>View Reviews</h2>
-        <p>View all reviews film lovers have left about films they have watched.</p>
+        <p classs="dash-text">View all reviews film lovers have left about films they have watched.</p>
         <p><a class="btn btn-secondary" href="{{url_for('viewreviews')}}" role="button">View reviews</a></p>
         </div>
       </div>
-<div class="col-sm-3 text-center card dashboard-card">
-        <div class="card-body">
+<div class="col-sm-3 card dashboard-card">
+        <div class="card-body text-center">
         <h2>Add Reviews</h2>
-        <p>Watched a film recently? Leave a review for other film lovers to see.</p>
+        <p class="dash-text">Watched a film recently? Leave a review for other film lovers to see.</p>
         <p><a class="btn btn-secondary" href="{{url_for('addreviews')}}" role="button">Add a review</a></p>
         </div>
       </div>

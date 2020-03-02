@@ -1,30 +1,28 @@
 {% block dashboard %}
-<div class="container">
+<div class="container-fluid">
   <div>
   <h2 class="text-center">User Dashboard</h2>
   </div>
 <div class="row">
-      <div class="col-sm-3">
+      <div class="col-sm-3 text-center">
         <h2>View Films</h2>
         <p>View all films that have been added to the database.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-sm-3">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-sm-3">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-      </div><!-- /.col-lg-4 --><div class="col-sm-3">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        <p><a class="btn btn-secondary" href="{{url_for('viewfilms')}}" role="button">View all films</a></p>
+      </div>
+      <div class="col-sm-3 text-center">
+        <h2>Add Films</h2>
+        <p>As a user, you can add a film to the database. Only you can add to the database.</p>
+        <p><a class="btn btn-secondary" href="{{url_for('addfilms')}}" role="button">Add films</a></p>
+      </div>
+<div class="col-sm-3 text-center">
+        <h2>View Reviews</h2>
+        <p>View all reviews film lovers have left about films they have watched.</p>
+        <p><a class="btn btn-secondary" href="{{url_for('viewreviews')}}" role="button">View reviews</a></p>
+      </div>
+<div class="col-sm-3 text-center">
+        <h2>Add Reviews</h2>
+        <p>Watched a film recently? Leave a review for other film lovers to see.</p>
+        <p><a class="btn btn-secondary" href="{{url_for('addreviews')}}" role="button">Add a review</a></p>
       </div>
     </div>
 </div>

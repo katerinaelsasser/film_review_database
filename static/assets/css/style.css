@@ -141,3 +141,8 @@ padding: 15px;
 .thumbernail {
     padding: 20px;
 }
+
+/*----user dashboard----*/
+.dashboard-card {
+    margin: 15px;
+}

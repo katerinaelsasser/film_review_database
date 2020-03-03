@@ -1,5 +1,10 @@
 {% block filmdisplay %}
-<div class="row mb-2">
+<div class="sub-title">Search a film!</div>
+<form>
+<imput onkeyup="getanswers(document.getElementById('qurybox').value)" id="filmbox"></imput>
+</form>
+<div id="film-results"></div>
+<!--<div class="row mb-2">
     <div class="col-md-4">
       <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
         <div class="col p-4 d-flex flex-column position-static">
@@ -18,5 +23,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>-->
     {% endblock %}

@@ -1,72 +1,56 @@
 {% block dashboard %}
-<div class="container-fluid">
-  <div>
-  <h2 class="text-center sub-title">User Dashboard</h2>
-  </div>
-  <div class="card-deck text-center">
-    <div class="card col-3 mb-4 shadow-sm">
-      
-      <div class="card-body">
-        <h2 class="card-title pricing-card-title">Add Films</h2>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>As a user, you can add a film to the database. Only you can add to the database.</li>
-          <li><a class="btn btn-secondary" href="{{url_for('addfilms')}}" role="button">Add films</a></li>
-        </ul>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Featured post</h3>
+          
+          <p class="card-text mb-auto">View all films that have been added to the database.</p>
+          <a class="btn btn-secondary" href="{{url_for('viewfilms')}}" role="button">View all films</a>
+        </div>
         
       </div>
     </div>
-    <div class="card col-3 mb-4 shadow-sm">
-            <div class="card-body">
-        <h2 class="card-title pricing-card-title">View</h2>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>View all films that have been added to the database.</li>
-          <li><a class="btn btn-secondary" href="{{url_for('viewfilms')}}" role="button">View all films</a></li>
-          <li>View all reviews film lovers have left about films they have watched.</li>
-          <li><a class="btn btn-secondary" href="{{url_for('viewreviews')}}" role="button">View reviews</a></li>
-        </ul>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Post title</h3>
+          
+          <p class="mb-auto">View all reviews film lovers have left about films they have watched.</p>
+          <a class="btn btn-secondary" href="{{url_for('viewreviews')}}" role="button">View reviews</a>
         </div>
-    </div>
- <div class="card col-3 mb-4 shadow-sm">
-      
-      <div class="card-body">
-        <h2 class="card-title pricing-card-title">Add Reviews</h2>
-        <ul class="list-unstyled mt-3 mb-4">
-          <li>Watched a film recently? Leave a review for other film lovers to see.</li>
-          <li><a class="btn btn-secondary" href="{{url_for('addreviews')}}" role="button">Add films</a></li>
-        </ul>
-              </div>
+        
+      </div>
     </div>
   </div>
-<!---
-<div class="row">
-      <div class="col-sm-6 card">
-        <div class="card-body text-center">
-        <h2>View Films</h2>
-        <p class="dash-text">View all films that have been added to the database.</p>
-        <p><a class="btn btn-secondary" href="{{url_for('viewfilms')}}" role="button">View all films</a></p>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Featured post</h3>
+          
+          <p class="card-text mb-auto">As a user, you can add a film to the database. Only you can add to the database.</p>
+          <a class="btn btn-secondary" href="{{url_for('addfilms')}}" role="button">Add films</a>
         </div>
-      </div>
-      <div class="col-sm-6 card">
-        <div class="card-body text-center">
-        <h2>Add Films</h2>
-        <p class="dash-text">As a user, you can add a film to the database. Only you can add to the database.</p>
-        <p><a class="btn btn-secondary" href="{{url_for('addfilms')}}" role="button">Add films</a></p>
-        </div>
-      </div>
-<div class="col-sm-6 card">
-        <div class="card-body text-center">
-        <h2>View Reviews</h2>
-        <p classs="dash-text">View all reviews film lovers have left about films they have watched.</p>
-        <p><a class="btn btn-secondary" href="{{url_for('viewreviews')}}" role="button">View reviews</a></p>
-        </div>
-      </div>
-<div class="col-sm-6 card">
-        <div class="card-body text-center">
-        <h2>Add Reviews</h2>
-        <p class="dash-text">Watched a film recently? Leave a review for other film lovers to see.</p>
-        <p><a class="btn btn-secondary" href="{{url_for('addreviews')}}" role="button">Add a review</a></p>
-        </div>
+        
       </div>
     </div>
-</div> --->
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Post title</h3>
+          
+          <p class="mb-auto">Watched a film recently? Leave a review for other film lovers to see.</p>
+          <a class="btn btn-secondary" href="{{url_for('addreviews')}}" role="button">Add reviews</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
     {% endblock %}

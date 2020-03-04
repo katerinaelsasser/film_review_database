@@ -15,19 +15,20 @@ mongo = PyMongo(app)
 
 #Home Page
 @app.route('/')
-@app.route('/homepage')
 def homepage():
     return render_template("pages/index.html")
 
 #viewfilms page
 @app.route('/viewfilms')
 def viewfilms():
-    return render_template("pages/viewfilms.html")
+    movielist = film=mongo.db.film.find()
+    return render_template("pages/viewfilms.html",movie=movielist)
 
 #viewreviews page
 @app.route('/viewreviews')
 def viewreviews():
-    return render_template("pages/viewreviews.html")
+    reviewlist = review=mongo.db.reviews.find()
+    return render_template("pages/viewreviews.html", review=reviewlist)
 
 
 #addreviews page

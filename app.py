@@ -22,22 +22,35 @@ def homepage():
 #viewfilms page
 @app.route('/viewfilms')
 def viewfilms():
-    return render_template("pages/viewfilms.html", film=mongo.db.filmreviews.find())
+    return render_template("pages/viewfilms.html", film=mongo.db.film.find())
 
 #viewreviews page
 @app.route('/viewreviews')
 def viewreviews():
-    return render_template("pages/viewreviews.html")
+    return render_template("pages/viewreviews.html", reviews=mongo.db.reviews.find())'
+
 
 #addreviews page
 @app.route('/addreviews')
 def addreviews():
     return render_template("pages/addreviews.html")
 
-#addreviews page
+@app.route('/insert_review', methods=['POST'])
+def insert_review():
+    review = mongo.db.review
+    review.insert_one(request.form.to_dict())
+    return redirect(url_for('viewreviews'))
+
+#addfilm page
 @app.route('/addfilms')
 def addfilms():
     return render_template("pages/addfilm.html")
+
+@app.route('/insert_film', methods=['POST'])
+def insert_film():
+    film = mongo.db.film
+    film.insert_one(request.form.to_dict())
+    return redirect(url_for('viewfilms'))
 
 #subscribe page
 @app.route('/subscribe')

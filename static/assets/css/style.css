@@ -38,6 +38,9 @@ padding: 15px;
     font-size: 30px;
 }
 
+.nav-item {
+    font-size: 20px;
+}
 /*-- footer ---*/
 .form-email {
     padding: 0;

@@ -36,8 +36,6 @@ def viewreviews():
 def addreviews():
     reviews =  mongo.db.reviews.find()
     reviews.insert_one(request.find()
-    coll = mongo.db.collectionName.find() 
-    print(coll) 
     return render_template("pages/addreviews.html", reviews=reviews)
 
 #addfilm page

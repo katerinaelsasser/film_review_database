@@ -1,7 +1,7 @@
 {% block filmdisplay %}
-<div class="sub-title">Search a film!</div>
-<form>
-<imput onkeyup="getanswers(document.getElementById('qurybox').value)" id="filmbox"></imput>
-</form>
-<div id="film-results"></div>
+<div id="film-results"><div class="card-reveal">
+{% for film in films %}
+                    <span class="card-title">{{film.film_name}}<i class="fas fa-times right"></i></span>
+                </div>
+          {% endfor %}
     {% endblock %}

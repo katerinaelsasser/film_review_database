@@ -32,13 +32,17 @@ def viewreviews():
 
 
 #addreviews page
-@app.route('/addreviews')
+@app.route('/addreviews', methods=['POST'])
 def addreviews():
+    reviews =  mongo.db.reviews
+    reviews.insert_one(request.form.to_dict())
     return render_template("pages/addreviews.html")
 
 #addfilm page
-@app.route('/addfilms')
+@app.route('/addfilms', methods=['POST'])
 def addfilms():
+    films =  mongo.db.films
+    films.insert_one(request.form.to_dict())
     return render_template("pages/addfilm.html")
 
 #subscribe page

@@ -22,7 +22,7 @@ def homepage():
 @app.route('/viewfilms')
 def viewfilms():
     movielist = films=mongo.db.films.find()
-    return render_template("pages/viewfilms.html",movie=movielist)
+    return render_template("pages/viewfilms.html", movie=movielist)
 
 #viewreviews page
 @app.route('/viewreviews')
@@ -36,14 +36,15 @@ def viewreviews():
 def addreviews():
     reviews =  mongo.db.reviews.find()
     reviews.insert_one(request.find()
+    coll = mongo.db.collectionName.find() 
+    print(coll) 
     return render_template("pages/addreviews.html", reviews=reviews)
 
 #addfilm page
-@app.route('/addfilms', methods=['POST'])
+@app.route('/addfilms')
 def addfilms():
-    films =  mongo.db.films
-    films.insert_one(request.find()
-    return render_template("pages/addfilm.html", films=films)
+coll = mongo.db.films.find() 
+return print(coll) 
 
 #subscribe page
 @app.route('/subscribe')

@@ -41,8 +41,8 @@ def addreviews():
 #addfilm page
 @app.route('/addfilms')
 def addfilms():
-coll = mongo.db.films.find() 
-return print(coll) 
+    coll = mongo.db.films.find() 
+    return print(coll) 
 
 #subscribe page
 @app.route('/subscribe')

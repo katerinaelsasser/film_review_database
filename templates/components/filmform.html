@@ -3,8 +3,8 @@
       <!--Title-->
       <h4 class="mb-3">Add a film</h4>
 
-<form class="col-12" method="POST" action="/viewfilms">
-        <div class="row">
+ <form action="{{ url_for('insertfilm') }}" method="POST"  class="col s12">
+         <div class="row">
         <!--Film name-->
           <div class="col-md-6 mb-3">
             <label for="filmName">Film name</label>

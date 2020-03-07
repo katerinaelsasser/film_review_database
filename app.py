@@ -39,6 +39,12 @@ def addreviews():
 def addfilms():
     return render_template("pages/addfilms.html")
 
+@app.route('/insertfilm', methods=['POST'])
+def insertfilm():
+    films = mongo.db.films
+    films.insert_one(request.form.to_dict())
+    return redirect(url_for('viewfilms'))
+
 #subscribe page
 @app.route('/subscribe')
 def subscribe():

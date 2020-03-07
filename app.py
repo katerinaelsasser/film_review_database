@@ -30,7 +30,7 @@ def viewreviews():
 
 
 #addreviews page
-@app.route('/addreviews', methods=['POST'])
+@app.route('/addreviews')
 def addreviews():
     return render_template("pages/addreviews.html")
 

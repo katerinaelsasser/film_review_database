@@ -26,7 +26,7 @@ def viewfilms():
 #viewreviews page
 @app.route('/viewreviews')
 def viewreviews():
-    return render_template("pages/viewreviews.html")
+    return render_template("pages/viewreviews.html", reviews=mongo.db.reviews.find())
 
 
 #addreviews page

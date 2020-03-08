@@ -201,7 +201,7 @@ padding: 15px;
 .column div:first-child {
 	margin-left: 0;
 }
-.column div span {
+.row div span {
 	position: absolute;
 	bottom: -20px;
 	left: 0;

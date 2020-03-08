@@ -45,7 +45,7 @@ def insertfilm():
 def addfilms():
     return render_template("pages/addfilms.html")
 
-@app.route('/insertfilm', methods=['POST'])
+@app.route('/insertfilm')
 def insertfilm():
     films = mongo.db.films
     films.insert_one(request.form.to_dict())

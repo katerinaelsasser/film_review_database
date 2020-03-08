@@ -1,20 +1,55 @@
 {% block newarrivals %}
 <div class="container-fluid new-arrivals">
 <h2 class="text-center new-arrivals-text">Recently added</h2>
-</div>
-<div class="row recent">
-  <img src="static/assets/images/movie-poster/dark-knight.jpg" alt="recent-poster" class="thumbernail col-sm-3">
- <img src="static/assets/images/movie-poster/first-man.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-<img src="static/assets/images/movie-poster/four-weddings.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-<img src="static/assets/images/movie-poster/inception.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-<img src="static/assets/images/movie-poster/kiki-delivery.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-  <img src="static/assets/images/movie-poster/la-la-land.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-  <img src="static/assets/images/movie-poster/moonlight.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-  <img src="static/assets/images/movie-poster/pulp-fiction.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-  <img src="static/assets/images/movie-poster/singin-in-the-rain.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-  <img src="static/assets/images/movie-poster/sleeping-beauty.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-  <img src="static/assets/images/movie-poster/spectre.jpg" alt="recent-poster" class="thumbernail col-sm-3">
-  <img src="static/assets/images/movie-poster/wizard-of-oz.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+    <div class="hovereffect column row recent">
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/dark-knight.jpg"/>
+    <span>Dark Knight</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/first-man.jpg"/>
+    <span>First Man</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster"src="static/assets/images/movie-poster/four-weddings.jpg"/>
+    <span>Four Weddings & A Funeral</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/inception.jpg"/>
+    <span>Inception</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/kiki-delivery.jpg"/>
+    <span>Kiki's Delivery Service</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/la-la-land.jpg"/>
+    <span>La La Land</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/moonlight.jpg"/>
+    <span>Moonlight</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/pulp-fiction.jpg"/>
+    <span>Pulp Fiction</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/singin-in-the-rain.jpg"/>
+    <span>Singin' In The Rain</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/sleeping-beauty.jpg"/>
+    <span>Sleeping Beauty</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/spectre.jpg"/>
+    <span>Spectre</span>
+  </div>
+  <div>
+    <img class="figure col-sm-3 thumbernail" alt="recent-poster" src="static/assets/images/movie-poster/wizard-of-oz.jpg"/>
+    <span>Wizard of Oz</span>
+  </div>
 <a type="button" class="btn btn-outline-info text-center" href="{{url_for('viewfilms')}}">View All Films</a>
 </div>
-    {% endblock %}
+{% endblock %}

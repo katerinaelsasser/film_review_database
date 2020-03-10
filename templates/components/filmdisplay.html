@@ -3,12 +3,7 @@
 <div class="row">
     <ul class="collapsible" data-collapsible="accordion">
         {% for film in films %}
-        <li>
-            <div class="collapsible-header">
-                    <strong>{{film.film_name}}</strong>
-            </div>
-
-        </li>
+        <li>{{film.film_name}}</li>
         {% endfor %}
 
     </ul>

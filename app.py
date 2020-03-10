@@ -21,7 +21,9 @@ def homepage():
 #viewfilms page
 @app.route('/viewfilms')
 def viewfilms():
-    return render_template("pages/viewfilms.html", films=mongo.db.films.find())
+    films=mongo.db.films.find()
+    print(films)
+    return render_template("pages/viewfilms.html", films=films)
 
 #viewreviews page
 @app.route('/viewreviews')

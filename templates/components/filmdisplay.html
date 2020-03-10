@@ -1,7 +1,16 @@
 {% block filmdisplay %}
 <div id="film-results"><div class="card-reveal">
-{% for film in films %}
-                    <span class="card-title">{{film.film_name}}<i class="fas fa-times right"></i></span>
-                </div>
-          {% endfor %}
+<div class="row">
+    <ul class="collapsible" data-collapsible="accordion">
+        {% for film in films %}
+        <li>
+            <div class="collapsible-header">
+                    <strong>{{film.film_name}}</strong>
+            </div>
+
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>
     {% endblock %}

@@ -1,0 +1,56 @@
+{% block dashboard %}
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Featured post</h3>
+          
+          <p class="card-text mb-auto">View all films that have been added to the database.</p>
+          <a class="btn btn-secondary" href="{{url_for('viewfilms')}}" role="button">View all films</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Post title</h3>
+          
+          <p class="mb-auto">View all reviews film lovers have left about films they have watched.</p>
+          <a class="btn btn-secondary" href="{{url_for('viewreviews')}}" role="button">View reviews</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Featured post</h3>
+          
+          <p class="card-text mb-auto">As a user, you can add a film to the database. Only you can add to the database.</p>
+          <a class="btn btn-secondary" href="{{url_for('addfilms')}}" role="button">Add films</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          
+          <h3 class="mb-0">Post title</h3>
+          
+          <p class="mb-auto">Watched a film recently? Leave a review for other film lovers to see.</p>
+          <a class="btn btn-secondary" href="{{url_for('addreviews')}}" role="button">Add reviews</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    {% endblock %}

@@ -15,29 +15,33 @@ mongo = PyMongo(app)
 
 #Home Page
 @app.route('/')
-@app.route('/homepage')
 def homepage():
     return render_template("pages/index.html")
 
 #viewfilms page
 @app.route('/viewfilms')
 def viewfilms():
-    return render_template("pages/viewfilms.html")
+    films=mongo.db.films.find()
+    print(films)
+    return render_template("pages/viewfilms.html", films=films)
 
 #viewreviews page
 @app.route('/viewreviews')
 def viewreviews():
-    return render_template("pages/viewreviews.html")
+    reviews=mongo.db.reviews.find()
+    print(reviews)
+    return render_template("pages/viewreviews.html", reviews=reviews)
+
 
 #addreviews page
 @app.route('/addreviews')
 def addreviews():
     return render_template("pages/addreviews.html")
 
-#addreviews page
+#addfilm page
 @app.route('/addfilms')
 def addfilms():
-    return render_template("pages/addfilm.html")
+    return render_template("pages/addfilms.html")
 
 #subscribe page
 @app.route('/subscribe')
@@ -55,6 +59,6 @@ def userhome():
     return render_template("pages/userhome.html")
     
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-        port=int(os.environ.get('PORT')),
-        debug=True)
+    app.run(host='0.0.0.0',
+            port=(os.environ.get('PORT')),
+            debug=True)

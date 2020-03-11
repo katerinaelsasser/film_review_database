@@ -1,19 +1,20 @@
 {% block newarrivals %}
 <div class="container-fluid new-arrivals">
 <h2 class="text-center new-arrivals-text">Recently added</h2>
-<div class="row recent">
-  <img src="static/assets/images/movie-poster/dark-knight.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
- <img src="static/assets/images/movie-poster/first-man.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-<img src="static/assets/images/movie-poster/four-weddings.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-<img src="static/assets/images/movie-poster/inception.jpg" href="{{url_for('viewfilms')}} "alt="recent-poster" class="thumbernail col-3">
-<img src="static/assets/images/movie-poster/kiki-delivery.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/la-la-land.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/moonlight.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/pulp-fiction.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/singin-in-the-rain.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/sleeping-beauty.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/spectre.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/wizard-of-oz.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
 </div>
+<div class="row recent">
+  <img src="static/assets/images/movie-poster/dark-knight.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+ <img src="static/assets/images/movie-poster/first-man.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+<img src="static/assets/images/movie-poster/four-weddings.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+<img src="static/assets/images/movie-poster/inception.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+<img src="static/assets/images/movie-poster/kiki-delivery.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+  <img src="static/assets/images/movie-poster/la-la-land.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+  <img src="static/assets/images/movie-poster/moonlight.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+  <img src="static/assets/images/movie-poster/pulp-fiction.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+  <img src="static/assets/images/movie-poster/singin-in-the-rain.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+  <img src="static/assets/images/movie-poster/sleeping-beauty.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+  <img src="static/assets/images/movie-poster/spectre.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+  <img src="static/assets/images/movie-poster/wizard-of-oz.jpg" alt="recent-poster" class="thumbernail col-sm-3">
+<a type="button" class="btn btn-outline-info text-center" href="{{url_for('viewfilms')}}">View All Films</a>
 </div>
     {% endblock %}

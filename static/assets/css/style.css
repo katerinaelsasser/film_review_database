@@ -19,6 +19,8 @@ img {
 padding: 15px;
 }
 
+.card,
+.card-deck,
 .row {
     margin: 0;
 }
@@ -36,6 +38,9 @@ padding: 15px;
     font-size: 30px;
 }
 
+.nav-item {
+    font-size: 20px;
+}
 /*-- footer ---*/
 .form-email {
     padding: 0;
@@ -136,6 +141,24 @@ padding-bottom: 15px;
 padding: 15px;
 }
 
-.thumbernail {
-    padding: 20px;
+.column#grayscale img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.column#grayscale:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+/*----user dashboard----*/
+
+.dash-text {
+    padding: 15px;
+}
+
+/*----all pages----*/
+
+.sub-title {
+    padding: 25px;
 }

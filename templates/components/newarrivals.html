@@ -1,19 +1,80 @@
 {% block newarrivals %}
-<div class="container-fluid new-arrivals">
-<h2 class="text-center new-arrivals-text">Recently added</h2>
-<div class="row recent">
-  <img src="static/assets/images/movie-poster/dark-knight.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
- <img src="static/assets/images/movie-poster/first-man.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-<img src="static/assets/images/movie-poster/four-weddings.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-<img src="static/assets/images/movie-poster/inception.jpg" href="{{url_for('viewfilms')}} "alt="recent-poster" class="thumbernail col-3">
-<img src="static/assets/images/movie-poster/kiki-delivery.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/la-la-land.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/moonlight.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/pulp-fiction.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/singin-in-the-rain.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/sleeping-beauty.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/spectre.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-  <img src="static/assets/images/movie-poster/wizard-of-oz.jpg" href="{{url_for('viewfilms')}}" alt="recent-poster" class="thumbernail col-3">
-</div>
+<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">New Arrivals</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+          </a>
+    </div>
+   
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/dark-knight.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/first-man.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/four-weddings.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/inception.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/kiki-delivery.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/la-la-land.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/moonlight.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/pulp-fiction.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/singin-in-the-rain.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/sleeping-beauty.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/spectre.jpg" alt="">
+          </a>
+    </div>
+    <div class="col-lg-3 col-md-4 col-6">
+      <a href="{{url_for('viewfilms')}}" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="static/assets/images/movie-poster/wizard-of-oz.jpg" alt="">
+          </a>
+    </div>
+
+  </div>
+
 </div>
     {% endblock %}

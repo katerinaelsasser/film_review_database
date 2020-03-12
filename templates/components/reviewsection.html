@@ -1,29 +1,29 @@
 {% block reviewsection %}
-<div class="container-fluid">
-<div class="card-deck mb-3 text-center container">
-    <div class="card mb-4 shadow-sm col-6">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">Suicide Squad</h4>
-      </div>
-      <div class="card-body col-12">
-        <ul class="row text-center col-12"><ol>
-        <i class="fa fa-star index-review"></i></ol><ol><i class="fa fa-star index-review"></i></ol><ol>
-        <i class="fa fa-star index-review">
-            </i></ol></ul>
-      </div>
-    </div>
-<div class="card mb-4 shadow-sm col-6">
-      <div class="card-header">
-        <h4 class="my-0 font-weight-normal">La La Land</h4>
-      </div>
-      <div class="card-body col-12">
-        <ul class="row text-center col-12"><ol>
-        <i class="fa fa-star index-review"></i></ol><ol><i class="fa fa-star index-review"></i></ol><ol>
-        <i class="fa fa-star index-review">
-            </i></ol><ol><i class="fa fa-star index-review">
-            </i></ol></ul>
-      </div>
-    </div>
+
+<div class="container">
+<div class="col-12 text-center">
+<h2 class="sub-title">View our reviews</h2>
+<p>Leave your review and you will be featured on our website. Let other film watchers find out what you think of that film. You could be like one of these reviewers.</p>
 </div>
-  </div>
+<div class="row">
+<div class="blockquote col-md-4 text-center">
+<h4>Suicide Squad (2016)</h4>
+<p>5 Stars</p>
+<p class="text-muted">This is one of my all time favs, you will like this if you love Harley Quinn and the joker!</p>
+</div>
+<div class="blockquote col-md-4 text-center">
+<h4>Love Rosie (2015)</h4>
+<p>4 Stars</p>
+<p class="text-muted">Great soundtrack and even though the plot has the usual cliches it has some genuinely funny moments that keep you watching until the inevitable conclusion.</p>
+</div>
+<div class="blockquote col-md-4 text-center">
+<h4>Spirited Away (2002)</h4>
+<p>4 Stars</p>
+<p class="text-muted">A stirring and memorable adventure of poetry, color, tones and narrative all in the vividness of animation.</p>
+</div>
+</div>
+<div class="text-center col-12">
+<a type="button" class="btn btn-outline-info text-center" href="{{url_for('viewreviews')}}">View Other Reviews</a>
+</div>
+</div>
     {% endblock %}

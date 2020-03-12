@@ -1,209 +1,251 @@
 {% block filmform %}
 <div class="text-center container">
+      <!--Title-->
       <h4 class="mb-3">Add a film</h4>
 
-<form class="needs-validation" novalidate="">
-<!--film title-->
- <div class="form-group">
- <label for="filmname">Film Title</label><br>
-  <input type="text" id="filmname" name="filmname">
-</div>
-<!--film year-->
-<div class="form-row align-items-center">
-      <label class="mr-sm-2" for="inlineFormCustomSelect">Year of release</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose the year</option>
-        <option value="1">1900</option>
-        <option value="2">1901</option>
-        <option value="3">1902</option>
-        <option value="1">1903</option>
-        <option value="2">1904</option>
-        <option value="3">1905</option>
-        <option value="1">1906</option>
-        <option value="2">1907</option>
-        <option value="3">1908</option>
-        <option value="1">1909</option>
-        <option value="2">1910</option>
-        <option value="3">1911</option>
-        <option value="1">1912</option>
-        <option value="2">1913</option>
-        <option value="3">1914</option>
-        <option value="1">1915</option>
-        <option value="2">1916</option>
-        <option value="3">1917</option>
-        <option value="1">1918</option>
-        <option value="2">1919</option>
-        <option value="3">1920</option>
-        <option value="1">1921</option>
-        <option value="2">1922</option>
-        <option value="3">1923</option>
-        <option value="1">1924</option>
-        <option value="2">1925</option>
-        <option value="3">1926</option>
-        <option value="1">1927</option>
-        <option value="2">1928</option>
-        <option value="3">1929</option>
-        <option value="1">1930</option>
-        <option value="2">1931</option>
-        <option value="3">1932</option>
-        <option value="1">1934</option>
-        <option value="2">1935</option>
-        <option value="3">1936</option>
-        <option value="1">1937</option>
-        <option value="2">1938</option>
-        <option value="3">1939</option>
-        <option value="1">1940</option>
-        <option value="2">1941</option>
-        <option value="3">1942</option>
-        <option value="1">1943</option>
-        <option value="2">1944</option>
-        <option value="3">1945</option>
-        <option value="1">1946</option>
-        <option value="2">1947</option>
-        <option value="3">1948</option>
-        <option value="1">1949</option>
-        <option value="2">1950</option>
-        <option value="3">1951</option>
-        <option value="1">1952</option>
-        <option value="2">1953</option>
-        <option value="3">1954</option>
-        <option value="1">1955</option>
-        <option value="2">1956</option>
-        <option value="3">1957</option>
-        <option value="1">1958</option>
-        <option value="2">1959</option>
-        <option value="3">1960</option>
-        <option value="1">1961</option>
-        <option value="2">1962</option>
-        <option value="3">1963</option>
-        <option value="1">1964</option>
-        <option value="2">1965</option>
-        <option value="3">1966</option>
-        <option value="1">1967</option>
-        <option value="2">1968</option>
-        <option value="3">1969</option>
-        <option value="1">1970</option>
-        <option value="2">1971</option>
-        <option value="3">1972</option>
-        <option value="1">1973</option>
-        <option value="2">1974</option>
-        <option value="3">1975</option>
-        <option value="1">1976</option>
-        <option value="2">1977</option>
-        <option value="3">1978</option>
-        <option value="2">1979</option>
-        <option value="1">1970</option>
-        <option value="2">1971</option>
-        <option value="3">1972</option>
-        <option value="1">1973</option>
-        <option value="2">1974</option>
-        <option value="3">1975</option>
-        <option value="1">1976</option>
-        <option value="2">1977</option>
-        <option value="3">1978</option>
-        <option value="2">1979</option>
-        <option value="1">1980</option>
-        <option value="2">1981</option>
-        <option value="3">1982</option>
-        <option value="1">1983</option>
-        <option value="2">1984</option>
-        <option value="3">1985</option>
-        <option value="1">1986</option>
-        <option value="2">1987</option>
-        <option value="3">1988</option>
-        <option value="2">1989</option>
-        <option value="1">1990</option>
-        <option value="2">1991</option>
-        <option value="3">1992</option>
-        <option value="1">1993</option>
-        <option value="2">1994</option>
-        <option value="3">1995</option>
-        <option value="1">1996</option>
-        <option value="2">1997</option>
-        <option value="3">1998</option>
-        <option value="2">1999</option>
-        <option value="1">2000</option>
-        <option value="1">2001</option>
-        <option value="1">2002</option>
-        <option value="1">2003</option>
-        <option value="1">2004</option>
-        <option value="1">2005</option>
-        <option value="1">2006</option>
-        <option value="1">2007</option>
-        <option value="1">2008</option>
-        <option value="1">2009</option>
-        <option value="1">2010</option>
-        <option value="1">2011</option>
-        <option value="1">2012</option>
-        <option value="1">2013</option>
-        <option value="1">2014</option>
-        <option value="1">2015</option>
-        <option value="1">2016</option>
-        <option value="1">2017</option>
-        <option value="1">2018</option>
-        <option value="1">2019</option>
-        <option value="1">2020</option>
-        <option value="1">2021</option>
-      </select>
+<form action="{{url_for('insert_film')}}" method="POST" class="col s12">
+         <div class="row">
+        <!--Film name-->
+          <div class="col-md-6 mb-3">
+            <label for="filmName">Film name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid film title is required.
+            </div>
     </div>
-
-
-
-
-<!--film description-->
-<div class="form-group">
-      <label for="exampleTextarea">Film Description</label>
-      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-    </div>
-<!--film director-->
-<div class="form-group">
- <label for="filmname">Film Title</label><br>
-  <input type="text" id="filmname" name="filmname">
+    <!--Director name-->
+          <div class="col-md-6 mb-3">
+            <label for="directorName">Name of Director</label>
+            <input type="text" class="form-control" id="directorName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid name of director is required.
+            </div>
+          </div>     
+          <!--Film description-->
+        <div class="col-md-12 mb-3">
+          <label for="description">Film Description</label>
+          <input type="text" class="form-control" id="description" placeholder="Description of Film" required="">
+          <div class="invalid-feedback">
+            Please enter the description of the film.
+          </div>
+        </div>
+        <!--Film Genre-->
+          <div class="col-md-12 mb-3">
+          <label for="genre">Genre</label>
+                    <div class="form-check">
+                      
+<label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Action</label>
+                        <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Adventure</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Animation</label>    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Biography</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Comedy</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Crime</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Documentary</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Drama</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Fantasy</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Historical</label>
+<label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Horro</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Indie</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Musical</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Romance</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Sci-Fi</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Sports</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Thriller</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" type="checkbox" value="">Western</label>
 </div>
+                    
+          <div class="invalid-feedback">
+            Please select at least one of the options.
+          </div>
+        </div>
+        <!--Film release year-->
+          <div class="col-md-4 mb-3">
+            <label for="YearofRelease">Year of Release</label>
+            <select class="custom-select d-block w-100" id="YearofRelease" required="">
+        <option>1900</option>
+        <option>1901</option>
+        <option>1902</option>
+        <option>1903</option>
+        <option>1904</option>
+        <option>1905</option>
+        <option>1906</option>
+        <option>1907</option>
+        <option>1908</option>
+        <option>1909</option>
+        <option>1910</option>
+        <option>1911</option>
+        <option>1912</option>
+        <option>1913</option>
+        <option>1914</option>
+        <option>1915</option>
+        <option>1916</option>
+        <option>1917</option>
+        <option>1918</option>
+        <option>1919</option>
+        <option>1920</option>
+        <option>1921</option>
+        <option>1922</option>
+        <option>1923</option>
+        <option>1924</option>
+        <option>1925</option>
+        <option>1926</option>
+        <option>1927</option>
+        <option>1928</option>
+        <option>1929</option>
+        <option>1930</option>
+        <option>1931</option>
+        <option>1932</option>
+        <option>1934</option>
+        <option>1935</option>
+        <option>1936</option>
+        <option>1937</option>
+        <option>1938</option>
+        <option>1939</option>
+        <option>1940</option>
+        <option>1941</option>
+        <option>1942</option>
+        <option>1943</option>
+        <option>1944</option>
+        <option>1945</option>
+        <option>1946</option>
+        <option>1947</option>
+        <option>1948</option>
+        <option>1949</option>
+        <option>1950</option>
+        <option>1951</option>
+        <option>1952</option>
+        <option>1953</option>
+        <option>1954</option>
+        <option>1955</option>
+        <option>1956</option>
+        <option>1957</option>
+        <option>1958</option>
+        <option>1959</option>
+        <option>1960</option>
+        <option>1961</option>
+        <option>1962</option>
+        <option>1963</option>
+        <option>1964</option>
+        <option>1965</option>
+        <option>1966</option>
+        <option>1967</option>
+        <option>1968</option>
+        <option>1969</option>
+        <option>1970</option>
+        <option>1971</option>
+        <option>1972</option>
+        <option>1973</option>
+        <option>1974</option>
+        <option>1975</option>
+        <option>1976</option>
+        <option>1977</option>
+        <option>1978</option>
+        <option>1979</option>
+        <option>1970</option>
+        <option>1971</option>
+        <option>1972</option>
+        <option>1973</option>
+        <option>1974</option>
+        <option>1975</option>
+        <option>1976</option>
+        <option>1977</option>
+        <option>1978</option>
+        <option>1979</option>
+        <option>1980</option>
+        <option>1981</option>
+        <option>1982</option>
+        <option>1983</option>
+        <option>1984</option>
+        <option>1985</option>
+        <option>1986</option>
+        <option>1987</option>
+        <option>1988</option>
+        <option>1989</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+        <option>2020</option>
+        <option>2021</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <!--Film Age Rating-->
+          <div class="col-md-4 mb-3">
+    <label for="agerating">Age Rating</label>
+            <select class="custom-select d-block w-100" id="agerating" required="">
+        <option>U</option>
+        <option>PG</option>
+        <option>12A</option>
+        <option>12</option>
+        <option>15</option>
+        <option>18</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select from the dropdown.
+            </div>
+  </div>
+<!--Film length-->
+          <div class="col-md-4 mb-3">
+    <label for="filmlength">Length of Film</label>
+    <input type="text" class="form-control" id="filmlength" placeholder="" value="" required="">
 
-<!--film genre-->
-<div class="form-group form-check-inline">
-<input type="radio" id="action" name="genre" value="action">
-  <label for="action">Action</label><br>
-  <input type="radio" id="adventure" name="genre" value="adventure">
-  <label for="adventure">Adventure</label><br>
-  <input type="radio" id="animation" name="genre" value="animation">
-  <label for="animation">Animation</label>
-<input type="radio" id="comedy" name="genre" value="comedy">
-  <label for="comedy">Comedy</label>
-<input type="radio" id="crime" name="genre" value="crime">
-  <label for="crime">crime</label>
-  <input type="radio" id="documentary" name="genre" value="documentary">
-  <label for="documentary">Documentary</label>
-  <input type="radio" id="drama" name="genre" value="drama">
-  <label for="drama">Drama</label>
-  <input type="radio" id="fantasy" name="genre" value="fantasy">
-  <label for="fantasy">fantasy</label>
-  <input type="radio" id="historical" name="genre" value="historical">
-  <label for="historical">Historical</label>
-  <input type="radio" id="horror" name="genre" value="horror">
-  <label for="horror">Horror</label>
-  <input type="radio" id="indie" name="genre" value="indie">
-  <label for="indie">indie</label>
-  <input type="radio" id="musical" name="genre" value="musical">
-  <label for="musical">musical</label>
-  <input type="radio" id="romance" name="genre" value="romance">
-  <label for="romance">romance</label>
-  <input type="radio" id="sci-fi" name="genre" value="sci-fi">
-  <label for="sci-fi">sci-fi</label>
-  <input type="radio" id="thriller" name="genre" value="thriller">
-  <label for="thriller">thriller</label>
-  <input type="radio" id="western" name="genre" value="western">
-  <label for="western">western</label>
-</div>
+            <div class="invalid-feedback">
+              Please type in the length of film in hrs and mins.
+            </div>
+          </div>
 
-film_age
-
-film_length
-
-
+      </div>
+      
 <!--Submit button-->
-<button type="submit" class="btn btn-primary">Submit</button>
+ <button type="submit" class="btn btn-primary">Submit</button>     
+      </form>
+
 
         </div>
     {% endblock %}

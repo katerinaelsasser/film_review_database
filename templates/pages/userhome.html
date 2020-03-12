@@ -1,40 +1,13 @@
 {% extends 'layout/userbase.html' %} {% block content %}
-<div class="container">
-  <div>
-  <h2 class="text-center">User Dashboard</h2>
-  </div>
-
-  <div class="my-3 p-3 bg-white rounded shadow-sm">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Pages</h6>
-    <div class="media text-muted pt-3">
-      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <a href="{{url_for('viewfilms')}}" class="d-block text-gray-dark">View All Films</a>
-        View all films that have been added to the database.
-      </p>
+<div class="container-fluid">
+  <img src="static/assets/images/headers/header-8.jpg" alt="Avatar" class="header-image">
+  <div class="overlay overlay-addfilm">
+    <div class="text">
+    <i class="fa fa-users intro-icon"></i>
+    <h4>User Dashboard</h4>
+    <p>Acess all pages on the website. Add films to the database so other people can leave reviews for.</p>
     </div>
-    <div class="media text-muted pt-3">
-      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <a href="{{url_for('viewreviews')}}" class="d-block text-gray-dark">View All Reviews</a>
-        View all reviews film lovers have left about films they have watched.
-      </p>
-    </div>
-    <div class="media text-muted pt-3">
-      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <a href="{{url_for('addreviews')}}" class="d-block text-gray-dark">Add A Review</a>
-        Watched a film recently? Leave a review for other film lovers to see.
-      </p>
-    </div>
-<div class="media text-muted pt-3">
-      <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"></rect><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
-      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-        <a href="#" class="d-block text-gray-dark">Add A Film</a>
-        As a user, you can add a film to the database. Only you can add to the database.
-      </p>
-    </div>
-
   </div>
 </div>
+{% include 'components/dashboard.html' %}
 {% endblock %}

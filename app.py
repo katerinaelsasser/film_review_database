@@ -45,8 +45,8 @@ def insertreview():
     return redirect(url_for('viewreviews'))
 
 #addfilms page
-@app.route('/addfilms', methods=['GET'])
-def addreviews():
+@app.route('/addfilm', methods=['GET'])
+def addfilm():
     return render_template("pages/addfilm.html")
 
 @app.route('/insertfilm', methods=['POST'])

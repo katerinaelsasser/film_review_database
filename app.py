@@ -34,7 +34,7 @@ def viewreviews():
 
 
 #addreviews page
-@app.route('/addreviews', method=['POST', 'GET'])
+@app.route('/addreviews', method=['POST'])
 def addreviews():
     return render_template("pages/addreviews.html")
 

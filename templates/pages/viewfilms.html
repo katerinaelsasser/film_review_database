@@ -1,14 +1,13 @@
 {% extends 'layout/base.html' %} {% block content %}
-<!-- display screen -->
-<div class="container-fluid">
-  <img src="static/assets/images/headers/header-2.jpg" alt="Avatar" class="header-image">
-  <div class="overlay overlay-viewfilm">
-    <div class="text">
-    <i class="fa fa-tv intro-icon"></i>
-    <h4>View our films</h4>
+<div class="row align-items-center my-5">
+      <div class="col-lg-7 text-center">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="static/assets/images/headers/header-2.jpg" alt="header-display">
+      </div>
+      <div class="col-lg-5">
+    <h1 class="font-weight-light">View our films</h1>
+
   <p>Check out all of our films that we have - We have put together all the information about the films. Struggling to find the next film to watch, we have added filters so you can find films from things that you like.</p>
+      </div>
     </div>
-  </div>
-</div>
 {% include 'components/filmdisplay.html' %}
 {% endblock %}

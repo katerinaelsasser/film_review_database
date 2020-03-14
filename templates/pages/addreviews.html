@@ -1,13 +1,12 @@
 {% extends 'layout/base.html' %} {% block content %}
-<div class="container-fluid">
-  <img src="static/assets/images/headers/header-4.jpg" alt="Avatar" class="header-image">
-  <div class="overlay overlay-addreview">
-    <div class="text">
-    <i class="fa fa-comment intro-icon"></i>
-    <h4>Add A Reviews</h4>
+<div class="row align-items-center my-5">
+      <div class="col-lg-7 text-center">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="static/assets/images/headers/header-4.jpg" alt="header-display">
+      </div>
+      <div class="col-lg-5">
+        <h1 class="font-weight-light">Add A Review</h1>
     <p>Watched a film recently? Leave a review below for other film lovers to see! Fill in the form the form below and then press submit to add your review.</p>
+      </div>
     </div>
-  </div>
-</div>
 {% include 'components/reviewform.html' %}
  {% endblock %}

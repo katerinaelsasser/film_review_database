@@ -44,10 +44,6 @@ def insertreview():
     reviews.insert_one(request.form.to_dict())
     return redirect(url_for('viewreviews'))
 
-#addfilm page
-@app.route('/addfilms', methods=['POST', 'GET'])
-def addfilms():
-    return render_template("pages/addfilms.html")
 
 #subscribe page
 @app.route('/subscribe')

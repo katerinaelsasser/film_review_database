@@ -1,10 +1,15 @@
 {% block reviewdisplay %}
 <div class="row">
-      <div class="col-lg-4">
-      {% for review in reviews %}
-        <h2>{{reviews.film_name}}</h2>
-        <p>{{reviews.stars}}</p>
-        <p>{{reviews.review}}</p>
+{% for review in reviews %}
+    <div class="col-md-3">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">{{review.film_name}}</h3>
+          <div class="mb-1 text-muted">{{review.star}}</div>
+          <p class="card-text mb-auto">{{review.review}}</p>
+        </div>
       </div>
+    </div>
+{% endfor %}
 </div>
 {% endblock %}

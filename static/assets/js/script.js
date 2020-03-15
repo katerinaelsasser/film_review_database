@@ -15,17 +15,17 @@ window.onclick = function(event) {
 }
 
 //login modal
-var modal = document.getElementById("loginmodal");
+var logmodal = document.getElementById("loginmodal");
 var btn = document.getElementById("loginbtn");
 var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
-  modal.style.display = "block";
+  logmodal.style.display = "block";
 }
 span.onclick = function() {
-  modal.style.display = "none";
+  logmodal.style.display = "none";
 }
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == logmodal) {
+    logmodal.style.display = "none";
   }
 }

@@ -1,10 +1,10 @@
 {% extends 'layout/base.html' %} {% block content %}
-<div class="container login-body">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Sign In</h5>
+<div class="row align-items-center my-5">
+      <div class="col-lg-7 text-center">
+        <img class="img-fluid rounded mb-4 mb-lg-0" src="static/assets/images/headers/header-7.jpg" alt="header-display">
+      </div>
+      <div class="col-lg-5 text-center">
+        <h1 class="font-weight-light">Sign In</h1>
             <form class="form-signin">
               <div class="form-label-group">
                 <input type="text" class="form-control" id="username" placeholder="Username" required>
@@ -15,8 +15,5 @@
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
             </form>
           </div>
-        </div>
-      </div>
     </div>
-  </div>
 {% endblock %}

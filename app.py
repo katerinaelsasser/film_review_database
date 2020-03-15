@@ -55,6 +55,11 @@ def insertfilm():
     films.insert_one(request.form.to_dict())
     return redirect(url_for('viewfilms'))
 
+#login page
+@app.route('/login')
+def login():
+    return render_template("pages/login.html")
+
 #user home page
 @app.route('/userhome')
 def userhome():

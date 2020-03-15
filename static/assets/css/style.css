@@ -71,6 +71,13 @@ padding-bottom: 15px;
     padding: 100px;
 }
 
+.inputEmail {
+    padding: 15px;
+}
+.inputPassword {
+    padding: 15px;
+}
+
 /*--- subscribe modal ---*/
 
 /* The Modal (background) */

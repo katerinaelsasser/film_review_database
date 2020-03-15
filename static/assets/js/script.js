@@ -13,3 +13,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//login
+var username = document.getElementById("username").value;
+var password = document.getElementById("password").value;
+if ( username == "Username1" && password == "Password123"){
+alert ("Login successfully");
+window.location = "userhome.html"; 
+return false;
+}

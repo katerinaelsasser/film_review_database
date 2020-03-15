@@ -1,16 +1,14 @@
 {% extends 'layout/base.html' %} {% block content %}
-<div class="container-fluid">
-  <img src="static/assets/images/headers/header-6.jpg" alt="Avatar" class="header-image">
-  <div class="overlay overlay-login login-page">
-		<div class="text-center text mb-4">
-        <i class="fa fa-users intro-icon"></i>
-			<h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+<div id="loginmodal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+  <div class="container">
 		<form action="userhome" method="post">
     <input type="Username" placeholder="Username" />
     <input type="password" placeholder="Password" />
     <input  type="submit" value="Log in" />
 </form>	
-        </div>
-        </div>
+  </div>
+  </div>
 </div>
 {% endblock %}

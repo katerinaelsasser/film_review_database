@@ -34,10 +34,6 @@ padding: 15px;
     padding: 0;
 }
 
-.fa {
-    padding: 0;
-    margin: 0;
-}
 /*---navbar ----*/
 .navbar-brand {
     font-size: 30px;
@@ -54,16 +50,6 @@ padding: 15px;
 /*--- index page---*/
 .index-review {
     font-size: 50px;
-}
-
-.recent {
-    padding: 10px;
-}
-
-/*--- viewfilms page ---*/
-
-.fa-tv {
-padding-bottom: 15px;
 }
 
 /*--- login page ---*/

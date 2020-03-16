@@ -1,55 +1,54 @@
 {% block dashboard %}
-
-<div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          
-          <h3 class="mb-0">Featured post</h3>
-          
+<div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+            <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+            <hr>
+            <ul class="fa-ul">
+              <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+            </ul>
+            <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+          </div>
+        </div>
+      </div>
+<div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Our Films</h5>
           <p class="card-text mb-auto">View all films that have been added to the database.</p>
-          <a class="btn btn-secondary" href="{{url_for('viewfilms')}}" role="button">View all films</a>
+            <a href="{{url_for('viewfilms')}}" class="btn btn-block btn-primary text-uppercase">View All</a>
+          </div>
         </div>
-        
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          
-          <h3 class="mb-0">Post title</h3>
-          
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Reviews</h5>
           <p class="mb-auto">View all reviews film lovers have left about films they have watched.</p>
-          <a class="btn btn-secondary" href="{{url_for('viewreviews')}}" role="button">View reviews</a>
+            <a href="{{url_for('viewreviews')}}" class="btn btn-block btn-primary text-uppercase">See All Reviews</a>
+          </div>
         </div>
-        
       </div>
-    </div>
-  </div>
-
-<div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          
-          <h3 class="mb-0">Featured post</h3>
-          
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Add A Film</h5>
           <p class="card-text mb-auto">As a user, you can add a film to the database. Only you can add to the database.</p>
-          <a class="btn btn-secondary" href="{{url_for('addfilm')}}" role="button">Add films</a>
+            <a href="{{url_for('addfilm')}}" class="btn btn-block btn-primary text-uppercase">View All</a>
+          </div>
         </div>
-        
       </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          
-          <h3 class="mb-0">Post title</h3>
-          
+      <div class="col-lg-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <h5 class="card-title text-muted text-uppercase text-center">Add A Review</h5>
           <p class="mb-auto">Watched a film recently? Leave a review for other film lovers to see.</p>
-          <a class="btn btn-secondary" href="{{url_for('addreviews')}}" role="button">Add reviews</a>
+            <a href="{{url_for('addreviews')}}" class="btn btn-block btn-primary text-uppercase">View All</a>
+          </div>
         </div>
-        
       </div>
     </div>
   </div>

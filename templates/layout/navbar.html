@@ -1,16 +1,14 @@
 {% block navbar %}
-
 <header>
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <a class="navbar-brand" href="{{url_for('homepage')}}">Movie Reviews</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="{{url_for('homepage')}}">Movie Reviews</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarlinks">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+  <div class="collapse navbar-collapse" id="navbarsExample03">
+    <ul class="navbar-nav mr-auto">
+     <li class="nav-item">
           <a class="nav-link" href="{{url_for('homepage')}}">Home</a>
         </li>
         <li class="nav-item">
@@ -28,12 +26,8 @@
         <li class="nav-item">
           <a class="nav-link" href="{{url_for('login')}}">Login</a>
         </li>
-      </ul>
-    </div>
+    </ul>
   </div>
 </nav>
-  </header>
-    {% endblock %}
-
-
-   
+ </header>
+    {% endblock %} 

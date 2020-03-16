@@ -52,6 +52,10 @@ padding: 15px;
     font-size: 50px;
 }
 
+.text-spacing {
+    padding: 15px;
+}
+
 /*--- login page ---*/
 .login-page {
     padding: 100px;

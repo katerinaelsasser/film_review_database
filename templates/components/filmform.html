@@ -4,6 +4,65 @@
       <h4 class="mb-3">Add a film</h4>
 
 <form action="{{url_for('insertfilm')}}" method="POST">
+         
+         
+         
+         
+                 <div class="row">
+        <!--Film name-->
+          <div class="col-md-6 mb-3">
+            <label for="filmName">Film name</label>
+            <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid film title is required.
+            </div>
+    </div>
+    <!--Star Rating-->
+          <div class="col-md-6 mb-3">
+            <label for="StarRating">Star Rating</label>
+            <select class="custom-select d-block w-100" name="film_star" id="StarRating" required="">
+        <option>1 Star</option>
+        <option>2 Star</option>
+        <option>3 Star</option>
+        <option>4 Star</option>
+        <option>5 Star</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a rating.
+            </div>
+          </div>     
+          <!--Review Text-->
+        <div class="col-md-12 mb-3">
+          <label for="ReviewText">Leave your thoughts below</label>
+          <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="" required="">
+        </div>
+      </div>
+
+<!--Submit button-->
+<button type="submit" name="action" class="btn btn-primary">Submit</button>
+</form>
+        </div>
+
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
          <div class="row">
         <!--Film name-->
           <div class="col-md-6 mb-3">
@@ -35,40 +94,41 @@
                     <div class="form-check">
                       
 <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Action</label>
-                        <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Adventure</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Action</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Animation</label>    <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Biography</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Adventure</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Comedy</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Animation</label>    <label class="form-check-label col-3">
+    <label class="form-check-label col-3">                    
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Biography</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Crime</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Comedy</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Documentary</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Crime</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Drama</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Documentary</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Fantasy</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Drama</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Historical</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Fantasy</label>
+    <label class="form-check-label col-3">
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Historical</label>
 <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Horror</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Horror</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Indie</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Indie</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Musical</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Musical</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Romance</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Romance</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Sci-Fi</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Sci-Fi</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Sports</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Sports</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Thriller</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Thriller</label>
     <label class="form-check-label col-3">
-                        <input class="form-check-input" type="checkbox" value="">Western</label>
+                        <input class="form-check-input" name="film_genre" type="checkbox" value="">Western</label>
 </div>
                     
           <div class="invalid-feedback">

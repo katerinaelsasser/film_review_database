@@ -3,71 +3,12 @@
       <!--Title-->
       <h4 class="mb-3">Add a film</h4>
 
-<form action="{{url_for('insertfilm')}}" method="POST">
-         
-         
-         
-         
-                 <div class="row">
-        <!--Film name-->
-          <div class="col-md-6 mb-3">
-            <label for="filmName">Film name</label>
-            <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Valid film title is required.
-            </div>
-    </div>
-    <!--Star Rating-->
-          <div class="col-md-6 mb-3">
-            <label for="StarRating">Star Rating</label>
-            <select class="custom-select d-block w-100" name="film_star" id="StarRating" required="">
-        <option>1 Star</option>
-        <option>2 Star</option>
-        <option>3 Star</option>
-        <option>4 Star</option>
-        <option>5 Star</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a rating.
-            </div>
-          </div>     
-          <!--Review Text-->
-        <div class="col-md-12 mb-3">
-          <label for="ReviewText">Leave your thoughts below</label>
-          <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="" required="">
-        </div>
-      </div>
-
-<!--Submit button-->
-<button type="submit" name="action" class="btn btn-primary">Submit</button>
-</form>
-        </div>
-
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
+<form action="{{url_for('insertfilm')}}" method="POST">        
          <div class="row">
         <!--Film name-->
           <div class="col-md-6 mb-3">
             <label for="filmName">Film name</label>
-            <input type="text" class="form-control" id="firstName" name="film_name" placeholder="Name of Film" value="" required="">
+            <input type="text" class="form-control" id="firstName" name="film_name" placeholder=" value="" required="">
             <div class="invalid-feedback">
               Valid film title is required.
             </div>
@@ -75,7 +16,7 @@
     <!--Director name-->
           <div class="col-md-6 mb-3">
             <label for="filmName">Director</label>
-            <input type="text" class="form-control" id="filmdirector" name="film_director" placeholder="Name of Director" value="" required="">
+            <input type="text" class="form-control" id="filmdirector" name="film_director" placeholder="" value="" required="">
             <div class="invalid-feedback">
               Valid director name is required.
             </div>
@@ -83,7 +24,7 @@
           <!--Film description-->
         <div class="col-md-12 mb-3">
           <label for="description">Film Description</label>
- <input type="text" class="form-control" id="description" name="film_description" placeholder="Description of Film" value="" required="">
+ <input type="text" class="form-control" id="description" name="film_description" placeholder="" value="" required="">
           <div class="invalid-feedback">
             Please enter the description of the film.
           </div>
@@ -138,6 +79,10 @@
         <!--Film release year-->
           <div class="col-md-4 mb-3">
             <label for="YearofRelease">Year of Release</label>
+            <input type="text" class="form-control" id="YearofRelease" name="film_year" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid film title is required.
+            </div>
             <select class="custom-select d-block w-100" id="YearofRelease" required="">
         <option>1900</option>
         <option>1901</option>

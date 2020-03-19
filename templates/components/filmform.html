@@ -33,7 +33,6 @@
           <div class="col-md-12 mb-3">
           <label for="genre">Genre</label>
                     <div class="form-check">
-                      
 <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Action">Action</label>
     <label class="form-check-label col-3">
@@ -223,30 +222,18 @@
           <!--Film Age Rating-->
           <div class="col-md-4 mb-3">
     <label for="agerating">Age Rating</label>
-            <select class="custom-select d-block w-100" id="agerating" required="">
-        <option>U</option>
-        <option>PG</option>
-        <option>12A</option>
-        <option>12</option>
-        <option>15</option>
-        <option>18</option>
+            <select class="custom-select d-block w-100" id="agerating" name="film_age" required="">
+        <option value="U">U</option>
+        <option value="PG">PG</option>
+        <option value="12A">12A</option>
+        <option value="12">12</option>
+        <option value="15">15</option>
+        <option value="18">18</option>
             </select>
             <div class="invalid-feedback">
               Please select from the dropdown.
             </div>
   </div>
-<!--Film length-->
-          <div class="col-md-4 mb-3">
-    <label for="filmlength">Length of Film</label>
-    <input type="text" class="form-control" id="filmlength" placeholder="" value="" required="">
-
-            <div class="invalid-feedback">
-              Please type in the length of film in hrs and mins.
-            </div>
-          </div>
-
-      </div>
-      
 <!--Submit button-->
  <button type="submit" class="btn btn-primary">Submit</button>     
       </form>

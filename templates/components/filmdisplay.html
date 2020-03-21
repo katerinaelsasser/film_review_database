@@ -1,15 +1,17 @@
 {% block filmdisplay %}
 <div class="row">
 {% for film in films %}
+    
     <div class="col-md-3">
-      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <h3 class="mb-0">{{film.film_name}} ({{film.film_year}})</h3>
+      <div class="card border-0 shadow">
+        <img src="{{film.film_poster}}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{film.film_name}} ({{film.film_year}})</h5>
           <div class="mb-1 text-muted">{{film.film_age}}</div>
           <p class="card-text mb-auto">{{film.film_description}}</p>
         </div>
       </div>
     </div>
-{% endfor %}
+    {% endfor %}
 </div>
 {% endblock %}

@@ -1,5 +1,5 @@
 {% block filmdashboard %}
-<div class="table-responsive">
+<div class="table-responsive container">
         <table class="table table-striped table-sm">
           <thead>
             <tr>
@@ -21,6 +21,8 @@
               <td>{{film.film_genre}}</td>
               <td>{{film.film_description}}</td>
               <td>{{film.film_poster}}</td>
+              <td>edit</td>
+              <td>delete</td>
             </tr>
             {% endfor %}
           </tbody>

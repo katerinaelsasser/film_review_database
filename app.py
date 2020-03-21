@@ -68,7 +68,14 @@ def loginform():
 @app.route('/userhome')
 def userhome():
     return render_template("pages/userhome.html")
-    
+
+#edit or delete films   
+@app.route('/filmlisting')
+def filmlisting():
+    films=mongo.db.films.find()
+    print(films)
+    return render_template("pages/filmlisting.html", films=films)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
             port=(os.environ.get('PORT')),

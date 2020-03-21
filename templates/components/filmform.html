@@ -1,110 +1,109 @@
 {% block filmform %}
 <div class="text-center container">
-      <!--Title-->
-      <h4 class="mb-3">Add a film</h4>
+    <!--Title-->
+    <h4 class="mb-3">Add a film</h4>
 
-<form action="{{url_for('insertfilm')}}" method="POST">        
-         <div class="row">
-        <!--Film name-->
-          <div class="col-md-6 mb-3">
-            <label for="filmName">Film name</label>
-            <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Valid film title is required.
+    <form action="{{url_for('insertfilm')}}" method="POST">
+        <div class="row">
+            <!--Film name-->
+            <div class="col-md-6 mb-3">
+                <label for="filmName">Film name</label>
+                <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid film title is required.
+                </div>
             </div>
-    </div>
-    <!--Director name-->
-          <div class="col-md-6 mb-3">
-            <label for="filmName">Director</label>
-            <input type="text" class="form-control" id="filmdirector" name="film_director" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Valid director name is required.
+            <!--Director name-->
+            <div class="col-md-6 mb-3">
+                <label for="filmName">Director</label>
+                <input type="text" class="form-control" id="filmdirector" name="film_director" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid director name is required.
+                </div>
             </div>
-    </div>   
-          <!--Film description-->
-        <div class="col-md-12 mb-3">
-          <label for="description">Film Description</label>
- <input type="text" class="form-control" id="description" name="film_description" placeholder="" value="" required="">
-          <div class="invalid-feedback">
-            Please enter the description of the film.
-          </div>
-        </div>
-        <!--Film Genre-->
-          <div class="col-md-12 mb-3">
-          <label for="genre">Genre</label>
-                    <div class="form-check">
-<label class="form-check-label col-3">
+            <!--Film description-->
+            <div class="col-md-12 mb-3">
+                <label for="description">Film Description</label>
+                <input type="text" class="form-control" id="description" name="film_description" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Please enter the description of the film.
+                </div>
+            </div>
+            <!--Film Genre-->
+            <div class="col-md-12 mb-3">
+                <label for="genre">Genre</label>
+                <div class="form-check">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Action">Action</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Adventure">Adventure</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Anmiation">Animation</label>
-    <label class="form-check-label col-3">                    
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Biography">Biography</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Comedy">Comedy</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Crime">Crime</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Documentary">Documentary</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Drama">Drama</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Fantasy">Fantasy</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Historical">Historical</label>
-<label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Horror">Horror</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Indie">Indie</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Musical">Musical</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Romance">Romance</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Sci-Fi">Sci-Fi</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Sports">Sports</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Thriller">Thriller</label>
-    <label class="form-check-label col-3">
+                    <label class="form-check-label col-3">
                         <input class="form-check-input" name="film_genre" type="checkbox" value="Western">Western</label>
-</div>
-                    
-          <div class="invalid-feedback">
-            Please select at least one of the options.
-          </div>
-        </div>
-        <!--Film release year-->
-          <div class="col-md-4 mb-3">
-            <label for="YearofRelease">Year of Release</label>
-            <input type="text" class="form-control" id="YearofRelease" name="film_year" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Valid film title is required.
-            </div>
-            <div class="invalid-feedback">
-              Please select a valid country.
-            </div>
-          </div>
-          <!--Film Age Rating-->
-          <div class="col-md-4 mb-3">
-    <label for="agerating">Age Rating</label>
-            <select class="custom-select d-block w-100" id="agerating" name="film_age" required="">
-        <option value="U">U</option>
-        <option value="PG">PG</option>
-        <option value="12A">12A</option>
-        <option value="12">12</option>
-        <option value="15">15</option>
-        <option value="18">18</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select from the dropdown.
-            </div>
-  </div>
-<!--Submit button-->
- <button type="submit" class="btn btn-primary">Submit</button>     
-      </form>
+                </div>
 
+                <div class="invalid-feedback">
+                    Please select at least one of the options.
+                </div>
+            </div>
+            <!--Film release year-->
+            <div class="col-md-4 mb-3">
+                <label for="YearofRelease">Year of Release</label>
+                <input type="text" class="form-control" id="YearofRelease" name="film_year" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid film title is required.
+                </div>
+                <div class="invalid-feedback">
+                    Please select a valid country.
+                </div>
+            </div>
+            <!--Film Age Rating-->
+            <div class="col-md-4 mb-3">
+                <label for="agerating">Age Rating</label>
+                <select class="custom-select d-block w-100" id="agerating" name="film_age" required="">
+                    <option value="U">U</option>
+                    <option value="PG">PG</option>
+                    <option value="12A">12A</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                    <option value="18">18</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select from the dropdown.
+                </div>
+            </div>
+            <!--Submit button-->
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
-        </div>
+    </div>
     {% endblock %}

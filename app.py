@@ -55,23 +55,7 @@ def insertfilm():
     films.insert_one(request.form.to_dict())
     return redirect(url_for('viewfilms'))
 
-#login page
-@app.route('/login.html', methods=['GET', 'POST'])
-def login():
-    form = LoginForm()
-    if 'logged in' in session:
-        return redirect(url_for('index.html'))
-    
-    if form.validate_on_submit():
-        existing_user = mongo.db.users.find_one({'username': request.form['username']})
-        if existing_user:
-            if bcrypt.hashpw(request.form['password'].encode('utf-8'), 
-            login_user['password'].encode('utf-8')) == login_user['password'].encode('utf-8'):
-                session['username'] = request.form['username']
-                session['logged in'] = True
-                return redirect(url_for('index'))
-    return render_template('login.html', form=form)
-    
+#login page   
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     return render_template("pages/login.html")

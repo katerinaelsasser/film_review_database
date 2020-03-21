@@ -60,10 +60,6 @@ def insertfilm():
 def login():
     return render_template("pages/login.html")
 
-@app.route('/loginform', methods=['POST'])
-def loginform():
-    return redirect(url_for('userhome'))
-
 #user home page
 @app.route('/userhome')
 def userhome():

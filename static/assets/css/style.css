@@ -76,8 +76,8 @@ padding: 15px;
       filter: gray;
       -webkit-filter: grayscale(1);
       -webkit-transition: all .8s ease-in-out; 
-      width: auto;
-      height: 500px; 
+      max-width: auto;
+      height: 400px; 
     }
 
  .new-arrivals:hover {

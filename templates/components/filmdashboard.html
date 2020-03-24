@@ -21,7 +21,7 @@
               <td>{{film.film_genre}}</td>
               <td>{{film.film_description}}</td>
               <td>{{film.film_poster}}</td>
-              <td>Edit | <a href="{{url_for('delete_task', task_id=task._id)}}">Done</a></td>
+              <td>Edit | <a href="{{url_for('deletefilm', film_id=film._id)}}">Done</a></td>
             </tr>
             {% endfor %}
           </tbody>

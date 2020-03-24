@@ -72,6 +72,12 @@ def filmlisting():
     print(films)
     return render_template("pages/filmlisting.html", films=films)
 
+@app.route('/deletefilm/<film_id>')
+def deletefilm(film_id):
+    mongo.db.films.remove({'_id': ObjectId(films_id)})
+    return redirect(url_for('filmlisting'))
+
+
 #View and delete reviews
 @app.route('/reviewlisting')
 def reviewlisting():

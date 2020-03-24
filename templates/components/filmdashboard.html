@@ -9,7 +9,7 @@
               <th>Genre</th>
               <th>Description</th>
               <th>Poster</th>
-              <th>#</th>
+              <th>Edit/Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -21,8 +21,7 @@
               <td>{{film.film_genre}}</td>
               <td>{{film.film_description}}</td>
               <td>{{film.film_poster}}</td>
-              <td>edit</td>
-              <td>delete</td>
+              <td>Edit | <a href="{{url_for('delete_task', task_id=task._id)}}">Done</a></td>
             </tr>
             {% endfor %}
           </tbody>

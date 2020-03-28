@@ -1,12 +1,11 @@
 {% extends 'layout/base.html' %} {% block content %}
 <div class="row align-items-center my-5">
-      <div class="col-lg-7">
+    <div class="col-lg-7">
         <img class="img-fluid rounded mb-4 mb-lg-0" src="static/assets/images/headers/header-4.jpg" alt="header-display">
-      </div>
-      <div class="col-lg-5 text-center">
-        <h1 class="font-weight-light">Add A Film</h1>
-    <p>Fill in the form below to add the film to the database.</p>
-      </div>
     </div>
-{% include 'components/filmform.html' %}
- {% endblock %}
+    <div class="col-lg-5 text-center">
+        <h1 class="font-weight-light">Add A Film</h1>
+        <p>Fill in the form below to add the film to the database.</p>
+    </div>
+</div>
+{% include 'components/filmform.html' %} {% endblock %}

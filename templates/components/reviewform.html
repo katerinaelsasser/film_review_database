@@ -1,41 +1,41 @@
 {% block reviewform %}
 <div class="text-center container">
-      <!--Title-->
-      <h4 class="mb-3">Add Your Review Here</h4>
+    <!--Title-->
+    <h4 class="mb-3">Add Your Review Here</h4>
 
-<form action="{{url_for('insertreview')}}" method="POST">
+    <form action="{{url_for('insertreview')}}" method="POST">
         <div class="row">
-        <!--Film name-->
-          <div class="col-md-6 mb-3">
-            <label for="filmName">Film name</label>
-            <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="" required="">
-            <div class="invalid-feedback">
-              Valid film title is required.
+            <!--Film name-->
+            <div class="col-md-6 mb-3">
+                <label for="filmName">Film name</label>
+                <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid film title is required.
+                </div>
             </div>
-    </div>
-    <!--Star Rating-->
-          <div class="col-md-6 mb-3">
-            <label for="film_star">Star Rating</label>
-            <select class="custom-select d-block w-100" name="film_star" id="film_star" required="">
-        <option>1 Star</option>
-        <option>2 Star</option>
-        <option>3 Star</option>
-        <option>4 Star</option>
-        <option>5 Star</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a rating.
+            <!--Star Rating-->
+            <div class="col-md-6 mb-3">
+                <label for="film_star">Star Rating</label>
+                <select class="custom-select d-block w-100" name="film_star" id="film_star" required="">
+                    <option>1 Star</option>
+                    <option>2 Star</option>
+                    <option>3 Star</option>
+                    <option>4 Star</option>
+                    <option>5 Star</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a rating.
+                </div>
             </div>
-          </div>     
-          <!--Review Text-->
-        <div class="col-md-12 mb-3">
-          <label for="ReviewText">Leave your thoughts below</label>
-          <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="" required="">
+            <!--Review Text-->
+            <div class="col-md-12 mb-3">
+                <label for="ReviewText">Leave your thoughts below</label>
+                <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="" required="">
+            </div>
         </div>
-      </div>
 
-<!--Submit button-->
-<button type="submit" name="action" class="btn btn-primary">Submit</button>
-</form>
+        <!--Submit button-->
+        <button type="submit" name="action" class="btn btn-primary">Submit</button>
+    </form>
 </div>
-        {% endblock %}
+{% endblock %}

@@ -1,27 +1,27 @@
 {% block dashboard %}
 <div class="container">
     <div class="row">
-<div class="col-md-6">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Films</h5>
-            <a href="{{url_for('viewfilms')}}" class="btn btn-block btn-primary text-uppercase">View All</a>
-            <a href="{{url_for('filmlisting')}}" class="btn btn-block btn-primary text-uppercase">Edit/Delete Film</a>
-            <a href="{{url_for('addfilm')}}" class="btn btn-block btn-primary text-uppercase">Add Film</a>
-          </div>
+        <div class="col-md-6">
+            <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">Films</h5>
+                    <a href="{{url_for('viewfilms')}}" class="btn btn-block btn-primary text-uppercase">View All</a>
+                    <a href="{{url_for('filmlisting')}}" class="btn btn-block btn-primary text-uppercase">Edit/Delete Film</a>
+                    <a href="{{url_for('addfilm')}}" class="btn btn-block btn-primary text-uppercase">Add Film</a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-5 mb-lg-0">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Reviews</h5>
-            <a href="{{url_for('viewreviews')}}" class="btn btn-block btn-primary text-uppercase">See All Reviews</a>
-            <a href="{{url_for('reviewlisting')}}" class="btn btn-block btn-primary text-uppercase">Delete Review</a>
-            <a href="{{url_for('addreviews')}}" class="btn btn-block btn-primary text-uppercase">Add Review</a>
+        <div class="col-md-6">
+            <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">Reviews</h5>
+                    <a href="{{url_for('viewreviews')}}" class="btn btn-block btn-primary text-uppercase">See All Reviews</a>
+                    <a href="{{url_for('reviewlisting')}}" class="btn btn-block btn-primary text-uppercase">Delete Review</a>
+                    <a href="{{url_for('addreviews')}}" class="btn btn-block btn-primary text-uppercase">Add Review</a>
 
-          </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-    {% endblock %}
+</div>
+{% endblock %}

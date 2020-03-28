@@ -1,12 +1,11 @@
 {% extends 'layout/userbase.html' %} {% block content %}
 <div class="row align-items-center my-5">
-      <div class="col-lg-7 text-center">
+    <div class="col-lg-7 text-center">
         <img class="img-fluid rounded mb-4 mb-lg-0" src="static/assets/images/headers/header-8.jpg" alt="header-display">
-      </div>
-      <div class="col-lg-5 text-center">
-        <h1 class="font-weight-light">Edit/Delete Films</h1>
-    <p>Adjust or remove films from your database. Below is the full list of all the films.</p>
-      </div>
     </div>
-{% include 'components/filmdashboard.html' %}
-{% endblock %}
+    <div class="col-lg-5 text-center">
+        <h1 class="font-weight-light">Edit/Delete Films</h1>
+        <p>Adjust or remove films from your database. Below is the full list of all the films.</p>
+    </div>
+</div>
+{% include 'components/filmdashboard.html' %} {% endblock %}

@@ -1,24 +1,24 @@
 {% block filmdashboard %}
 <div class="table-responsive container">
-        <table class="table table-striped table-sm">
-          <thead>
+    <table class="table table-striped table-sm">
+        <thead>
             <tr>
-              <th>Title</th>
-              <th>Star Rating</th>
-              <th>Review</th>
-              <th>Delete</th>
+                <th>Title</th>
+                <th>Star Rating</th>
+                <th>Review</th>
+                <th>Delete</th>
             </tr>
-          </thead>
-          <tbody>
-          {% for review in reviews %}
+        </thead>
+        <tbody>
+            {% for review in reviews %}
             <tr>
-              <td>{{reviews.film_name}}</td>
-              <td>{{reviews.star}}</td>
-              <td>{{reviews.review}}</td>
-              <td>delete</td>
+                <td>{{reviews.film_name}}</td>
+                <td>{{reviews.star}}</td>
+                <td>{{reviews.review}}</td>
+                <td>delete</td>
             </tr>
             {% endfor %}
-          </tbody>
-        </table>
-      </div>
-      {% endblock %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

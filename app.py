@@ -6,8 +6,6 @@ from bson.objectid import ObjectId
 from os import path
 if path.exists("env.py"):
   import env 
-from flask_login import current_user, login_user
-from app.models import User
 
 #mongodb
 app = Flask(__name__)

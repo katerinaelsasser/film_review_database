@@ -6,6 +6,8 @@ from bson.objectid import ObjectId
 from os import path
 if path.exists("env.py"):
   import env 
+from flask_login import current_user, login_user
+from app.models import User
 
 #mongodb
 app = Flask(__name__)
@@ -58,8 +60,8 @@ def insertfilm():
 #login page   
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template("pages/login.html")
-
+    return render_template("pages/login.html", title='Sign In')
+    
 #user home page
 @app.route('/userhome')
 def userhome():

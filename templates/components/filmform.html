@@ -3,7 +3,7 @@
     <!--Title-->
     <h4 class="mb-3">Add a film</h4>
 
-    <form action="{{url_for('insertfilm')}}" method="POST">
+    <form action="/insertfilm" method="POST">
         <div class="row">
             <!--Film name-->
             <div class="col-md-6 mb-3">
@@ -89,7 +89,8 @@
             </div>
             <!--Submit button-->
             <button type="submit" name="action" class="btn btn-primary">Submit</button>
-    </form>
+    
 
-    </div>
+    </div></form>
+</div>
     {% endblock %}

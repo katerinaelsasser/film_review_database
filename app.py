@@ -60,7 +60,7 @@ def insertfilm():
 #login page   
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template("pages/login.html", title='Sign In')
+    return render_template("pages/login.html")
     
 #user home page
 @app.route('/userhome')

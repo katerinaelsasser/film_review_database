@@ -83,13 +83,17 @@ def deletefilm(film_id):
     mongo.db.films.remove({'_id': ObjectId(films_id)})
     return redirect(url_for('filmlisting'))
 
-
 #View and delete reviews
 @app.route('/reviewlisting')
 def reviewlisting():
     reviews=mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/reviewlisting.html", reviews=reviews)
+
+@app.route('/deletereview/<review_id>')
+def deletereview(review_id):
+    mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
+    return redirect(url_for('reviewlisting'))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

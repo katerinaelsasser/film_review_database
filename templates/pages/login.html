@@ -8,7 +8,7 @@
             <h1 class="font-weight-light">Sign In</h1>
             <form class="form-signin">
                 <div class="form-label-group">
-                    <input type="text" id="username" name="username" placeholder="Username" value="{{request.form.username}}">
+                    <input type="text" placeholder="Enter Username" name="username" value="{{request.form.username}}">
                 </div>
                 <div class="form-label-group">
                     <input type="password" id="password" name="password" placeholder="Password" value="{{request.form.password }}">
@@ -16,6 +16,9 @@
                 <div class="form-label-group">
                     <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
                 </div>
+                 {% if error %}
+        <p class="error"> {{ error }}</p>
+    {% endif %}
             </form>
     </div>
 </div>

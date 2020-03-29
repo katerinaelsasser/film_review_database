@@ -89,7 +89,7 @@ def deletefilm(film_id):
 def reviewlisting():
     reviews=mongo.db.reviews.find()
     print(reviews)
-    return render_template("pages/reviewlisting.html")
+    return render_template("pages/reviewlisting.html", reviews=reviews)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

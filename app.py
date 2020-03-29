@@ -64,11 +64,7 @@ def login():
             error = 'Invalid Username or Password. Please try again.'
         else:
             return redirect(url_for('userhome'))
-    retyrn render_template(error=error)
-
-
-
-    return render_template("pages/login.html")
+    return render_template(error=error)
     
 #user home page
 @app.route('/userhome')

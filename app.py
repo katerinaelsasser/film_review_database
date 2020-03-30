@@ -60,14 +60,14 @@ def insertfilm():
 def login():
     error = None
     if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'password':
+        if request.form.get['username'] != 'admin' or request.form.get['password'] != 'password':
             error = 'Invalid Username or Password. Please try again.'
         else:
             return redirect(url_for('userhome'))
     return render_template("pages/login.html", error=error)
     
 #user home page
-@app.route('/userhome')
+@app.route('/userhome', methods=['GET'])
 def userhome():
     return render_template("pages/userhome.html")
 

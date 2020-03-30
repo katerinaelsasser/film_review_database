@@ -71,7 +71,21 @@ def login():
 def userhome():
     return render_template("pages/userhome.html")
 
-#edit or delete films   
+#edit films   
+@app.route('/editfilms')
+def editfilms():
+    films=mongo.db.films.find()
+    print(films)
+    return render_template("pages/editfilms.html", films=films)
+
+#delete films   
+@app.route('/deletefilms')
+def deletefilms():
+    films=mongo.db.films.find()
+    print(films)
+    return render_template("pages/deletefilms.html", films=films)
+
+
 @app.route('/filmlisting')
 def filmlisting():
     films=mongo.db.films.find()

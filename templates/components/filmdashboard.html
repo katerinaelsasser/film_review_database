@@ -8,7 +8,6 @@
               <th>Age Rating</th>
               <th>Genre</th>
               <th>Description</th>
-              <th>Poster</th>
               <th>Edit/Delete</th>
             </tr>
           </thead>
@@ -20,7 +19,6 @@
               <td>{{film.film_age}}</td>
               <td>{{film.film_genre}}</td>
               <td>{{film.film_description}}</td>
-              <td>{{film.film_poster}}</td>
               <td>Edit | <a href="{{url_for('deletefilm', film_id=film._id)}}">Done</a></td>
             </tr>
             {% endfor %}

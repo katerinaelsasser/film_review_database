@@ -71,43 +71,26 @@ def login():
 def userhome():
     return render_template("pages/userhome.html")
 
-#edit films   
+#Edit films   
 @app.route('/editfilms')
 def editfilms():
     films=mongo.db.films.find()
     print(films)
     return render_template("pages/editfilms.html", films=films)
 
-#delete films   
+#Delete films   
 @app.route('/deletefilms')
 def deletefilms():
     films=mongo.db.films.find()
     print(films)
     return render_template("pages/deletefilms.html", films=films)
 
-
-@app.route('/filmlisting')
-def filmlisting():
-    films=mongo.db.films.find()
-    print(films)
-    return render_template("pages/filmlisting.html", films=films)
-
-@app.route('/deletefilm/<film_id>')
-def deletefilm(film_id):
-    mongo.db.films.remove({'_id': ObjectId(films_id)})
-    return redirect(url_for('filmlisting'))
-
-#View and delete reviews
-@app.route('/reviewlisting')
+#Delete reviews
+@app.route('/deletereviews')
 def reviewlisting():
     reviews=mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/reviewlisting.html", reviews=reviews)
-
-@app.route('/deletereview/<review_id>')
-def deletereview(review_id):
-    mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
-    return redirect(url_for('reviewlisting'))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

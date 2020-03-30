@@ -87,10 +87,10 @@ def deletefilms():
 
 #Delete reviews
 @app.route('/deletereviews')
-def reviewlisting():
+def deletereviews():
     reviews=mongo.db.reviews.find()
     print(reviews)
-    return render_template("pages/reviewlisting.html", reviews=reviews)
+    return render_template("pages/deletereviews.html", reviews=reviews)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

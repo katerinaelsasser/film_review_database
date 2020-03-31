@@ -100,8 +100,8 @@ def deletefilms():
     print(films)
     return render_template("pages/deletefilms.html", films=films)
 
-@app.route('/delete_film/<films_id>')
-def delete_film(task_id):
+@app.route('/deletefilms/<films_id>')
+def removefilm(task_id):
     mongo.db.films.remove({'_id': ObjectId(task_id)})
     return redirect(url_for('deletefilms'))
 
@@ -113,7 +113,7 @@ def deletereviews():
     print(reviews)
     return render_template("pages/deletereviews.html", reviews=reviews)
 
-@app.route('/removereview/<review_id>')
+@app.route('/deletereviews/<review_id>')
 def removereview(review_id):
     mongo.db.reviews.remove({'_id': ObjectId(task_id)})
     return redirect(url_for('deletereviews'))

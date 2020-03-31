@@ -76,7 +76,22 @@ def userhome():
 def editfilms():
     films=mongo.db.films.find()
     print(films)
-    return render_template("pages/editfilms.html", films=films)
+    return render_template("pages/filmlisting.html", films=films)
+
+@app.route('/updatefilm/<film_id>', methods=["POST"])
+def update_film(film_id):
+    films=mongo.db.films
+    films.update( {'_id': ObjectId(film_id)},
+    {
+        'film_name':request.form.get('film_name'),
+        'film_director': request.form.get('film_director'),
+        'film_description': request.form.get('film_description'),
+        'film_genre':request.form.get('film_genre')
+        'film_year':request.form.get('film_year')
+        'film_age':request.form.get('film_age')
+        'film_poster':request.form.get('film_poster')
+    })
+    return redirect(url_for('editfilms'))
 
 #Delete films   
 @app.route('/deletefilms')
@@ -85,12 +100,31 @@ def deletefilms():
     print(films)
     return render_template("pages/deletefilms.html", films=films)
 
+@app.route('/delete_film/<films_id>')
+def delete_film(task_id):
+    mongo.db.films.remove({'_id': ObjectId(task_id)})
+    return redirect(url_for('deletefilms'))
+
+
 #Delete reviews
 @app.route('/deletereviews')
 def deletereviews():
     reviews=mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/deletereviews.html", reviews=reviews)
+
+@app.route('/delete_review/<reviews_id>')
+def delete_review(reviews_id):
+    mongo.db.reviews.remove({'_id': ObjectId(task_id)})
+    return redirect(url_for('deletereviews'))
+
+
+
+
+
+
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

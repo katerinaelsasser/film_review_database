@@ -1,18 +1,2 @@
 {% block editbutton %}
-<div class="row text-center">
-    {% for film in films %}
-
-    <div class="col-md-3">
-        <div class="card border-0 shadow">
-            <img src="{{film.film_poster}}" class="card-img-top" alt="...">
-            <div class="card-body text-center">
-                <h5 class="card-title mb-0">{{film.film_name}} ({{film.film_year}})</h5>
-                <div class="mb-1 text-muted">{{film.film_age}} | {{film.film_genre}} </div>
-                <p class="card-text mb-auto">{{film.film_description}}</p>
-                <p>Edit</p>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-</div>
 {% endblock %}

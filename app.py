@@ -87,9 +87,9 @@ def update_film(film_id):
         'film_director': request.form.get('film_director'),
         'film_description': request.form.get('film_description'),
         'film_genre':request.form.get('film_genre')
-        'film_year':request.form.get('film_year')
-        'film_age':request.form.get('film_age')
-        'film_poster':request.form.get('film_poster')
+       # 'film_year':request.form.get('film_year')
+       # 'film_age':request.form.get('film_age')
+       # 'film_poster':request.form.get('film_poster')
     })
     return redirect(url_for('editfilms'))
 

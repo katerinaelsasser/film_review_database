@@ -102,7 +102,7 @@ def deletefilms():
 
 @app.route('/deletefilms/<films_id>')
 def removefilm(task_id):
-    mongo.db.films.remove({'_id': ObjectId(task_id)})
+    mongo.db.films.remove({'_id': ObjectId(film_id)})
     return redirect(url_for('deletefilms'))
 
 

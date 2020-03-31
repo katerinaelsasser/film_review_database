@@ -9,7 +9,7 @@
                 <h5 class="card-title mb-0">{{film.film_name}} ({{film.film_year}})</h5>
                 <div class="mb-1 text-muted">{{film.film_age}} | {{film.film_genre}} </div>
                 <p class="card-text mb-auto">{{film.film_description}}</p>
-                <a href="{{url_for('edit_task', film_id=films._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                <a href="{{url_for('edit_task', film_id=films._id)}}" class="btn btn-secondary">Edit</a>
             </div>
         </div>
     </div>

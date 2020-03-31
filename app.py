@@ -113,8 +113,8 @@ def deletereviews():
     print(reviews)
     return render_template("pages/deletereviews.html", reviews=reviews)
 
-@app.route('/delete_review/<review_id>')
-def delete_review(reviews_id):
+@app.route('/removereview/<review_id>')
+def removereview(review_id):
     mongo.db.reviews.remove({'_id': ObjectId(task_id)})
     return redirect(url_for('deletereviews'))
 

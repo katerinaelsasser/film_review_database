@@ -7,7 +7,7 @@
                 <h3 class="mb-0">{{review.film_name}}</h3>
                 <div class="mb-1 text-muted">{{review.film_star}}</div>
                 <p class="card-text mb-auto">{{review.film_review}}</p>
-                <a href="{{url_for('deletefilm', review_id=review._id)}}">Delete</a>
+                <a href="{{url_for('deletereviews', review_id=review._id)}}">Delete</a>
             </div>
         </div>
     </div>

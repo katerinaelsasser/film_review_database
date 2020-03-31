@@ -118,14 +118,6 @@ def delete_review(reviews_id):
     mongo.db.reviews.remove({'_id': ObjectId(task_id)})
     return redirect(url_for('deletereviews'))
 
-
-
-
-
-
-
-
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
             port=(os.environ.get('PORT')),

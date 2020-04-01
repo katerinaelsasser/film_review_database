@@ -98,7 +98,7 @@ padding: 15px;
 
 /*------filmform--------*/
 .modalbtn {
-    padding: 15px;
+    padding-bottom: 15px;
 }
 
 .modal {
@@ -121,7 +121,7 @@ padding: 15px;
   width: 80%; 
 }
 .close {
-  color: #aaa;
+  color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;

@@ -1,13 +1,10 @@
 {% block filmform %}
 <div class="text-center container">
-    <!--Title-->
-    <h4 class="mb-3">Add a film</h4>
-
     <form action="/insertfilm" method="POST">
         <div class="row">
             <!--Film name-->
             <div class="col-md-6 mb-3">
-                <label for="filmName">Film name</label>
+                <h4><label for="filmName">Film name</label></h4>
                 <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                     Valid film title is required.
@@ -15,7 +12,7 @@
             </div>
             <!--Director name-->
             <div class="col-md-6 mb-3">
-                <label for="filmName">Director</label>
+                <h4><label for="filmName">Director</label></h4>
                 <input type="text" class="form-control" id="filmdirector" name="film_director" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                     Valid director name is required.
@@ -23,7 +20,7 @@
             </div>
             <!--Film description-->
             <div class="col-md-12 mb-3">
-                <label for="description">Film Description</label>
+                <h4><label for="description">Film Description</label></h4>
                 <input type="text" class="form-control" id="description" name="film_description" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                     Please enter the description of the film.
@@ -31,18 +28,18 @@
             </div>
             <!--Film Genre-->
             <div class="col-md-12 mb-3">
-                <label for="genre">Genre</label>
+                <h4><label for="genre">Genre</label></h4>
                   <!--view all genres-->
   {% include 'components/genremodal.html' %}
   <!--end of view all genres-->
-                <input type="text" class="form-control" id="film_genre" name="film_genre" required="">
+                <h4><input type="text" class="form-control" id="film_genre" name="film_genre" required=""></h4>
                 <div class="invalid-feedback">
                     Please fill in with one or multiple genres.
                 </div>
   </div>
             <!--Film release year-->
             <div class="col-md-4 mb-3">
-                <label for="YearofRelease">Year of Release</label>
+                <h4><label for="YearofRelease">Year of Release</label></h4>
                 <input type="text" class="form-control" id="YearofRelease" name="film_year" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                     Valid film title is required.
@@ -50,7 +47,7 @@
             </div>
             <!--Film Age Rating-->
             <div class="col-md-4 mb-3">
-                <label for="agerating">Age Rating</label>
+                <h4><label for="agerating">Age Rating</label></h4>
                 <select class="custom-select d-block w-100" id="agerating" name="film_age" required="">
                     <option value="U">U</option>
                     <option value="PG">PG</option>
@@ -65,7 +62,7 @@
             </div>
             <!--Film poster-->
             <div class="col-md-4 mb-3">
-                <label for="filmposter">Film Poster</label>
+                <h4><label for="filmposter">Film Poster</label></h4>
                 <input type="text" class="form-control" id="filmposter" name="film_poster" placeholder="" value="" required="">
                 <div class="invalid-feedback">
                     Valid film poster link is required.

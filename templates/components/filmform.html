@@ -32,35 +32,14 @@
             <!--Film Genre-->
             <div class="col-md-12 mb-3">
                 <label for="genre">Genre</label>
+                  <!--view all genres-->
+  {% include 'components/genremodal.html' %}
+  <!--end of view all genres-->
                 <input type="text" class="form-control" id="film_genre" name="film_genre" required="">
                 <div class="invalid-feedback">
                     Please fill in with one or multiple genres.
                 </div>
-                <button type="button" class="collapsible">Open Collapsible</button>
-<div class="content">
-  <p>Click here to see the whole list of genres
-                <ul>
-                <li>Action</li>
-                <li>Adventure</li>
-                <li>Animation</li>
-                <li>Biography</li>
-                <li>Comedy</li>
-                <li>Crime</li>
-                <li>Documentary</li>
-                <li>Drama</li>    
-                <li>Fantasy</li>
-                <li>Historical</li>
-                <li>Horror</li>
-                <li>Indie</li>
-                <li>Musical</li>
-                <li>Romance</li>
-                <li>Sci-Fi</li>
-                <li>Sports</li>
-                <li>Thriller</li>
-                <li>Western</li>
-                </ul>   
-                </p>
-</div>   </div>
+  </div>
             <!--Film release year-->
             <div class="col-md-4 mb-3">
                 <label for="YearofRelease">Year of Release</label>

@@ -100,7 +100,7 @@ def deletefilms():
     print(films)
     return render_template("pages/deletefilms.html", films=films)
 
-@app.route('/deletefilms/<films_id>')
+@app.route('/deletefilms/<film_id>')
 def removefilm(film_id):
     mongo.db.films.remove({'_id': ObjectId(film_id)})
     return redirect(url_for('deletefilms'))
@@ -115,7 +115,7 @@ def deletereviews():
 
 @app.route('/deletereviews/<review_id>')
 def removereview(review_id):
-    mongo.db.reviews.remove({'_id': ObjectId(task_id)})
+    mongo.db.reviews.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('deletereviews'))
 
 if __name__ == '__main__':

@@ -4,6 +4,7 @@
         <div class="row">
             <!--Film name-->
             {% for film in films %}
+                {% if film.film_name == film.category_name%}
             <div class="col-md-6 mb-3">
                 <h4><label for="filmName">Film Title</label></h4>
                 <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="{{film.film_name}}" required="">

@@ -5,8 +5,11 @@
     </div>
     <div class="col-lg-5 text-center">
         <h1 class="font-weight-light">View Films</h1>
-
         <p>Check out all of our films that we have - We have put together all the information about the films. Struggling to find the next film to watch, we have added filters so you can find films from things that you like.</p>
+    <div class="row text-center">
+    <a class="btn btn-success col-md-6 btn-sm header-btn" href="{{url_for('viewreviews')}}">View Reviews</a>
+    <a class="btn btn-info col-md-6 btn-sm header-btn" href="{{url_for('addreviews')}}">Add Reviews</a>
+    </div>
     </div>
 </div>
 {% include 'components/filmdisplay.html' %} {% endblock %}

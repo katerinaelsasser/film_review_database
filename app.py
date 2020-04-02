@@ -87,7 +87,7 @@ def editform():
 
 @app.route('/editform/<film_id>', methods=["POST"])
 def update_film(film_id):
-    mongo.db.films.update( {'_id': ObjectId(film_id)}),
+    mongo.db.films.update( {'_id': ObjectId(film_id)},
     {
         'film_name':request.form.get('film_name'),
         'film_director': request.form.get('film_director'),

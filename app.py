@@ -76,20 +76,26 @@ def userhome():
 def editfilms():
     films=mongo.db.films.find()
     print(films)
-    return render_template("pages/filmlisting.html", films=films)
+    return render_template("pages/editfilms.html", films=films)
 
-@app.route('/updatefilm/<film_id>', methods=["POST"])
+#Editform
+@app.route('/editform')
+def editfilms():
+    films=mongo.db.films.find()
+    print(films)
+    return render_template("pages/editform.html", films=films)
+
+@app.route('/editform/<film_id>', methods=["POST"])
 def update_film(film_id):
-    films=mongo.db.films
-    films.update( {'_id': ObjectId(film_id)},
+    mongo.db.films.update( {'_id': ObjectId(film_id)},
     {
         'film_name':request.form.get('film_name'),
         'film_director': request.form.get('film_director'),
         'film_description': request.form.get('film_description'),
-        'film_genre':request.form.get('film_genre')
-       # 'film_year':request.form.get('film_year')
-       # 'film_age':request.form.get('film_age')
-       # 'film_poster':request.form.get('film_poster')
+        'film_genre':request.form.get('film_genre'),
+        'film_year':request.form.get('film_year'),
+        'film_age':request.form.get('film_age'),
+        'film_poster':request.form.get('film_poster'),
     })
     return redirect(url_for('editfilms'))
 

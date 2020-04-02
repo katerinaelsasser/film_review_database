@@ -1,0 +1,77 @@
+{% block adjustfilms %}
+<div class="text-center container">
+    <form action="update_film" method="POST">
+        <div class="row">
+            <!--Film name-->
+            <div class="col-md-6 mb-3">
+                <h4><label for="filmName">Film Title</label></h4>
+                <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="{{film.film_name}}" required="">
+                <div class="invalid-feedback">
+                    Valid film title is required.
+                </div>
+            </div>
+            <!--Director name-->
+            <div class="col-md-6 mb-3">
+                <h4><label for="filmName">Director</label></h4>
+                <input type="text" class="form-control" id="filmdirector" name="film_director" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid director name is required.
+                </div>
+            </div>
+            <!--Film description-->
+            <div class="col-md-12 mb-3">
+                <h4><label for="description">Description</label></h4>
+                <input type="text" class="form-control" id="description" name="film_description" value="{{film.film_description}}" required="">
+                <div class="invalid-feedback">
+                    Please enter the description of the film.
+                </div>
+            </div>
+            <!--Film Genre-->
+            <div class="col-md-12 mb-3">
+                <h4><label for="genre">Genre</label></h4>
+                  <!--view all genres-->
+  {% include 'components/genremodal.html' %}
+  <!--end of view all genres-->
+                <h4><input type="text" class="form-control" id="film_genre" name="film_genre" value="{{film.film_genre}}" required=""></h4>
+                <div class="invalid-feedback">
+                    Please fill in with one or multiple genres.
+                </div>
+  </div>
+            <!--Film release year-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="YearofRelease">Year of Release</label></h4>
+                <input type="text" class="form-control" id="YearofRelease" name="film_year" placeholder="" value="{{film.film_year}}" required="">
+                <div class="invalid-feedback">
+                    Valid film title is required.
+                </div>
+            </div>
+            <!--Film Age Rating-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="agerating">Age Rating</label></h4>
+                <select class="custom-select d-block w-100" id="agerating" name="film_age" required="">
+                    <option value="U">U</option>
+                    <option value="PG">PG</option>
+                    <option value="12A">12A</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                    <option value="18">18</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select from the dropdown.
+                </div>
+            </div>
+            <!--Film poster-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="filmposter">Poster</label></h4>
+                <input type="text" class="form-control" id="filmposter" name="film_poster" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid film poster link is required.
+                </div>
+            </div>
+            <!--Submit button-->
+            <div class="text-center col-12">
+        <button type="submit" name="action" class="btn btn-success btn-block text-center">Submit</button>
+        </div>
+</div></form>
+</div>
+    {% endblock %}

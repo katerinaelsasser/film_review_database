@@ -52,9 +52,6 @@ padding: 15px;
     padding: 0;
 }
 
-/*----header----*/
-
-
 /*--- index page---*/
 .index-review {
     font-size: 50px;
@@ -62,6 +59,11 @@ padding: 15px;
 
 .text-spacing {
     padding: 15px;
+}
+
+/*------viewfilms------*/
+.film-card {
+    margin: 15px;
 }
 
 /*--- login page ---*/

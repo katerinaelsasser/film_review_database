@@ -81,7 +81,7 @@ def editfilms():
 #Editform
 @app.route('/editform')
 def editform():
-    films=mongo.db.films.find()
+    films=mongo.db.films.find_one({"_id": ObjectId(film_id)})
     print(films)
     return render_template("pages/editform.html", films=films)
 

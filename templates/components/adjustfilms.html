@@ -1,6 +1,6 @@
 {% block adjustfilms %}
 <div class="text-center container">
-    <form action="update_film" method="POST">
+    <form action="{{update_film, film_id=film._id)}}" method="POST">
         <div class="row">
             <!--Film name-->
             {% for film in films %}

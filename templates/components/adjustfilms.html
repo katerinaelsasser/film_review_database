@@ -3,6 +3,7 @@
     <form action="update_film" method="POST">
         <div class="row">
             <!--Film name-->
+            {% for film in films %}
             <div class="col-md-6 mb-3">
                 <h4><label for="filmName">Film Title</label></h4>
                 <input type="text" class="form-control" id="firstName" name="film_name" placeholder="" value="{{film.film_name}}" required="">
@@ -71,7 +72,7 @@
             <!--Submit button-->
             <div class="text-center col-12">
         <button type="submit" name="action" class="btn btn-success btn-block text-center">Submit</button>
-        </div>
+        </div>{% endfor %}
 </div></form>
 </div>
     {% endblock %}

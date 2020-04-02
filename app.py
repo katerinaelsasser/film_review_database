@@ -80,7 +80,7 @@ def editfilms():
 
 #Editform
 @app.route('/editform')
-def editfilms():
+def editform():
     films=mongo.db.films.find()
     print(films)
     return render_template("pages/editform.html", films=films)

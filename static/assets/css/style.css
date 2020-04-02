@@ -64,7 +64,10 @@ padding: 15px;
 /*------viewfilms------*/
 .film-card {
     margin: 15px;
+    padding: 0;
 }
+
+.film-btn
 
 /*--- login page ---*/
 .login-page {

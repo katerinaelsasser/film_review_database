@@ -79,7 +79,7 @@ def editfilms():
     return render_template("pages/editfilms.html", films=films)
 
 #Editform
-@app.route('/editform')
+@app.route('/editform/<film_id>', methods=["GET"])
 def editform():
     films=mongo.db.films.find_one({"film_id": ObjectId(film_id)})
     print(films)

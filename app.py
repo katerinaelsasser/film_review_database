@@ -85,7 +85,7 @@ def editform():
     print(films)
     return render_template("pages/editform.html", films=films)
 
-@app.route('/editform/<film_id>', methods=["GET"])
+@app.route('/editform/<film_id>', methods=["POST"])
 def update_film(film_id):
     mongo.db.films.update( {'_id': ObjectId(film_id)},
     {

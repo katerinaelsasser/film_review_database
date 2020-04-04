@@ -1,18 +1,29 @@
 {% block filmdisplay %}
+
+<div>
+<form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
+
+
+
 <div class="row">
-    {% for film in films %}
+   
 
     <div class="col-md-3 film-card">
         <div class="card border-0 shadow">
-            <img src="{{film.film_poster}}" class="card-img-top" alt="movie-poster">
+            <img src="#" class="card-img-top" alt="movie-poster">
             <div class="card-body text-center">
-                <h5 class="card-title mb-0">{{film.film_name}} ({{film.film_year}})</h5>
-                <div class="mb-1 text-muted">{{film.film_age}} | {{film.film_genre}} </div>
-                <p class="card-text mb-auto">{{film.film_description}}</p>
+                <h5 class="card-title mb-0"># (#)</h5>
+                <div class="mb-1 text-muted"># | # </div>
+                <p class="card-text mb-auto">#</p>
                 <a class="btn btn-info" href="{{url_for('addreviews')}}">Add Reviews</a>
             </div>
         </div>
     </div>
-    {% endfor %}
+    
 </div>
 {% endblock %}

@@ -21,7 +21,7 @@ def homepage():
 #viewfilms page
 @app.route('/view/movies')
 def viewmovies():
-    return render_template("pages/viewfilms.html", films=films)
+    return render_template("pages/viewfilms.html")
 
 #viewreviews page
 @app.route('/view/reviews')

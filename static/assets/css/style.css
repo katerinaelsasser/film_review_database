@@ -19,19 +19,10 @@ img {
 padding: 15px;
 }
 
-.container-fluid {
-    padding: 0;
-    margin: 0;
-}
-
 .card,
 .card-deck,
 .row {
     margin: 0;
-}
-
-.col-4 {
-    padding: 0;
 }
 
 /*---navbar ----*/

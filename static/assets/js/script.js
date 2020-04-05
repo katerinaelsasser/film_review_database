@@ -1,22 +1,6 @@
-//film form (genre modal)
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-span.onclick = function() {
-  modal.style.display = "none";
-}
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
 //search bar
 function bob(userSearch) {
-    fetch('https://www.omdbapi.com/?j=tt3896198&apikey=8f317f8')
+    fetch('https://www.omdbapi.com/?j=tt3896198&apikey=8f317f8&plot=ful=$(userSearch)&type=movie')
     .then(response=>response.json())
     .then(searchResults=>{
         searchResults.Search.ForEach(movie=>{

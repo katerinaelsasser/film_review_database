@@ -58,19 +58,6 @@ def login():
 def userhome():
     return render_template("pages/userhome.html")
 
-#Delete films   
-@app.route('/deletefilms')
-def deletefilms():
-    films=mongo.db.films.find()
-    print(films)
-    return render_template("pages/deletefilms.html", films=films)
-
-@app.route('/deletefilms/<film_id>')
-def removefilm(film_id):
-    mongo.db.films.remove({'_id': ObjectId(film_id)})
-    return redirect(url_for('deletefilms'))
-
-
 #Delete reviews
 @app.route('/deletereviews')
 def deletereviews():

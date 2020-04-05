@@ -23,6 +23,12 @@ def homepage():
 def viewmovies():
     return render_template("pages/viewfilms.html")
 
+#individual film page
+#@app.route('/view/movies/'<imdbID>)
+#def movieID():
+    #return render_template("pages/individualfilm.html")
+
+
 #viewreviews page
 @app.route('/view/reviews')
 def viewreviews():

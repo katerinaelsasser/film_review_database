@@ -4,11 +4,12 @@ function bob(userSearch) {
     .then(res => res.json())
     .then(data => {
       console.log(data);
-      data.Search.forEach(element => {
+      data.Search.forEach(movie => {
         let movieInfo = `
         '<div class="col-md-3 film-card">
         <div class="card border-0 shadow">
-            <img src="{poster}" class="card-img-top" alt="movie-poster">
+        <a href="/view/movies/${movie.imdbID}">
+            <img src="${movie.Poster}" class="card-img-top" alt="movie-poster"></a>
             <p>"${movie.Title}"</p>
             </div>`;
         $('#moviesDIV').appendTo(movieInfo);

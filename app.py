@@ -58,34 +58,6 @@ def login():
 def userhome():
     return render_template("pages/userhome.html")
 
-#Edit films   
-@app.route('/editfilms')
-def editfilms():
-    films=mongo.db.films.find()
-    print(films)
-    return render_template("pages/editfilms.html", films=films)
-
-#Editform
-@app.route('/editform/<film_id>', methods=["GET"])
-def editform():
-    films=mongo.db.films.find_one({"film_id": ObjectId(film_id)})
-    print(films)
-    return render_template("pages/editform.html", films=films)
-
-@app.route('/editform/<film_id>', methods=["POST"])
-def update_film(film_id):
-    mongo.db.films.update( {'_id': ObjectId(film_id)},
-    {
-        'film_name':request.form.get('film_name'),
-        'film_director': request.form.get('film_director'),
-        'film_description': request.form.get('film_description'),
-        'film_genre':request.form.get('film_genre'),
-        'film_year':request.form.get('film_year'),
-        'film_age':request.form.get('film_age'),
-        'film_poster':request.form.get('film_poster'),
-    })
-    return redirect(url_for('editfilms'))
-
 #Delete films   
 @app.route('/deletefilms')
 def deletefilms():

@@ -28,15 +28,6 @@ def viewmovies():
 #def movieID():
     #return render_template("pages/individualfilm.html")
 
-
-#viewreviews page
-@app.route('/view/reviews')
-def viewreviews():
-    reviews=mongo.db.reviews.find()
-    print(reviews)
-    return render_template("pages/viewreviews.html", reviews=reviews)
-
-
 #addreviews page
 @app.route('/addreviews', methods=['GET'])
 def addreviews():

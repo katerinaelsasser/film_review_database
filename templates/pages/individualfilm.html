@@ -36,10 +36,10 @@
       <form class="needs-validation" novalidate="">
         <div class="row">
           <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" id="firstName" placeholder="Film Name" value="" required="">
+            <input type="text" class="form-control" id="firstName" name="film_name" placeholder="Film Name" value="" required="">
           </div>
           <div class="col-md-6 mb-3">
-            <select class="custom-select d-block w-100" id="country" required="">
+            <select class="custom-select d-block w-100" name="film_star" id="film_star" required="">
               <option value="">Choose...</option>
               <option>5 Stars</option>
               <option>4 Stars</option>
@@ -54,7 +54,7 @@
        </div>  
 
         <div class="mb-3">
-          <input type="text" class="form-control" id="address" placeholder="Leave Your Thoughts" required="">
+          <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="Leave Your Thoughts" required="">
           <div class="invalid-feedback">
             Please enter your thoughtd of the movie
           </div>

@@ -26,6 +26,8 @@ def viewmovies():
 #individual film page
 @app.route('/view/movies/individual')
 def movieID():
+    reviews =  mongo.db.reviews
+    reviews.insert_one(request.form.to_dict())
     return render_template("pages/individualfilm.html")
 
 #addreviews page

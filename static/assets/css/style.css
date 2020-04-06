@@ -93,3 +93,7 @@ padding: 15px;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
     }
+/*--- viewfilms ---*/
+.film-header {
+  background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-7.jpg');  
+}

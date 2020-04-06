@@ -24,22 +24,11 @@ def viewmovies():
     return render_template("pages/viewfilms.html")
 
 #individual film page
-@app.route('/view/movies/individual')
+@app.route('/view/movies/individual', methods=['GET','POST'])
 def movieID():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())
     return render_template("pages/individualfilm.html")
-
-#addreviews page
-@app.route('/addreviews', methods=['GET'])
-def addreviews():
-    return render_template("pages/addreviews.html")
-
-@app.route('/insertreview', methods=['POST'])
-def insertreview():
-    reviews =  mongo.db.reviews
-    reviews.insert_one(request.form.to_dict())
-    return redirect(url_for('viewreviews'))
 
 #login page   
 @app.route('/login', methods=['GET', 'POST'])

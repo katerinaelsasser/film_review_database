@@ -56,6 +56,25 @@ padding: 15px;
     padding: 15px;
 }
 
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-item-1 {
+    background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-1.jpg');
+}
+.carousel-item-2 {
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-2.jpg');
+}
+.carousel-item-3 {
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-3.jpg');
+}
 /*--- new arrivals ---*/
 .new-arrivals-text {
 padding: 15px;

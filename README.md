@@ -49,8 +49,11 @@ HTML
 CSS
 Javascript
 JQuery
+Flask
 Python
 Bootswatch
+GitPod
+PyMongo
 ## Testing
 The user stories that I have made at the beginning will help with testing as well as being a check list.
 
@@ -73,6 +76,7 @@ The information collected and stored in this website database. I have used Mongo
 |Film Title |film_name  |                      |string     |
 |Star Rating|film_star  |                      |           |
 |Review     |film_review|                      |string|
+|Nickname   |user_name  |                      |      |
 
 
 ## Deployment

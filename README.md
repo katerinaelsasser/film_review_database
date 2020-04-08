@@ -67,6 +67,13 @@ Data appears on the map
 ## Information Architecture
 The information collected and stored in this website database. I have used MongoDB which holds data for reviews that has been submitted. 
 
+### User Collection
+
+| Title	    | Key in db | form validation type | Data type |
+|-----------|:---------:|:--------------------:|:---------:|
+|Username   |username   |                      |           |
+|Password   |password   |                      |
+
 ### Review Collection
 
 | Title	    | Key in db | form validation type | Data type |
@@ -76,7 +83,7 @@ The information collected and stored in this website database. I have used Mongo
 |Film Title |film_name  |                      |string     |
 |Star Rating|film_star  |                      |           |
 |Review     |film_review|                      |string|
-|Nickname   |user_name  |                      |      |
+|Nickname   |nickname   |                      |      |
 
 
 ## Deployment

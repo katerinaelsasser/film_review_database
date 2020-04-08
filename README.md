@@ -1,4 +1,6 @@
-# Film Review Database
+# FRATES - Data Centric Development
+
+FRATES is a website that is created for users to find films and to review them.
 
 This project is a website database full of information about films. Users of this website can browser information about these films and also can add reviews to the films.
 External Users must be able to find films and the site owner must be able to earn money on each film purchased.
@@ -58,6 +60,21 @@ Test the code
 Add " around the data and the title of the rows
 Testing the code
 Data appears on the map
+
+## Information Architecture
+The information collected and stored in this website database. I have used MongoDB which holds data for reviews that has been submitted. 
+
+### Review Collection
+
+| Title	    | Key in db | form validation type | Data type |
+|-----------|:---------:|:--------------------:|:---------:|
+|_id        |_id        |None                  |Object Id  |
+|IMDB_id    |imdb_id    |                      |
+|Film Title |film_name  |                      |string     |
+|Star Rating|film_star  |                      |           |
+|Review     |film_review|                      |string|
+
+
 ## Deployment
 The website was deployed from the master branch and has been hosted on the GitHub pages. When I add a new commit to this master website, it will be automatically updated. I deployed it by doing the following steps:
 

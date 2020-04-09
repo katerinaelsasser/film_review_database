@@ -51,11 +51,12 @@ def userhome():
 def deletereviews():
     reviews=mongo.db.reviews.find()
     print(reviews)
-    return render_template("pages/deletereviews.html", reviews=reviews)
+    mongo.db.reviews.remove({'_id': ObjectId(review_id)})
+    return render_template("pages/viewallreviews.html", reviews=reviews)
 
 @app.route('/deletereviews/<review_id>')
 def removereview(review_id):
-    mongo.db.reviews.remove({'_id': ObjectId(review_id)})
+    
     return redirect(url_for('deletereviews'))
 
 if __name__ == '__main__':

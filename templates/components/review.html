@@ -1,15 +1,32 @@
 {% block review %}
-<div class="container-fluid row">
-       <div class="col-md-12 order-md-1">
-      
+<div class="container review-container">
+<div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Leave A Review</h4>
       <form class="needs-validation" novalidate="">
         <div class="row">
           <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" id="firstName" name="film_name" placeholder="Film Name" value="" required="">
+            <label for="firstName">Film Title</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="filmname inserted here" required="">
           </div>
           <div class="col-md-6 mb-3">
+            <label for="lastName">Nickname of Reviewer</label>
+            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address">Review</label>
+          <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="" required="">
+          <div class="invalid-feedback">
+            Please leave a review.
+          </div>
+        
+<hr class="mb-4">
+        <div class="mb-3">
             <select class="custom-select d-block w-100" name="film_star" id="film_star" required="">
-              <option value="">Choose...</option>
+              <option value="">Choose A Star Rating</option>
               <option>5 Stars</option>
               <option>4 Stars</option>
               <option>3 Stars</option>
@@ -20,18 +37,15 @@
               Please select a rating.
             </div>
           </div>
-       </div>  
-
-        <div class="mb-3">
-          <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="Leave Your Thoughts" required="">
-          <div class="invalid-feedback">
-            Please enter your thoughts of the movie
           </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox text-center">
+          <input type="checkbox" class="custom-control-input" id="recommend">
+          <label class="custom-control-label" name="recommend">Would you recommend to a friend?</label>
         </div>
-        <!--recommend-->
-        <!--nickname-->
-            <button type="button" class="btn btn-secondary col-12">Submit</button>
-        </form>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Your Review</button>
+      </form>
     </div>
     </div>
 {% endblock %}

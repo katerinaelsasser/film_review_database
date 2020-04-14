@@ -17,3 +17,5 @@ console.log(movie.Title)
       });
     });
 }
+
+//let filmSearch = $("#searchbar")

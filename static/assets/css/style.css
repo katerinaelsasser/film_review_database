@@ -67,49 +67,49 @@ padding: 15px;
 }
 
 .carousel-item-1 {
-    background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-1.jpg');
+    background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-1.jpg');
 }
 .carousel-item-2 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-2.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-2.jpg');
 }
 .carousel-item-3 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-3.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-3.jpg');
 }
 .carousel-item-4 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-4.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-4.jpg');
 }
 .carousel-item-5 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-5.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-5.jpg');
 }
 .carousel-item-6 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-6.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-6.jpg');
 }
 .carousel-item-7 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-7.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-7.jpg');
 }
 .carousel-item-8 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-8.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-8.jpg');
 }
 .carousel-item-9 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-9.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-9.jpg');
 }
 .carousel-item-10 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-10.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-10.jpg');
 }
 .carousel-item-11 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-11.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-11.jpg');
 }
 .carousel-item-12 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-12.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-12.jpg');
 }
 .carousel-item-13 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-13.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-13.jpg');
 }
 .carousel-item-14 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-14.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-14.jpg');
 }
 .carousel-item-15 {
-background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-15.jpg');
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-15.jpg');
 }
 /*--- new arrivals ---*/
 .new-arrivals-text {
@@ -131,5 +131,5 @@ padding: 15px;
     }
 /*--- viewfilms ---*/
 .film-header {
-  background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/assets/images/headers/header-7.jpg');  
+  background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-7.jpg');  
 }

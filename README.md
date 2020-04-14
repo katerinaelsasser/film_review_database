@@ -11,14 +11,14 @@ I put together mock ups of what the database would look like. For the two mockup
 
 #### wireframes
 ### Page 1
-[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/mobile_mockup_1.jpg)
+[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/mobile_mockup_1.jpg)
 
-[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/laptop_mockup_1.jpg)
+[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/laptop_mockup_1.jpg)
 
 ### Page 2
-[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/mobile_mockup_2.jpg)
+[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/mobile_mockup_2.jpg)
 
-[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/assets/images/mockups/laptop_mockup_2.jpg)
+[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/laptop_mockup_2.jpg)
 
 ### Strategy
 The aim of this website is so users can find films and the site owner can earn money from users buying the films. The information and the images that will be on the page must link to the films in the database. The infomation in the database must be inform the user about the films.

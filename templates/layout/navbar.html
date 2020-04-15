@@ -2,7 +2,7 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
         <a class="navbar-brand" href="{{url_for('homepage')}}">FRATES</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"  aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -17,13 +17,21 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('viewmovies')}}">Add/View Reviews</a>
                 </li>
+
+                {% if user.is_authenticated %}
+                    {{user.username}}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('deletereviews')}}">Delete Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('userhome')}}">User1</a>
+                    </li>
+                {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('login')}}">Login</a>
-                </li>
+                    </li>
+                {% endif %}
             </ul>
-            <div>
-            <a class="nav-link" href="{{url_for('login')}}"><i class="fa fa-user usericon"></i></a>
-            </div>
         </div>
     </nav>
 </header>

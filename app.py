@@ -31,8 +31,11 @@ def movieID():
     return render_template("pages/individualfilm.html")
 
 #login page   
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 def login():
+    username = request.form.get('username')
+    password = request.form.get('password')
+
     error = None
     if request.method == 'POST':
         if request.form.get['username'] != 'admin' or request.form.get['password'] != 'password':

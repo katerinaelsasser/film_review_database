@@ -1,7 +1,47 @@
 {% block dashboard %}
 <div class="container">
-<h1 class="font-weight-light text-center text-lg">View All Pages</h1>
-    <hr class="hr mt-2 mb-5">
-   
+<div>
+<h1 class="font-weight-light text-center text-lg">Access All Pages</h1>
+<p class="text-center">View all pages that users of the website will see and also have access to all of the reviews that have been uploaded to the database.</p>  
 </div>
+</div>
+
+<div class="card-deck mb-3 text-center">
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h2 class="my-0">View Movies</h2>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Visible To All</h4>
+        <p class="mt-3 mb-4">
+          View all movies that are in the datbase, an unlimited about of movies. Search the film you would like to see.
+        </p>
+        <a class="btn btn-lg btn-info btn-block" href="{{url_for('viewmovies')}}">Click Here</a>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h2 class="my-0">Add Reviews</h2>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Visible To All</h4>
+        <p class="mt-3 mb-4">
+          Leave a revew for one of the films in the database. Simiply search the review, find your film and then submit a review form.
+        </p>
+        <a class="btn btn-lg btn-danger btn-block" href="{{url_for('viewmovies')}}">Click Here</a>
+      </div>
+    </div>
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h2 class="my-0">Delete Reviews</h2>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Visible To You</h4>
+        <p class="mt-3 mb-4">
+          Seen a review you would like to remove. See all reviews submitted, click the remove button and it will be deleted.
+        </p>
+        <a class="btn btn-lg btn-warning btn-block" href="{{url_for('deletereviews')}}">Click Here</a>
+      </div>
+    </div>
+  </div>
 {% endblock %}

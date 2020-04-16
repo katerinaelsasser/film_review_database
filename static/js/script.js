@@ -18,4 +18,4 @@ console.log(movie.Title)
     });
 }
 
-//let filmSearch = $("#searchbar")
+let filmSearch = $("filmSearch")

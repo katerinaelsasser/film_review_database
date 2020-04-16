@@ -18,19 +18,9 @@
                     <a class="nav-link" href="{{url_for('viewmovies')}}">Add/View Reviews</a>
                 </li>
 
-                {% if user.is_authenticated %}
-                    {{user.username}}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('deletereviews')}}">Delete Reviews</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url_for('userhome')}}">User1</a>
-                    </li>
-                {% else %}
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('login')}}">Login</a>
                     </li>
-                {% endif %}
             </ul>
         </div>
     </nav>

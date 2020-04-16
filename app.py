@@ -45,7 +45,7 @@ def login():
     return render_template("pages/login.html", error=error)
     
 #user home page
-@app.route('/userhome', methods=['GET'])
+@app.route('/userhome')
 def userhome():
     return render_template("pages/userhome.html")
 

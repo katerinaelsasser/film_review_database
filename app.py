@@ -50,17 +50,12 @@ def userhome():
     return render_template("pages/userhome.html")
 
 #Delete reviews
-@app.route('/deletereviews')
+@app.route('/deletereviews', methods=['GET','POST'])
 def deletereviews():
     reviews=mongo.db.reviews.find()
-    print(reviews)
     mongo.db.reviews.remove({'_id': ObjectId(review_id)})
+    print(reviews)
     return render_template("pages/viewallreviews.html", reviews=reviews)
-
-@app.route('/deletereviews/<review_id>')
-def removereview(review_id):
-    
-    return redirect(url_for('deletereviews'))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

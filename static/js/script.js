@@ -1,6 +1,6 @@
 //search bar
 function bob(userSearch) {
-    fetch('https://www.omdbapi.com/?apikey=8f317f8&plot=full=$(userSearch)&type=movie')
+    fetch('https://www.omdbapi.com/?apikey=8fb317f8&plot=full=$(userSearch)&type=movie')
     .then(res => res.json())
     .then(data => {
 console.log(data.Search);
@@ -18,4 +18,5 @@ console.log(movie.Title)
     });
 }
 
-let filmSearch = $("filmSearch")
+const userSearchBar = $("#filmSearchBar")
+const searchButton = $("#searchButton");

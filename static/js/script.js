@@ -1,8 +1,9 @@
 //search bar
-function bob(userSearch) {
-    fetch('https://www.omdbapi.com/?apikey=8fb317f8&plot=full=$(userSearch)&type=movie')
+function filmSearch(userSearcBar) {
+    fetch('https://www.omdbapi.com/?apikey=8fb317f8&s='+userSearchBar+'&type=movie')
     .then(res => res.json())
     .then(data => {
+document.getElementById('userSearchBar').value;
 console.log(data.Search);
       data.Search.forEach(movie => {
 console.log(movie.Title)
@@ -17,6 +18,6 @@ console.log(movie.Title)
       });
     });
 }
-
-const userSearchBar = $("#filmSearchBar")
+const userSearchBar = $("#filmSearchBar");
 const searchButton = $("#searchButton");
+

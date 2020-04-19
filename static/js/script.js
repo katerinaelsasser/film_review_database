@@ -1,9 +1,9 @@
 //search bar
 function filmSearch(userSearcBar) {
+    document.getElementById('userSearchBar').value;
     fetch('https://www.omdbapi.com/?apikey=8fb317f8&s='+userSearchBar+'&type=movie')
     .then(res => res.json())
     .then(data => {
-document.getElementById('userSearchBar').value;
 console.log(data.Search);
       data.Search.forEach(movie => {
 console.log(movie.Title)

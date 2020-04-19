@@ -1,7 +1,8 @@
 //search bar
 function filmSearch(userSearcBar) {
+    console.log(userSearcBar);
     document.getElementById('userSearchBar').value;
-    fetch('https://www.omdbapi.com/?apikey=8fb317f8&s='+userSearchBar+'&type=movie')
+    fetch('https://www.omdbapi.com/?apikey=fe2afef6&s='+userSearchBar+'&type=movie')
     .then(res => res.json())
     .then(data => {
 console.log(data.Search);
@@ -19,5 +20,5 @@ console.log(movie.Title)
     });
 }
 const userSearchBar = $("#filmSearchBar");
-const searchButton = $("#searchButton");
+
 

@@ -24,7 +24,7 @@ def viewmovies():
     return render_template("pages/viewfilms.html")
 
 #individual film page
-@app.route('/view/movies/individual', methods=['GET','POST'])
+@app.route('/view/movies/{{movie.imdbID}}', methods=['GET','POST'])
 def movieID():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())
@@ -42,7 +42,7 @@ def login():
             error = 'Invalid Username or Password. Please try again.'
         else:
             return redirect(url_for('userhome'))
-    return render_template("pages/login.html", error=error)
+    return render_template("pages/login.html")
     
 #user home page
 @app.route('/userhome')

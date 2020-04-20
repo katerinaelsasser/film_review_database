@@ -15,7 +15,7 @@ console.log(movie.Title);
         `<div class="col-md-3 film-card">
         <div class="card border-0 shadow">
         <a href="/view/movies/${movie.imdbID}">
-            <img src="${movie.Poster}" class="card-img-top" alt="movie-poster"></a>
+            <img src="${movie.Poster}" class="card-img-top new-arrivals" alt="movie-poster"></a>
             <p>${movie.Title}</p>
             </div>`;
         $('#moviesDIV').append(movieInfo);
@@ -26,7 +26,3 @@ console.log(movie.Title);
 $("#filmSearchBar").change(function () {
     filmSearch();
 });
-
-const userSearchBar = $("#filmSearchBar");
-
-

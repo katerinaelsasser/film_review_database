@@ -22,7 +22,11 @@ console.log(movie.Title);
       });
     });
 }
+
 // added by Stephen
 $("#filmSearchBar").change(function () {
     filmSearch();
 });
+
+
+const userSearchBar = $("#filmSearchBar")

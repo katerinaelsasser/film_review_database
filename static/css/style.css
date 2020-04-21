@@ -115,25 +115,18 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
 .carousel-item-15 {
 background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-15.jpg');
 }
-/*--- new arrivals ---*/
-.new-arrivals-text {
-padding: 15px;
-}
 
-.new-arrivals {
+/*--- viewfilms ---*/
+.film-effect {
       filter: gray;
       -webkit-filter: grayscale(1);
       -webkit-transition: all .8s ease-in-out; 
       max-width: auto;
-      height: 300px; 
+      margin-bottom: 15px;
     }
 
- .new-arrivals:hover {
+ .film-effect:hover {
     filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
     }
-/*--- viewfilms ---*/
-.film-header {
-  background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-7.jpg');  
-}

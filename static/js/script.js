@@ -12,7 +12,7 @@ console.log(data.Search);
 console.log(movie.Title);
 //display for each film
         let movieInfo =
-        `<div class="col-md-3 film-card">
+        `<div class="col-md-3 film-card film-effect">
         <div class="card border-0 shadow">
         <a href="/view/movies/${movie.imdbID}">
             <img src="${movie.Poster}" class="card-img-top" alt="movie-poster"></a>

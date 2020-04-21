@@ -16,7 +16,7 @@ console.log(movie.Title);
         <div class="card border-0 shadow">
         <a href="/view/movies/${movie.imdbID}">
             <img src="${movie.Poster}" class="card-img-top" alt="movie-poster"></a>
-            <p>${movie.Title}</p>
+            <h4 class="text-center film-title">${movie.Title}</h4>
             </div>`;
         $('#moviesDIV').append(movieInfo);
       });

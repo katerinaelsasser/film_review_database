@@ -130,3 +130,7 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
     }
+
+.film-title {
+    padding: 10px;
+}

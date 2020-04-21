@@ -123,6 +123,7 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
       -webkit-transition: all .8s ease-in-out; 
       max-width: auto;
       margin-bottom: 15px;
+      height: 80%;
     }
 
  .film-effect:hover {

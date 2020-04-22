@@ -1,10 +1,14 @@
 {% block filmdisplay %}
 <!---Search Bar-->
+<div class="container border-bottom">
 <div class="searchbar-button row">
-    <input class="form-control form-control-lg col-8 search-bar" type="text" placeholder="Search a film..." id="filmSearchBar" name="filmSearchBar">
-    <button class="btn btn-warning col-4 search-button" id="filmSearchBtn" type="submit">Search</button>
+    <input class="form-control col-8 search-bar" type="text" placeholder="Search a film..." id="filmSearchBar" name="filmSearchBar">
+    <button class="btn btn-primary btn-warning col-4 search-button" id="filmSearchBtn" type="submit">Search</button>
+</div>
 </div>
 <!---Films---->
+<div class="container">
 <div class="row" id="moviesDIV">
+</div>
 </div>
 {% endblock %}

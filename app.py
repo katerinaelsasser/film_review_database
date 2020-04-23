@@ -16,19 +16,19 @@ mongo = PyMongo(app)
 #Home Page
 @app.route('/')
 def homepage():
-    return render_template("pages/index.html")
+    return render_template("pages/index.html", TitlePage="Home")
 
 #viewfilms page
 @app.route('/view/movies')
 def viewmovies():
-    return render_template("pages/viewfilms.html")
+    return render_template("pages/viewfilms.html", TitlePage="Find A Movie")
 
 #individual film page
 @app.route('/view/movies/{{movie.imdbID}}', methods=['GET','POST'])
 def movieID():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())
-    return render_template("pages/individualfilm.html")
+    return render_template("pages/individualfilm.html", TitlePage="{{movie.Title}}")
 
 #login page   
 @app.route('/login')
@@ -38,7 +38,7 @@ def login():
 #user home page
 @app.route('/userhome')
 def userhome():
-    return render_template("pages/userhome.html")
+    return render_template("pages/userhome.html", TitlePage="Admin")
 
 #Delete reviews
 @app.route('/deletereviews', methods=['GET','POST'])

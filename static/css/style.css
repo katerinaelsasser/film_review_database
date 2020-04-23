@@ -125,6 +125,21 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
 .carousel-item-15 {
 background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-15.jpg');
 }
+.carousel-item-16 {
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-16.jpg');
+}
+.carousel-item-17 {
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-17.jpg');
+}
+.carousel-item-18 {
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-18.jpg');
+}
+.carousel-item-19 {
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-19.jpg');
+}
+.carousel-item-20 {
+background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-20.jpg');
+}
 
 /*--- viewfilms ---*/
 .film-effect {

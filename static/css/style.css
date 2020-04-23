@@ -1,5 +1,7 @@
-html {
+html,
+p {
     padding: 0;
+    margin: 0;
 }
 
 h2 {
@@ -148,4 +150,10 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
 
 .form-style {
     margin: 15px;
+}
+
+/*-----review----*/
+
+.review-form {
+    padding: 5px;
 }

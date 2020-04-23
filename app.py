@@ -24,7 +24,7 @@ def viewmovies():
     return render_template("pages/viewfilms.html", TitlePage="Find A Movie")
 
 #individual film page
-@app.route('/view/movies/{{movie.imdbID}}', methods=['GET','POST'])
+@app.route('/view/movies/individual', methods=['GET','POST'])
 def movieID():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())

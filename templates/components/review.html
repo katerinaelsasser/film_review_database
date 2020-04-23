@@ -1,14 +1,13 @@
 {% block review %}
 <div class="container review-container">
-<div class="col-md-8 order-md-1">
       <h4 class="mb-3">Leave A Review</h4>
-      <form class="needs-validation" novalidate="">
+      <form>
         <div class="row">
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 review-form">
             <label for="firstName">Film Title</label>
             <input type="text" class="form-control" id="firstName" placeholder="" value="filmname inserted here" required="">
           </div>
-          <div class="col-md-6 mb-3">
+          <div class="col-md-6 mb-3 review-form">
             <label for="lastName">Nickname of Reviewer</label>
             <input type="text" class="form-control" id="nickname" name="nickname" placeholder="" value="" required="">
             <div class="invalid-feedback">
@@ -16,15 +15,15 @@
             </div>
           </div>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 review-form">
           <label for="address">Review</label>
           <input type="text" class="form-control" name="film_review" id="ReviewText" placeholder="" required="">
           <div class="invalid-feedback">
             Please leave a review.
           </div>
-        
-<hr class="mb-4">
-        <div class="mb-3">
+        </div>
+        <div class="mb-3 review-form">
+            <label for="address">Review</label>
             <select class="custom-select d-block w-100" name="film_star" id="film_star" required="">
               <option value="">Choose A Star Rating</option>
               <option>5 Stars</option>
@@ -37,15 +36,11 @@
               Please select a rating.
             </div>
           </div>
-          </div>
-        <hr class="mb-4">
-        <div class="custom-control custom-checkbox text-center">
+        <div class="custom-control custom-checkbox text-center border-bottom">
           <input type="checkbox" class="custom-control-input" id="recommend">
           <label class="custom-control-label" name="recommend">Would you recommend to a friend?</label>
         </div>
-        <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit Your Review</button>
+        <button class="btn btn-primary btn-block" type="submit">Submit Your Review</button>
       </form>
-    </div>
     </div>
 {% endblock %}

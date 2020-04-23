@@ -1,16 +1,13 @@
 //search bar
 function filmSearch() {
     var userSearchBar = document.getElementById('filmSearchBar').value;
-// clears search before generating
     $('#moviesDIV').empty();
-//omdb api code
     fetch('https://www.omdbapi.com/?apikey=fe2afef6&s='+userSearchBar+'&type=movie')
     .then(res => res.json())
     .then(data => {
 console.log(data.Search);
       data.Search.forEach(movie => {
 console.log(movie.Title);
-//display for each film
         let movieInfo =
         `<div class="col-md-3 film-card film-effect">
         <div class="card border-0 shadow">
@@ -23,10 +20,14 @@ console.log(movie.Title);
     });
 }
 
-// added by Stephen
 $("#filmSearchBar").change(function () {
     filmSearch();
 });
 
-
 const userSearchBar = $("#filmSearchBar")
+
+//login
+function adminLogin () {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+}

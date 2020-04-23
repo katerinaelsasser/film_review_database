@@ -33,7 +33,7 @@ def movieID():
 #login page   
 @app.route('/login')
 def login():
-    return render_template("pages/login.html")
+    return render_template("pages/login.html", TitlePage="Login")
     
 #user home page
 @app.route('/userhome')

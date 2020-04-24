@@ -80,6 +80,17 @@ footer {
   background-size: cover;
 }
 
+.carousel-item-film {
+    height: 100%;
+  min-height: 500px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
 .carousel-item-1 {
     background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/static/images/headers/header-1.jpg');
 }

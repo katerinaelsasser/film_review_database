@@ -1,5 +1,15 @@
-{% extends 'layout/userbase.html' %} {% block content %}
+{% extends 'layout/userbase.html' %} 
+{% block content %}
 
+<!---Slideshow-->
 {% include 'components/userslide.html' %}    
 
-{% include 'components/dashboard.html' %} {% endblock %}
+<!--Intro-->
+<div class="container">
+<p>Access all pages on the website, including the back office pages. Add, edit and delete films to the database so other people can leave reviews for. As well as this, you can remove reviews that you don't want on the website.</p>
+</div>
+
+<!---links to all pages-->
+{% include 'components/dashboard.html' %} 
+
+{% endblock %}

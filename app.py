@@ -41,13 +41,18 @@ def login():
 def userhome():
     return render_template("pages/userhome.html", TitlePage="Admin")
 
+#View All Reviews
+@app.route('/viewreviews', methods=['GET','POST'])
+def viewreviews():
+    reviews=mongo.db.reviews.find()
+    return render_template("pages/viewallreviews.html", reviews=reviews)
+
 #Delete reviews
-@app.route('/deletereviews', methods=['GET','POST'])
+@app.route('/deletereviews/<review_id>', methods=['GET','POST'])
 def deletereviews():
     reviews=mongo.db.reviews.find()
     mongo.db.reviews.remove({'_id': ObjectId(review_id)})
-    print(reviews)
-    return render_template("pages/viewallreviews.html", reviews=reviews)
+    return redirect(url_for('viewreviews'))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

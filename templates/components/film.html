@@ -6,15 +6,18 @@
         <div class="container">
           <div class="row">
             <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Name</h3>
+              <h3 class="login-heading mb-4">${movie.Title}</h3>
                 <div>
-                Year | Age Rating
+                ${movie.Year} | ${movie.Rating}
                 </div>
                 <div>
-                Genre | Length
+                ${movie.Genre} | ${movie.Runtime}
                 </div>
                 <div>
-                Description
+                Director : ${movie.Director}
+                </div>
+                <div>
+                ${movie.Plot}
                 </div>
             </div>
           </div>
@@ -22,7 +25,7 @@
       </div>
     </div>
     <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
-    <img src="static/images/movie-poster/dark-knight.jpg">
+    <img src="${movie.Poster}">
     </div>
 
   </div>

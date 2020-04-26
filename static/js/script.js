@@ -11,7 +11,7 @@ console.log(movie.Title);
         let movieInfo =
         `<div class="col-md-3 film-card film-effect">
         <div class="card border-0 shadow">
-        <a href="/view/movies/${movie.imdbID}">
+        <a href="{{url_for('movieID')}}">
             <img src="${movie.Poster}" class="card-img-top" alt="movie-poster"></a>
             <h4 class="text-center film-title">${movie.Title}</h4>
             </div>`;
@@ -25,9 +25,3 @@ $("#filmSearchBar").change(function () {
 });
 
 const userSearchBar = $("#filmSearchBar")
-
-//login
-function adminLogin () {
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-}

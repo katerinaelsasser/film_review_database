@@ -24,11 +24,12 @@ def viewmovies():
     return render_template("pages/viewfilms.html", TitlePage="Find A Movie")
 
 #individual film page
-@app.route('/view/movies/individual', methods=['GET','POST'])
+@app.route('/view/movies/<movie_id>', methods=['GET','POST'])
 def movieID():
+    movie_id = {{movie.imdbID}}
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())
-    return render_template("pages/individualfilm.html", TitlePage="{{movie.Title}}")
+    return render_template("pages/individualfilm.html", TitlePage="movie.Title")
 
 #login page   
 @app.route('/login')

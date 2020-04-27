@@ -24,11 +24,9 @@ def viewmovies():
     return render_template("pages/viewfilms.html", TitlePage="Find A Movie")
 
 #individual film page
-@app.route('/view/movies/<movie_id>', methods=['GET','POST'])
-def movieID():
-    movie_id = {{movie.imdbID}}
-    reviews =  mongo.db.reviews
-    reviews.insert_one(request.form.to_dict())
+@app.route('/view/movies/'<movie_id>, methods=['GET','POST'])
+def movieID(movie_id):
+    movie_id = "movie.imdbID"
     return render_template("pages/individualfilm.html", TitlePage="movie.Title")
 
 #login page   
@@ -48,11 +46,11 @@ def viewreviews():
     return render_template("pages/viewallreviews.html", reviews=reviews)
 
 #Delete reviews
-@app.route('/deletereviews/<review_id>', methods=['GET','POST'])
-def deletereviews():
-    reviews=mongo.db.reviews.find()
-    mongo.db.reviews.remove({'_id': ObjectId(review_id)})
-    return redirect(url_for('viewreviews'))
+#@app.route('/deletereviews/<review_id>', methods=['GET','POST'])
+#def deletereviews():
+ #   reviews=mongo.db.reviews.find()
+  #  mongo.db.reviews.remove({'_id': ObjectId(review_id)})
+   # return redirect(url_for('viewreviews'))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

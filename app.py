@@ -24,9 +24,9 @@ def viewmovies():
     return render_template("pages/viewfilms.html", TitlePage="Find A Movie")
 
 #individual film page
-@app.route('/view/movies/'<movie_id>, methods=['GET','POST'])
+@app.route('/view/movies/${movie.imdbID}')
 def movieID(movie_id):
-    movie_id = "movie.imdbID"
+    movie_id = 'movie.imdbID'
     return render_template("pages/individualfilm.html", TitlePage="movie.Title")
 
 #login page   

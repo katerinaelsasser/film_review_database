@@ -9,14 +9,12 @@ console.log(data.Search);
       data.Search.forEach(movie => {
 console.log(movie.Title);
         let moviePreview =
-        `<a href="/view/movies/${movie.imdbID}">
-        <div class="col-md-3 film-card film-effect">
+        `<div class="col-md-3 film-card film-effect">
         <div class="card border-0 shadow">
-        <a href="{{url_for('movieID')}}">
+        <a href="/view/movies/${movie.imdbID}">
             <img src="${movie.Poster}" class="card-img-top" alt="movie-poster"></a>
             <h4 class="text-center film-title">${movie.Title}</h4>
-            </div>
-            </a>`;
+            </div>`;
         $('#moviesDIV').append(moviePreview);
       });
     });

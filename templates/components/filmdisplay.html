@@ -16,6 +16,16 @@
 <!---Films---->
 <div class="container">
 <div class="row" id="moviesDIV">
+
+{% for film in films %}
+<div class="col-md-3 film-card film-effect">
+        <div class="card border-0 shadow">
+        <a onclick="movieSelected('${movie.imdbID}')" href="#">
+            <img src="${movie.Poster}" class="card-img-top" alt="movie-poster"></a>
+            <h4 class="text-center film-title">${movie.Title}</h4>
+            </div>
+{% endfor %}
+
 </div>
 </div>
 {% endblock %}

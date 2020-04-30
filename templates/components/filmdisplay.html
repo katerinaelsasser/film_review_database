@@ -20,8 +20,8 @@
 {% for movie in movies %}
 <div class="col-md-3 film-card film-effect">
         <div class="card border-0 shadow">
-            <img src="${movie.Poster}" class="card-img-top" alt="movie-poster">
-            <h4 class="text-center film-title">${movie.title}</h4>
+            <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+            <h4 class="text-center film-title">{{movie.title}}</h4>
             </div>
 {% endfor %}
 

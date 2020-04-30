@@ -26,9 +26,9 @@ def viewmovies():
     return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
 
 #individual film page
-@app.route('/view/movies/movie.imdbID', methods=['GET','POST'])
+@app.route('/view/movies/individual', methods=['GET','POST'])
 def movieID(movie_id):
-    movies =  mongo.db.movies.find_one({"_id": ObjectId(movies_id)})
+    movies=mongo.db.movies.find()
     reviews=mongo.db.reviews.find()
     print(movies, reviews)
     return render_template("pages/individualfilm.html", movies=movies, reviews=reviews, TitlePage="movie.Title")

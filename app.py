@@ -21,17 +21,17 @@ def homepage():
 #viewfilms page
 @app.route('/view/movies', methods=['GET'])
 def viewmovies():
-    films=mongo.db.films.find()
-    print(films)
-    return render_template("pages/viewfilms.html", TitlePage="Find A Movie")
+    movies=mongo.db.movies.find()
+    print(movies)
+    return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
 
 #individual film page
 @app.route('/view/movies/movie.imdbID', methods=['GET','POST'])
 def movieID(movie_id):
-    films=mongo.db.films.find()
+    movies =  mongo.db.movies.find_one({"_id": ObjectId(movies_id)})
     reviews=mongo.db.reviews.find()
-    print(films, reviews)
-    return render_template("pages/individualfilm.html", films=films, reviews=reviews, TitlePage="movie.Title")
+    print(movies, reviews)
+    return render_template("pages/individualfilm.html", movies=movies, reviews=reviews, TitlePage="movie.Title")
 
 #login page   
 @app.route('/login')

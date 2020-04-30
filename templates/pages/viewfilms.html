@@ -14,7 +14,8 @@
         <div class="card border-0 shadow">
             <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
             <h4 class="text-center film-title">{{movie.title}}</h4>
-            <div class="input-group-append">
+        <div class="row">    
+            <div class="input-group-append col-6">
             <button type="submit" class="btn btn-secondary">Info</button>
           <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -22,14 +23,29 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">{{movie.title}}</h3>
+                <div>
+                {{movie.year}} | {{movie.rating}}
+                </div>
+                <div>
+                {{movie.genre}} | {{movie.runtime}}
+                </div>
+                <div>
+                {{movie.plot}}
+                </div>
+                <div>
+                {{movie.actors}}
+                </div>
+            </div>
   </div>
 
 </div>
           </div>
-          <div class="input-group-append">
+          <div class="input-group-append col-6">
             <button type="submit" class="btn btn-secondary">Reviews</button>
-          </div>        
+          </div>   
+          </div>     
             </div>
             </div>
 {% endfor %}

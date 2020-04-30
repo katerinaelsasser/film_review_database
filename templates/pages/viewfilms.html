@@ -14,7 +14,22 @@
         <div class="card border-0 shadow">
             <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
             <h4 class="text-center film-title">{{movie.title}}</h4>
-        
+            <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Info</button>
+          <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+          </div>
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Reviews</button>
+          </div>        
             </div>
 {% endfor %}
 

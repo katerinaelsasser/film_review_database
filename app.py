@@ -19,15 +19,19 @@ def homepage():
     return render_template("pages/index.html", TitlePage="Home")
 
 #viewfilms page
-@app.route('/view/movies')
+@app.route('/view/movies', methods=['GET'])
 def viewmovies():
+    films=mongo.db.films.find()
+    print(films)
     return render_template("pages/viewfilms.html", TitlePage="Find A Movie")
 
 #individual film page
-@app.route('/view/movies/movie.imdbID')
+@app.route('/view/movies/movie.imdbID', methods=['GET','POST'])
 def movieID(movie_id):
-    movie_id = 'movie.imdbID'
-    return render_template("pages/individualfilm.html", TitlePage="movie.Title")
+    films=mongo.db.films.find()
+    reviews=mongo.db.reviews.find()
+    print(films, reviews)
+    return render_template("pages/individualfilm.html", films=films, reviews=reviews, TitlePage="movie.Title")
 
 #login page   
 @app.route('/login')
@@ -43,6 +47,7 @@ def userhome():
 @app.route('/viewreviews', methods=['GET','POST'])
 def viewreviews():
     reviews=mongo.db.reviews.find()
+    print(reviews)
     return render_template("pages/viewallreviews.html", reviews=reviews)
 
 #Delete reviews

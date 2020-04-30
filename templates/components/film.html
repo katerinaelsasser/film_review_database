@@ -1,18 +1,35 @@
 {% block film %}
-<div id="Film_ID">
 
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <div class="col-md-8 col-lg-6">
+      <div class="login d-flex align-items-center py-5">
         <div class="container">
-            <div id="movieView">
-            
-            
-            
-</div>
-
-
-         
-  
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">{{movie.title}}</h3>
+                <div>
+                {{movie.year}} | {{movie.rating}}
+                </div>
+                <div>
+                {{movie.genre}} | {{movie.runtime}}
+                </div>
+                <div>
+                {{movie.plot}}
+                </div>
+                <div>
+                {{movie.actors}}
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image">
+    <img src="{{movie.poster}}">
     </div>
 
   </div>
+</div>
 
 {% endblock %}

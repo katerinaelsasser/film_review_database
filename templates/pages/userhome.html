@@ -1,4 +1,4 @@
-{% extends 'layout/userbase.html' %} 
+{% extends 'layout/base.html' %} 
 {% block content %}
 
 <!---Slideshow-->
@@ -6,10 +6,10 @@
 
 <!--Intro-->
 <div class="container">
-<p>Access all pages on the website, including the back office pages. Add, edit and delete films to the database so other people can leave reviews for. As well as this, you can remove reviews that you don't want on the website.</p>
+<h1 class="text-center">Access All Pages</h1>
 </div>
 
 <!---links to all pages-->
 {% include 'components/dashboard.html' %} 
-
+{% include 'components/about.html' %}
 {% endblock %}

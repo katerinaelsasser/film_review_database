@@ -54,6 +54,10 @@ padding: 15px;
     margin: 15px;
 }
 
+.btn-text {
+    color: #fefefe;
+}
+
 /*-- footer ---*/
 footer {
     padding: 15px;

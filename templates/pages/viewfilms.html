@@ -1,9 +1,13 @@
 {% extends 'layout/base.html' %} {% block content %}
-{% include 'components/filmslide.html' %} 
-<!--Intro-->
-<div class="container">
-<h4>Search A Film & Review It</h4>
-<p>Search a film in the search bar, click the film you want to view and find out infomation about it, what other people think about it and add your own review.</p>
+
+<div class="row align-items-center my-5 border-bottom">
+<div class="col-lg-5 text-spacing text-center">
+        <h1 class="header-style"><strong>Search It</strong></h1>
+<p class="header-style">Search a film in the search bar, click the film you want to view and find out infomation about it, what other people think about it and add your own review.</p>
+    </div>
+    <div class="col-lg-7 text-center">
+{% include 'components/filmslide.html' %}   
+</div>
 </div>
 <!---Films---->
 <div class="container">
@@ -41,4 +45,7 @@
 {% endfor %}
 
 
-</div> {% endblock %}
+</div> 
+
+{% include 'components/about.html' %}
+{% endblock %}

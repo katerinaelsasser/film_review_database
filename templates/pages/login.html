@@ -1,7 +1,21 @@
 {% extends 'layout/base.html' %} {% block content %}
 <div class="row align-items-center my-5 border-bottom">
-{% include 'components/loginslide.html' %}    
-{% include 'components/loginform.html' %}     
+<div class="col-lg-5 text-center">
+            <h1 class="font-weight-light">Sign In</h1>
+            <p class="text-muted">Please enter username and password</p>
+            <form class="form-signin" action="{{url_for('userhome')}}">
+                <div class="form-label-group header-style">
+                    <input type="text" placeholder="Enter Username" id="username" name="username">
+                </div>
+                <div class="form-label-group header-style">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </div>
+                <div class="form-label-group header-style">
+                    <button class="btn btn-primary btn-info btn-block text-uppercase" type="submit">Sign in</button>
+                </div>
+            </form>
+    </div>  
+{% include 'components/loginslide.html' %}      
 </div>
-<!---new user-->
+{% include 'components/about.html' %}
 {% endblock %}

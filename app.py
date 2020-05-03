@@ -52,26 +52,26 @@ def viewreviews():
     return render_template("pages/viewallreviews.html", reviews=reviews)
 
 #Edit films
-@app.route('/movies/edit/<film_id>', methods=["GET"])
-def editform():
+@app.route('/movies/edit', methods=["GET"])
+def editmovies():
     films=mongo.db.films.find()
-    films=mongo.db.films.find_one({"film_id": ObjectId(film_id)})
+    #films=mongo.db.films.find_one({"film_id": ObjectId(film_id)})
     print(films)
-    mongo.db.films.update( {'_id': ObjectId(film_id)},
-    {
-        'film_name':request.form.get('film_name'),
-        'film_director': request.form.get('film_director'),
-        'film_description': request.form.get('film_description'),
-        'film_genre':request.form.get('film_genre'),
-        'film_year':request.form.get('film_year'),
-        'film_age':request.form.get('film_age'),
-        'film_poster':request.form.get('film_poster'),
-    })
+    #mongo.db.films.update( {'_id': ObjectId(film_id)},
+    #{
+     #   'film_name':request.form.get('film_name'),
+      #  'film_director': request.form.get('film_director'),
+       # 'film_description': request.form.get('film_description'),
+        #'film_genre':request.form.get('film_genre'),
+        #'film_year':request.form.get('film_year'),
+        #'film_age':request.form.get('film_age'),
+        #'film_poster':request.form.get('film_poster'),
+    #})
     return render_template("pages/editform.html", films=films)
 
 #Add Movie
 @app.route('/movies/add', methods=['POST'])
-def insertmovie():
+def addmovies():
     movies =  mongo.db.movies
     movies.insert_one(request.form.to_dict())
     return render_template("pages/addfilm.html", movies=movies)

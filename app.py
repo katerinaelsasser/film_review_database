@@ -27,11 +27,13 @@ def viewmovies():
     return render_template("pages/viewfilms.html", movies=movies, reviews=reviews, TitlePage="Find A Movie")
 
 #Leave review page
-@app.route('/review/add', methods=['POST'])
+@app.route('/review/add')
 def addreview():
-    reviews =  mongo.db.reviews
-    reviews.insert_one(request.form.to_dict())
-    return render_template("pages/addreview.html", reviews=reviews, TitlePage="Leave A Review")
+    movies = mongo.db.movies.find()
+    #reviews =  mongo.db.reviews
+    #reviews.insert_one(request.form.to_dict())
+    print(movies)
+    return render_template("pages/addreview.html", movies=movies, TitlePage="Leave A Review")
 
 #login page   
 @app.route('/login')
@@ -46,10 +48,10 @@ def userhome():
 #View All Reviews
 @app.route('/review/view', methods=['GET','POST'])
 def viewreviews():
-    reviews=mongo.db.reviews.find()
-    mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
-    print(reviews)
-    return render_template("pages/viewallreviews.html", reviews=reviews)
+    #reviews=mongo.db.reviews.find()
+    #mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
+    #print(reviews)
+    return render_template("pages/viewallreviews.html", TitlePage="View Reviews")
 
 #Edit films
 @app.route('/movies/edit', methods=["GET"])

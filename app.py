@@ -21,12 +21,13 @@ def homepage():
 #viewfilms page
 @app.route('/view/movies', methods=['GET'])
 def viewmovies():
-    movies=mongo.db.movies.find()
-    print(movies)
-    return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
+    movies = mongo.db.movies.find()
+    reviews = mongo.db.reviews.find()
+    print(movies, reviews)
+    return render_template("pages/viewfilms.html", movies=movies, reviews=reviews, TitlePage="Find A Movie")
 
 #leave review page
-@app.route('/review', methods=['POST'])
+@app.route('/add/review', methods=['POST'])
 def addreview():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())

@@ -19,15 +19,15 @@ def homepage():
     return render_template("pages/index.html", TitlePage="Home")
 
 #viewfilms page
-@app.route('/view/movies', methods=['GET'])
+@app.route('/movies/view', methods=['GET'])
 def viewmovies():
     movies = mongo.db.movies.find()
     reviews = mongo.db.reviews.find()
     print(movies, reviews)
     return render_template("pages/viewfilms.html", movies=movies, reviews=reviews, TitlePage="Find A Movie")
 
-#leave review page
-@app.route('/add/review', methods=['POST'])
+#Leave review page
+@app.route('/review/add', methods=['POST'])
 def addreview():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())
@@ -39,26 +39,20 @@ def login():
     return render_template("pages/login.html", TitlePage="Login")
     
 #user home page
-@app.route('/userhome')
+@app.route('/dashboard')
 def userhome():
     return render_template("pages/userhome.html", TitlePage="Admin")
 
 #View All Reviews
-@app.route('/viewreviews', methods=['GET','POST'])
+@app.route('/review/view', methods=['GET','POST'])
 def viewreviews():
     reviews=mongo.db.reviews.find()
+    mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
     print(reviews)
     return render_template("pages/viewallreviews.html", reviews=reviews)
 
-#Delete reviews
-@app.route('/deletereviews/<review_id>', methods=['GET','POST'])
-def deletereviews():
-    reviews = mongo.db.reviews.find()
-    mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
-    return redirect(url_for('deletereviews'))
-
 #Edit films
-@app.route('/editform/<film_id>', methods=["GET"])
+@app.route('/movies/edit/<film_id>', methods=["GET"])
 def editform():
     films=mongo.db.films.find()
     films=mongo.db.films.find_one({"film_id": ObjectId(film_id)})
@@ -76,15 +70,11 @@ def editform():
     return render_template("pages/editform.html", films=films)
 
 #Add Movie
-@app.route('/addfilm', methods=['GET'])
-def addfilm():
-    return render_template("pages/addfilm.html")
-
-@app.route('/insertfilm', methods=['POST'])
-def insertfilm():
-    films =  mongo.db.films
-    films.insert_one(request.form.to_dict())
-    return redirect(url_for('viewfilms'))
+@app.route('/movies/add', methods=['POST'])
+def insertmovie():
+    movies =  mongo.db.movies
+    movies.insert_one(request.form.to_dict())
+    return render_template("pages/addfilm.html", movies=movies)
 
 
 if __name__ == '__main__':

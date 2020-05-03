@@ -30,10 +30,10 @@ def viewmovies():
 @app.route('/review/add')
 def addreview():
     movies = mongo.db.movies.find()
-    #reviews =  mongo.db.reviews
-    #reviews.insert_one(request.form.to_dict())
+    reviews =  mongo.db.reviews
+    reviews.insert_one(request.form.to_dict())
     print(movies)
-    return render_template("pages/addreview.html", movies=movies, TitlePage="Leave A Review")
+    return render_template("pages/addreview.html", movies=movies, reviews=reviews, TitlePage="Leave A Review")
 
 #login page   
 @app.route('/login')

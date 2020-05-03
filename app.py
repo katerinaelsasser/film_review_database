@@ -51,11 +51,41 @@ def viewreviews():
     return render_template("pages/viewallreviews.html", reviews=reviews)
 
 #Delete reviews
-#@app.route('/deletereviews/<review_id>', methods=['GET','POST'])
-#def deletereviews():
- #   reviews=mongo.db.reviews.find()
-  #  mongo.db.reviews.remove({'_id': ObjectId(review_id)})
-   # return redirect(url_for('viewreviews'))
+@app.route('/deletereviews/<review_id>', methods=['GET','POST'])
+def deletereviews():
+    reviews = mongo.db.reviews.find()
+    mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
+    return redirect(url_for('deletereviews'))
+
+#Edit films
+@app.route('/editform/<film_id>', methods=["GET"])
+def editform():
+    films=mongo.db.films.find()
+    films=mongo.db.films.find_one({"film_id": ObjectId(film_id)})
+    print(films)
+    mongo.db.films.update( {'_id': ObjectId(film_id)},
+    {
+        'film_name':request.form.get('film_name'),
+        'film_director': request.form.get('film_director'),
+        'film_description': request.form.get('film_description'),
+        'film_genre':request.form.get('film_genre'),
+        'film_year':request.form.get('film_year'),
+        'film_age':request.form.get('film_age'),
+        'film_poster':request.form.get('film_poster'),
+    })
+    return render_template("pages/editform.html", films=films)
+
+#Add Movie
+@app.route('/addfilm', methods=['GET'])
+def addfilm():
+    return render_template("pages/addfilm.html")
+
+@app.route('/insertfilm', methods=['POST'])
+def insertfilm():
+    films =  mongo.db.films
+    films.insert_one(request.form.to_dict())
+    return redirect(url_for('viewfilms'))
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

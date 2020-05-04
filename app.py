@@ -21,7 +21,7 @@ def homepage():
 #viewfilms page
 @app.route('/movies/view', methods=['GET'])
 def viewmovies():
-    movies = mongo.db.movies.find().sort( { movies.title } )
+    movies = mongo.db.movies.find().sort( { "title" } )
     reviews = mongo.db.reviews.find()
 
 #add lookup code $lookup { from: "reviews", look for review.title == movie.title, show all reviews with same title} 

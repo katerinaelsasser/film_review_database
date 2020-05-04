@@ -23,6 +23,9 @@ def homepage():
 def viewmovies():
     movies = mongo.db.movies.find()
     reviews = mongo.db.reviews.find()
+
+#add lookup code $lookup { from: "reviews", look for review.title == movie.title, show all reviews with same title} 
+
     print(movies, reviews)
     return render_template("pages/viewfilms.html", movies=movies, reviews=reviews, TitlePage="Find A Movie")
 

@@ -59,20 +59,9 @@ def viewreviews():
 #Edit films
 @app.route('/movies/edit', methods=["GET"])
 def editmovies():
-    films=mongo.db.films.find()
-    #films=mongo.db.films.find_one({"film_id": ObjectId(film_id)})
-    print(films)
-    #mongo.db.films.update( {'_id': ObjectId(film_id)},
-    #{
-     #   'film_name':request.form.get('film_name'),
-      #  'film_director': request.form.get('film_director'),
-       # 'film_description': request.form.get('film_description'),
-        #'film_genre':request.form.get('film_genre'),
-        #'film_year':request.form.get('film_year'),
-        #'film_age':request.form.get('film_age'),
-        #'film_poster':request.form.get('film_poster'),
-    #})
-    return render_template("pages/editform.html", films=films)
+    movies = mongo.db.movies.find()
+    print(movies)
+    return render_template("pages/edit.html", movies=movies)
 
 #Add Movie
 @app.route('/movies/add', methods=['POST'])

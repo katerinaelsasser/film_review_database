@@ -1,0 +1,135 @@
+{% extends 'layout/base.html' %} {% block content %}
+<div class="row align-items-center my-5 border-bottom">
+    <div class="col-lg-7">
+{% include 'components/filmslide.html' %} 
+    </div>
+    <div class="col-lg-5 text-spacing text-center">
+        <h1 class="font-weight-light">View All Reviews</h1>
+        <p>Search any and every film there is. If there is a film that you have seen, click the button and add a review.</p>
+    </div>
+</div>
+</div>
+</div>
+
+<!--Edit/Delete Movies--->
+
+<div class="container">
+<div class="row" id="moviesDIV">
+
+{% for movie in movies %}
+<div class="col-md-3 film-card film-effect">
+        <div class="card border-0 shadow">
+            <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+            <h4 class="text-center film-title">{{movie.title}}</h4>
+        <div class="row">    
+            <div class="input-group-append col-6">
+            <button id="infoBtn" type="submit" class="btn btn-secondary">Edit</button>
+          </div>
+          <div class="input-group-append col-6">
+            <a href="{{url_for('removefilm', film_id=film._id)}}" class="btn btn-danger">Delete</a>
+          </div>   
+          </div>     
+            </div>
+            </div>
+<!-- info modal -->
+<div id="infoModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<form action="/insertmovie" method="POST">
+        <div class="row">
+            <!--Movie name-->
+            <div class="col-md-6 mb-3">
+                <h4><label for="title">Movie Title</label></h4>
+                <input type="text" class="form-control" id="title" name="title" placeholder="" value="" required="">{{movie.title}}
+                <div class="invalid-feedback">
+                    Valid movie title is required.
+                </div>
+            </div>
+            <!--Director name-->
+            <div class="col-md-6 mb-3">
+                <h4><label for="director">Director</label></h4>
+                <input type="text" class="form-control" id="director" name="director" placeholder="" value="" required="">{{movie.director}}
+                <div class="invalid-feedback">
+                    Valid director name is required.
+                </div>
+            </div>
+            <!--Movie description-->
+            <div class="col-md-12 mb-3">
+                <h4><label for="plot">Description</label></h4>
+                <input type="text" class="form-control" id="plot" name="plot" placeholder="" value="" required="">{{movie.plot}}
+                <div class="invalid-feedback">
+                    Please enter the movie plot.
+                </div>
+            </div>
+            <!--Movie Genre-->
+            <div class="col-md-12 mb-3">
+                <h4><label for="genre">Genre</label></h4>
+                <input type="text" class="form-control" id="genre" name="genre" required="">{{movie.genre}}
+                <div class="invalid-feedback">
+                    Please fill in with one or multiple genres.
+                </div>
+  </div>
+            <!--Movie release year-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="year">Year of Release</label></h4>
+                <input type="text" class="form-control" id="year" name="year" placeholder="" value="" required="">{{movie.year}}
+                <div class="invalid-feedback">
+                    Valid year of release is required.
+                </div>
+            </div>
+            <!--Movie Age Rating-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="rating">Age Rating</label></h4>
+                <select class="custom-select d-block w-100" id="rating" name="rating" required="">{{movie.rating}}
+                    <option value="U">U</option>
+                    <option value="PG">PG</option>
+                    <option value="12A">12A</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                    <option value="18">18</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select from the dropdown.
+                </div>
+            </div>
+            <!--Movie poster-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="poster">Poster</label></h4>
+                <input type="text" class="form-control" id="poster" name="poster" placeholder="" value="" required="">{{movie.poster}}
+                <div class="invalid-feedback">
+                    Poster link is required.
+                </div>
+            </div>
+            <!--Submit button-->
+            <div class="text-center col-12">
+        <button type="submit" name="action" class="btn btn-success btn-block text-center">Submit</button>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col-md-9 col-lg-8 mx-auto">
+              <h3 class="login-heading mb-4">{{movie.title}}</h3>
+                <p>{{movie.year}} | {{movie.rating}}</p>
+                <p>{{movie.genre}} | {{movie.runtime}}</p>
+                <p>{{movie.plot}}</p>
+                <p>{{movie.actors}}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+</div> 
+</div>
+
+
+{% endblock %}

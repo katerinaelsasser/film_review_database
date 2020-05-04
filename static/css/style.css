@@ -225,3 +225,7 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
   text-decoration: none;
   cursor: pointer;
 }
+
+.modal-text {
+    padding: 15px;
+}

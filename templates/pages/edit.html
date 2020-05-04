@@ -31,7 +31,7 @@
           </div>     
             </div>
             </div>
-<!-- info modal -->
+<!-- edit modal -->
 <div id="infoModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
@@ -40,7 +40,7 @@
             <!--Movie name-->
             <div class="col-md-6 mb-3">
                 <h4><label for="title">Movie Title</label></h4>
-                <input type="text" class="form-control" id="title" name="title" placeholder="" value="" required="">{{movie.title}}
+                <input type="text" class="form-control" id="title" name="title" placeholder="" value="{{movie.title}}" required="">
                 <div class="invalid-feedback">
                     Valid movie title is required.
                 </div>
@@ -48,7 +48,7 @@
             <!--Director name-->
             <div class="col-md-6 mb-3">
                 <h4><label for="director">Director</label></h4>
-                <input type="text" class="form-control" id="director" name="director" placeholder="" value="" required="">{{movie.director}}
+                <input type="text" class="form-control" id="director" name="director" placeholder="" value="{{movie.director}}" required="">
                 <div class="invalid-feedback">
                     Valid director name is required.
                 </div>
@@ -56,7 +56,7 @@
             <!--Movie description-->
             <div class="col-md-12 mb-3">
                 <h4><label for="plot">Description</label></h4>
-                <input type="text" class="form-control" id="plot" name="plot" placeholder="" value="" required="">{{movie.plot}}
+                <input type="text" class="form-control" id="plot" name="plot" placeholder="" value="{{movie.plot}}" required="">
                 <div class="invalid-feedback">
                     Please enter the movie plot.
                 </div>
@@ -64,7 +64,7 @@
             <!--Movie Genre-->
             <div class="col-md-12 mb-3">
                 <h4><label for="genre">Genre</label></h4>
-                <input type="text" class="form-control" id="genre" name="genre" required="">{{movie.genre}}
+                <input type="text" class="form-control" id="genre" name="genre" required="" value="{{movie.genre}}">
                 <div class="invalid-feedback">
                     Please fill in with one or multiple genres.
                 </div>
@@ -72,7 +72,7 @@
             <!--Movie release year-->
             <div class="col-md-4 mb-3">
                 <h4><label for="year">Year of Release</label></h4>
-                <input type="text" class="form-control" id="year" name="year" placeholder="" value="" required="">{{movie.year}}
+                <input type="text" class="form-control" id="year" name="year" placeholder="" value="{{movie.year}}" required="">
                 <div class="invalid-feedback">
                     Valid year of release is required.
                 </div>
@@ -80,7 +80,7 @@
             <!--Movie Age Rating-->
             <div class="col-md-4 mb-3">
                 <h4><label for="rating">Age Rating</label></h4>
-                <select class="custom-select d-block w-100" id="rating" name="rating" required="">{{movie.rating}}
+                <select class="custom-select d-block w-100" id="rating" name="rating" required="" value="{{movie.rating}}">
                     <option value="U">U</option>
                     <option value="PG">PG</option>
                     <option value="12A">12A</option>
@@ -95,7 +95,7 @@
             <!--Movie poster-->
             <div class="col-md-4 mb-3">
                 <h4><label for="poster">Poster</label></h4>
-                <input type="text" class="form-control" id="poster" name="poster" placeholder="" value="" required="">{{movie.poster}}
+                <input type="text" class="form-control" id="poster" name="poster" placeholder="" value="{{movie.poster}}" required="">
                 <div class="invalid-feedback">
                     Poster link is required.
                 </div>
@@ -105,25 +105,6 @@
         <button type="submit" name="action" class="btn btn-success btn-block text-center">Submit</button>
         </div>
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">{{movie.title}}</h3>
-                <p>{{movie.year}} | {{movie.rating}}</p>
-                <p>{{movie.genre}} | {{movie.runtime}}</p>
-                <p>{{movie.plot}}</p>
-                <p>{{movie.actors}}</p>
-    </div>
   </div>
 </div>
 {% endfor %}

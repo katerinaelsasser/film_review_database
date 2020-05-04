@@ -63,6 +63,20 @@ def editmovies():
     print(movies)
     return render_template("pages/edit.html", movies=movies , TitlePage="Edit/Delete Movies")
 
+@app.route('/movies/edit/<film_id>', methods=["POST"])
+def updatemovies(movies_id):
+    mongo.db.movies.update( {'_id': ObjectId(movies_id)},
+    {
+        'title':request.form.get('title'),
+        'director': request.form.get('director'),
+        'plot': request.form.get('plot'),
+        'genre':request.form.get('genre'),
+        'year':request.form.get('year'),
+        'rating':request.form.get('rating'),
+        'poster':request.form.get('poster'),
+    })
+    return redirect(url_for('editmovies'))
+
 @app.route('/movies/edit/<film_id>')
 def removemovie(movies_id):
     mongo.db.movies.remove({'_id': ObjectId(movies_id)})
@@ -73,11 +87,11 @@ def removemovie(movies_id):
 def addmovies():
     return render_template("pages/addfilm.html")
 
-@app.route('/insertmovie', methods=['POST'])
-def insertmovie():
-    movies =  mongo.db.movies
-    movies.insert_one(request.form.to_dict())
-    return redirect(url_for('viewmovies'))    
+#@app.route('/insertmovie', methods=['POST'])
+#def insertmovie():
+ #   movies =  mongo.db.movies
+  #  movies.insert_one(request.form.to_dict())
+   # return redirect(url_for('viewmovies'))    
 
 
 if __name__ == '__main__':

@@ -1,61 +1,61 @@
 {% extends 'layout/base.html' %} {% block content %}
 <div class="row align-items-center my-5 border-bottom">
-<div class="col-lg-5 text-spacing text-center">
+    <div class="col-lg-5 text-spacing text-center">
         <h1 class="header-style"><strong>Search It</strong></h1>
-<p class="header-style">Search a film in the search bar, click the film you want to view and find out infomation about it, what other people think about it and add your own review.</p>
+        <p class="header-style">Search a film in the search bar, click the film you want to view and find out infomation about it, what other people think about it and add your own review.</p>
     </div>
     <div class="col-lg-7">
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-            <div class="carousel-item carousel-item-6 active">
-      </div>
-      <div class="carousel-item carousel-item-7">
-      </div>
-      <div class="carousel-item carousel-item-8">
-      </div>
-      <div class="carousel-item carousel-item-9">
-      </div>
-      <div class="carousel-item carousel-item-10">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item carousel-item-6 active">
+                </div>
+                <div class="carousel-item carousel-item-7">
+                </div>
+                <div class="carousel-item carousel-item-8">
+                </div>
+                <div class="carousel-item carousel-item-9">
+                </div>
+                <div class="carousel-item carousel-item-10">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-</div>
-</div>
 </div>
 
 <!---Films---->
 <div class="container">
-<div class="row" id="moviesDIV">
+    <div class="row" id="moviesDIV">
 
-{% for movie in movies %}
-<div class="col-md-3 film-card film-effect">
-        <div class="card border-0 shadow">
-            <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
-            <h4 class="text-center film-title">{{movie.title}}</h4>
-        <div class="row">    
-            <div class="input-group-append col-6">
-            <button id="infoBtn" class="btn btn-secondary">Info</button>
-          </div>
-          <div class="input-group-append col-6">
-            <a class="btn btn-secondary" href="#">Reviews</button>
-          </div>   
-          </div>     
+        {% for movie in movies %}
+        <div class="col-md-3 film-card film-effect">
+            <div class="card border-0 shadow">
+                <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+                <h4 class="text-center film-title">{{movie.title}}</h4>
+                <div class="row">
+                    <div class="input-group-append col-6">
+                        <button id="infoBtn" class="btn btn-secondary">Info</button>
+                    </div>
+                    <div class="input-group-append col-6">
+                        <a class="btn btn-secondary" href="#">Reviews</a>
+                    </div>   
+                </div>     
             </div>
-            </div>
+        </div>
 <!-- info modal -->
 <div id="infoModal" class="modal">
   <div class="modal-content">

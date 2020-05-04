@@ -62,10 +62,16 @@
     <span class="close">&times;</span>
     <div class="col-md-9 col-lg-8 mx-auto">
               <h3 class="login-heading mb-4">{{movie.title}}</h3>
-                <p class="modal-text">{{movie.year}} | {{movie.rating}}</p>
+              <div class="row">
+              <div class="col-7">
+                <p class="modal-text">{{movie.year}} | {{movie.rated}}</p>
                 <p class="modal-text">{{movie.genre}} | {{movie.runtime}}</p>
                 <p class="modal-text">{{movie.plot}}</p>
                 <p class="modal-text">{{movie.actors}}</p>
+              </div>
+              <div class="col-5">
+              <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+              </div>
     </div>
   </div>
 </div>

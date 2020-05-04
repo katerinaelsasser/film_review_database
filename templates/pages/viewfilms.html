@@ -61,15 +61,13 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="col-md-9 col-lg-8 mx-auto">
-              <h1 class="login-heading mb-4 text-center">{{movie.title}}</h1>
+              <h1 class="login-heading mb-4 text-center">{{movie.title}} ({{movie.year}})</h1>
               <div class="row modal-padding">
               <div class="col-7">
-                <h4 class="modal-text">{{movie.year}}</h4>
                 <h4 class="modal-text">{{movie.rated}}</h4>
                 <h4 class="modal-text">{{movie.genre}}</h4>
-                <h4 class="modal-text">{{movie.runtime}}</h4>
                 <h4 class="modal-text">{{movie.plot}}</h4>
-                <h4 class="modal-text">{{movie.actors}}</h4>
+                <h4 class="modal-text">Staring: {{movie.actors}}</h4>
               </div>
               <div class="col-5">
               <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">

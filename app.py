@@ -51,10 +51,9 @@ def userhome():
 #View All Reviews
 @app.route('/review/view', methods=['GET','POST'])
 def viewreviews():
-    #reviews=mongo.db.reviews.find()
-    #mongo.db.reviews.remove({'_id': ObjectId(reviews_id)})
-    #print(reviews)
-    return render_template("pages/viewallreviews.html", TitlePage="View Reviews")
+    reviews = mongo.db.reviews.find()
+    print(reviews)
+    return render_template("pages/viewallreviews.html", reviews=reviews, TitlePage="View All Reviews")
 
 #Edit films
 @app.route('/movies/edit', methods=["GET"])

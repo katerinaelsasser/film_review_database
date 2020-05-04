@@ -1,13 +1,25 @@
 {% extends 'layout/base.html' %} {% block content %}
 <div class="row align-items-center my-5 border-bottom">
-    <div class="col-lg-7">
-{% include 'components/reviewslide.html' %}  
-    </div>
     <div class="col-lg-5 text-spacing text-center">
         <h1 class="font-weight-light">View All Reviews</h1>
         <p>Search any and every film there is. If there is a film that you have seen, click the button and add a review.</p>
     </div>
+    <div class="col-lg-7">
+{% include 'components/reviewslide.html' %}   
 </div>
 </div>
-{% include 'components/reviewdashboard.html' %} 
-{% endblock %}
+</div>
+<div class="row">
+    {% for review in reviews %}
+    <div class="col-md-3">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <h3 class="mb-0">{{review.film_name}}</h3>
+                <div class="mb-1 text-muted">{{review.film_star}}</div>
+                <p class="card-text mb-auto">{{review.film_review}}</p>
+                <a href="{{url_for('removereview', review_id=review._id)}}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>{% endblock %}

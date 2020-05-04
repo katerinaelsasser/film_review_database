@@ -76,7 +76,6 @@
     </div>
   </div>
 </div>
-{% endfor %}
 {% for review in reviews %}
 
 <!-- review modal -->
@@ -85,14 +84,22 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">{{review.star}}</h3>
+
+{% if review.title == movie.title %}
+ <h3 class="login-heading mb-4">{{review.star}}</h3>
                 <p>{{review.review}}</p>
                 <a href="{{url_for('addreview')}}" class="btn">Add A Review</a>
+{% endfor %}
+{% else %}
+<p>Be the first to leave a review</p>
+<a href="{{url_for('addreview')}}" class="btn">Add A Review</a>
+
+{% endif %}              
     </div>
   </div>
 </div>
-{% endfor %}
 
+{% endfor %}
 </div> 
 </div>
 

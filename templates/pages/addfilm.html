@@ -1,0 +1,75 @@
+{% extends 'layout/base.html' %} {% block content %}
+<div class="text-center container">
+    <form action="/insertmovie" method="POST">
+        <div class="row">
+            <!--Movie name-->
+            <div class="col-md-6 mb-3">
+                <h4><label for="title">Movie Title</label></h4>
+                <input type="text" class="form-control" id="title" name="title" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid movie title is required.
+                </div>
+            </div>
+            <!--Director name-->
+            <div class="col-md-6 mb-3">
+                <h4><label for="director">Director</label></h4>
+                <input type="text" class="form-control" id="director" name="director" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid director name is required.
+                </div>
+            </div>
+            <!--Movie description-->
+            <div class="col-md-12 mb-3">
+                <h4><label for="plot">Description</label></h4>
+                <input type="text" class="form-control" id="plot" name="plot" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Please enter the movie plot.
+                </div>
+            </div>
+            <!--Movie Genre-->
+            <div class="col-md-12 mb-3">
+                <h4><label for="genre">Genre</label></h4>
+                <input type="text" class="form-control" id="genre" name="genre" required="">
+                <div class="invalid-feedback">
+                    Please fill in with one or multiple genres.
+                </div>
+  </div>
+            <!--Movie release year-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="year">Year of Release</label></h4>
+                <input type="text" class="form-control" id="year" name="year" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid year of release is required.
+                </div>
+            </div>
+            <!--Movie Age Rating-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="rating">Age Rating</label></h4>
+                <select class="custom-select d-block w-100" id="rating" name="rating" required="">
+                    <option value="U">U</option>
+                    <option value="PG">PG</option>
+                    <option value="12A">12A</option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                    <option value="18">18</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select from the dropdown.
+                </div>
+            </div>
+            <!--Movie poster-->
+            <div class="col-md-4 mb-3">
+                <h4><label for="poster">Poster</label></h4>
+                <input type="text" class="form-control" id="poster" name="poster" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Poster link is required.
+                </div>
+            </div>
+            <!--Submit button-->
+            <div class="text-center col-12">
+        <button type="submit" name="action" class="btn btn-success btn-block text-center">Submit</button>
+        </div>
+</div></form>
+</div>
+{% include 'components/about.html' %}
+{% endblock %} 

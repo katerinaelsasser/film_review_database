@@ -77,9 +77,13 @@ def editmovies():
 #Add Movie
 @app.route('/movies/add', methods=['POST'])
 def addmovies():
+    return render_template("pages/addfilm.html")
+
+@app.route('/insertmovie', methods=['POST'])
+def insertmovie():
     movies =  mongo.db.movies
     movies.insert_one(request.form.to_dict())
-    return render_template("pages/addfilm.html", movies=movies)
+    return redirect(url_for('viewmovies'))    
 
 
 if __name__ == '__main__':

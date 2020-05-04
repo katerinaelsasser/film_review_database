@@ -61,7 +61,7 @@ def viewreviews():
 def editmovies():
     movies = mongo.db.movies.find()
     print(movies)
-    return render_template("pages/edit.html", movies=movies)
+    return render_template("pages/edit.html", movies=movies , TitlePage="Edit/Delete Movies")
 
 @app.route('/movies/edit/<film_id>')
 def removemovie(movies_id):

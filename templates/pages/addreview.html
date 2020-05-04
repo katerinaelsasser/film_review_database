@@ -12,10 +12,10 @@
 </div>
 
 <div class="container review-container">
-      <h4 class="mb-3">Leave A Review</h4>
+      <h1 class="mb-3">Leave A Review</h1>
       <form>
           <div class="col-md-12 mb-3 review-form">
-            <label for="movieName">Movie Title</label>
+            <label for="movieName"><h4>Movie Title</h4></label>
             <select class="custom-select d-block w-100" name="movieName" id="movieName" required="">
               <option value="">Select Movie Title</option>
               {% for movie in movies %}
@@ -27,14 +27,14 @@
             </div>
         </div>
         <div class="mb-3 review-form">
-          <label for="movieReview">Review</label>
+          <label for="movieReview"><h4>Review</h4></label>
           <input type="text" class="form-control" name="movieReview" id="ReviewText" placeholder="" required="">
           <div class="invalid-feedback">
             Please leave a review.
           </div>
         </div>
         <div class="mb-3 review-form">
-            <label for="movieStar">Star Rating</label>
+            <label for="movieStar"></h4>Star Rating</h4></label>
             <select class="custom-select d-block w-100" name="movieStar" id="movieStar" required="">
               <option value="">Choose A Star Rating</option>
               <option>5 Stars</option>

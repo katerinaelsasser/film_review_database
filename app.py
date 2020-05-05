@@ -22,12 +22,8 @@ def homepage():
 @app.route('/movies/view', methods=['GET'])
 def viewmovies():
     movies = mongo.db.movies.find()
-    reviews = mongo.db.reviews.find()
-
-#add lookup code $lookup { from: "reviews", look for review.title == movie.title, show all reviews with same title} 
-
-    print(movies, reviews)
-    return render_template("pages/viewfilms.html", movies=movies, reviews=reviews, TitlePage="Find A Movie")
+    print(movies)
+    return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
 
 #Leave review page
 @app.route('/review/add')

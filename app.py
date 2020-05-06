@@ -77,16 +77,16 @@ def removemovie(movies_id):
     mongo.db.movies.remove({'_id': ObjectId(movies_id)})
     return redirect(url_for('editmovies'))
 
-#Add Movie
-@app.route('/movies/add', methods=['POST'])
-def addmovies():
+#Add Movies
+@app.route('/movies/add')
+def addmovie():
     return render_template("pages/addfilm.html")
 
-#@app.route('/insertmovie', methods=['POST'])
-#def insertmovie():
- #   movies =  mongo.db.movies
-  #  movies.insert_one(request.form.to_dict())
-   # return redirect(url_for('viewmovies'))    
+@app.route('/insertmovie', methods=['POST'])
+def insertfilm():
+    films =  mongo.db.films
+    films.insert_one(request.form.to_dict())
+    return redirect(url_for('viewmovies'))  
 
 
 if __name__ == '__main__':

@@ -79,7 +79,7 @@ def updatemovies(movies_id):
     })
     return redirect(url_for('editmovies'))
 
-@app.route('/movies/edit/<film_id>')
+@app.route('/movies/edit/<movie_id>')
 def removemovie(movies_id):
     mongo.db.movies.remove({'_id': ObjectId(movies_id)})
     return redirect(url_for('editmovies'))

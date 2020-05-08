@@ -1,4 +1,18 @@
 {% extends 'layout/base.html' %} {% block content %}
+<div class="row align-items-center my-5 border-bottom">
+<!--Intro--->
+<div class="col-lg-5 text-spacing text-center">
+        <h1 class="header-style"><strong>Add To The Collection</strong></h1>
+<p class="header-style">Fill out the form below and submit a movie to the database.</p>
+    </div>
+<!--Slideshow--->
+    <div class="col-lg-7">
+{% include 'components/reviewslide.html' %}   
+</div>
+</div>
+</div>
+
+<!---Add Movie Form--->
 <div class="text-center container">
     <form action="/insertmovie" method="POST">
         <div class="row">

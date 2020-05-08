@@ -26,8 +26,6 @@ def viewmovies():
     return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
 
 #Leave review
-
-#Add Reviews
 @app.route('/review/add')
 def addreview():
     return render_template("pages/addreview.html", TitlePage="Leave A Review")
@@ -42,7 +40,7 @@ def insertreview():
 
 @app.route('/review/add/submitted')
 def reviewsubmited():
-    return render_template("pages/added.html", TitlePage="Leave A Review")
+    return render_template("pages/submitedrev.html", TitlePage="Leave A Review")
 
 #login page   
 @app.route('/login')

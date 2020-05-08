@@ -31,7 +31,7 @@ def addreview():
     
     return render_template("pages/addreview.html", TitlePage="Leave A Review")
 
-@app.route('/insertreview', methods=['POST'])
+@app.route('/insertreview', methods=['GET','POST'])
 def insertreview():
     movies =  mongo.db.movies
     print (movies)

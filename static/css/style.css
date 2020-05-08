@@ -243,3 +243,9 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
 .btn-login {
     margin: 0;
 } 
+
+/*-----dashboard-----*/
+
+.intro-text {
+    padding-top: 50px;
+}

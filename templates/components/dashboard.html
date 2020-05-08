@@ -1,4 +1,9 @@
 {% block dashboard %}
+<!---Intro--->
+<div class="container intro-text">
+<h1 class="text-center">Access All Pages</h1>
+</div>
+<!---Dashoboard--->
 <div class="container">
 <div class="row mb-2">
     <div class="col-md-4">
@@ -16,7 +21,7 @@
         <div class="col p-4 d-flex flex-column position-static">
           <h3 class="mb-0 text-center">Add Movies</h3>
           <div class="mb-1 text-muted text-center">Visible To Only You</div>
-          <p class="mb-auto text-center">Leave a revew for one of the films in the database. Simiply search the review, find your film and then submit a review form.</p>
+          <p class="mb-auto text-center">Leave a revew for one of the films in the database. Simiply search the review, find a movie and then submit a review form.</p>
           <a class="btn btn-outline-danger btn-dashboard" href="{{url_for('addmovie')}}">Click Here</a>
         </div>
       </div>

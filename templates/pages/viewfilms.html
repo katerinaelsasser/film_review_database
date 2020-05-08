@@ -43,7 +43,7 @@
     
     
 {% for movie in movies %}
-        <div class="col-md-3 film-card film-effect">
+        <div class="col-md-3 film-card">
             <div class="card border-0 shadow">
                 <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
                 <h4 class="text-center film-title">{{movie.title}}</h4>
@@ -54,7 +54,7 @@
         </div>
 
   <!-- The Modal -->
-  <div class="modal" id="infoModal-{{movie._id}}">
+  <div class="modal fade" id="infoModal-{{movie._id}}">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
       
@@ -80,16 +80,10 @@
         </div>
         
         <!-- Close/Review Button -->
-        <div class="row">
-        <div class="modal-footer">
+        <div class="modal-footer row">
           <a class="btn btn-danger" href="#" data-dismiss="modal">View Reviews</a>
-        </div>
-        <div class="modal-footer">
           <a class="btn btn-danger" href="{{url_for('addreview')}}" data-dismiss="modal">Add Review</a>
-        </div>
-        <div class="modal-footer">
           <button class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
         </div>
       </div>
     </div>

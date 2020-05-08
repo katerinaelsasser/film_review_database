@@ -33,14 +33,14 @@
 
 <div class="container review-container">
       <h1 class="mb-3">Leave A Review</h1>
-      <form action="/insertmovie" method="POST">
+      <form action="/insertreview" method="POST">
           <div class="col-md-12 mb-3 review-form">
             <label for="movieName"><h4>Movie Title</h4></label>
             <select class="custom-select d-block w-100" name="movieName" id="movieName" required="">
               <option value="">Select Movie Title</option>
-              {% for movie in movies %}
+    {% for movie in movies %}
               <option>{{movie.title}}</option>
-              {% endfor %}
+    {% endfor %}
             </select>
             <div class="invalid-feedback">
               Please select a movie.

@@ -80,8 +80,8 @@ def updatemovies(movies_id):
     return redirect(url_for('editmovies'))
 
 @app.route('/movies/edit/<movie_id>')
-def removemovie(movies_id):
-    mongo.db.movies.remove({'_id': ObjectId(movies_id)})
+def removemovie(movie_id):
+    mongo.db.movies.remove({'_id': ObjectId(movie_id)})
     return redirect(url_for('editmovies'))
 
 #Add Movies

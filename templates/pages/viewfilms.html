@@ -37,11 +37,12 @@
     </div>
 </div>
 
-<!---Films---->
+<!---Movie Catalogue---->
 <div class="container">
-    <div class="row" id="moviesDIV">
-
-        {% for movie in movies %}
+    <div class="row">
+    
+    
+{% for movie in movies %}
         <div class="col-md-3 film-card film-effect">
             <div class="card border-0 shadow">
                 <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
@@ -56,13 +57,21 @@
                 </div>     
             </div>
         </div>
-<!-- info modal -->
-<div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="col-md-9 col-lg-8 mx-auto">
-              <h1 class="login-heading mb-4 text-center">{{movie.title}} ({{movie.year}})</h1>
-              <div class="row modal-padding">
+
+  <!-- The Modal -->
+  <div class="modal" id="infoModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">{{movie.title}} ({{movie.year}})</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="row modal-padding">
               <div class="col-7">
                 <h4 class="modal-text">{{movie.rated}}</h4>
                 <h4 class="modal-text">{{movie.genre}}</h4>
@@ -73,12 +82,25 @@
               <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
               </div>
               </div>
+        </div>
+        
+        <!-- Close/Review Button -->
+        <div class="row">
+        <div class="modal-footer">
+          <a class="btn btn-danger" href="#" data-dismiss="modal">View Reviews</a>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-danger" href="{{url_for('addreview')}}" data-dismiss="modal">Add Review</a>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-{% endfor %}
-</div> 
+  {% endfor %}
+  </div>  
 </div>
 
 {% endblock %}

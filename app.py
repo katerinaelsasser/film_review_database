@@ -65,7 +65,7 @@ def editmovies():
     print(movies)
     return render_template("pages/edit.html", movies=movies, TitlePage="Edit/Delete Movies")
 
-@app.route('/movies/edit/<film_id>', methods=["POST"])
+@app.route('/movies/edit/<movie_id>', methods=["POST"])
 def updatemovies(movies_id):
     mongo.db.movies.update( {'_id': ObjectId(movies_id)},
     {

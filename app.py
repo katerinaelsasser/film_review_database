@@ -64,7 +64,7 @@ def viewreviews():
 def editmovies():
     movies = mongo.db.movies.find()
     print(movies)
-    return render_template("pages/edit.html", movies=movies , TitlePage="Edit/Delete Movies")
+    return render_template("pages/edit.html", movies=movies, TitlePage="Edit/Delete Movies")
 
 @app.route('/movies/edit/<film_id>', methods=["POST"])
 def updatemovies(movies_id):
@@ -88,7 +88,7 @@ def removemovie(movies_id):
 #Add Movies
 @app.route('/movies/add')
 def addmovie():
-    return render_template("pages/addfilm.html")
+    return render_template("pages/addfilm.html", TitlePage="Add Movie")
 
 @app.route('/insertmovie', methods=['POST'])
 def insertmovies():

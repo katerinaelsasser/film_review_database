@@ -25,7 +25,7 @@ def viewmovies():
     print(movies)
     return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
 
-#Leave review
+#Add review
 @app.route('/review/add')
 def addreview():
     return render_template("pages/addreview.html", TitlePage="Leave A Review")
@@ -94,8 +94,11 @@ def addmovie():
 def insertmovies():
     movies =  mongo.db.movies
     movies.insert_one(request.form.to_dict())
-    return redirect(url_for('viewmovies'))  
+    return redirect(url_for('moviesubmited'))  
 
+@app.route('/review/add/submitted')
+def moviesubmited():
+    return render_template("pages/submitedrev.html", TitlePage="Leave A Review")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

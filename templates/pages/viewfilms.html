@@ -43,41 +43,22 @@
     
     
 {% for movie in movies %}
-        <div class="col-md-3 film-card film-effect">
+        <div class="col-md-3 film-card">
+        <div class="film-effect">
             <div class="card border-0 shadow">
                 <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
-                <h4 class="text-center film-title">{{movie.title}}</h4>
-                    <div class="container">
+                <h4 class="text-center film-title">{{movie.title}}</h4>  
+            </div>     
+        </div>
+        <div class="container">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
                         <button class="btn btn-outline-secondary col-12" data-toggle="modal" data-target="#infoModal-{{movie._id}}">Info</button>
-                    </div>    
-            </div>
+                    </div>
         </div>
 
 <!-- Modal -->
 <div class="modal fade" id="infoModal-{{movie._id}}" tabindex="-1" role="dialog" aria-labelledby="{{movie._id}}-Label" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
- <!--- <div class="modal-dialog" role="document">
+<div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h2 class="modal-title" id="{{movie._id}}-Label">{{movie.title}} ({{movie.year}})</h2>
@@ -105,7 +86,7 @@
       </div>
     </div>
   </div>
-</div>-->
+</div>
   {% endfor %}
 
 

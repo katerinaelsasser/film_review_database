@@ -32,7 +32,8 @@ def addreview():
 
 @app.route('/insertreview', methods=['GET','POST'])
 def insertreview():
-    movies =  mongo.db.movies.find()
+    movies =  mongo.db.movies
+    print(movies)
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())
     return redirect(url_for('reviewsubmited'))
@@ -47,25 +48,25 @@ def login():
     return render_template("pages/login.html", TitlePage="Login")
     
 #user home page
-@app.route('/dashboard')
+@app.route('/user')
 def userhome():
     return render_template("pages/userhome.html", TitlePage="Admin")
 
-#View All Reviews
-@app.route('/review/view', methods=['GET','POST'])
+#View/Delete Reviews
+@app.route('/user/review/view', methods=['GET','POST'])
 def viewreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/viewallreviews.html", reviews=reviews, TitlePage="View All Reviews")
 
 #Edit films
-@app.route('/movies/edit', methods=["GET"])
+@app.route('/user/movies/edit', methods=["GET"])
 def editmovies():
     movies = mongo.db.movies.find()
     print(movies)
     return render_template("pages/edit.html", movies=movies, TitlePage="Edit/Delete Movies")
 
-@app.route('/movies/edit/<movie_id>', methods=["POST"])
+@app.route('/user/movies/edit/<movie_id>', methods=["POST"])
 def updatemovies(movies_id):
     mongo.db.movies.update( {'_id': ObjectId(movies_id)},
     {
@@ -79,23 +80,23 @@ def updatemovies(movies_id):
     })
     return redirect(url_for('editmovies'))
 
-@app.route('/movies/edit/<movie_id>')
+@app.route('/user/movies/edit/<movie_id>')
 def removemovie(movie_id):
     mongo.db.movies.remove({'_id': ObjectId(movie_id)})
     return redirect(url_for('editmovies'))
 
 #Add Movies
-@app.route('/movies/add')
+@app.route('/user/movies/add')
 def addmovie():
     return render_template("pages/addfilm.html", TitlePage="Add Movie")
 
-@app.route('/insertmovie', methods=['POST'])
+@app.route('/user/movies/add/', methods=['POST'])
 def insertmovies():
     movies =  mongo.db.movies
     movies.insert_one(request.form.to_dict())
     return redirect(url_for('moviesubmited'))  
 
-@app.route('/review/add/submitted')
+@app.route('/user/movies/add/submitted')
 def moviesubmited():
     return render_template("pages/submitedrev.html", TitlePage="Leave A Review")
 

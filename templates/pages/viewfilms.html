@@ -1,9 +1,11 @@
 {% extends 'layout/base.html' %} {% block content %}
 <div class="row align-items-center my-5 border-bottom">
+<!--Intro--->
     <div class="col-lg-5 text-spacing text-center">
         <h1 class="header-style"><strong>Search It</strong></h1>
         <p class="header-style">Search a film in the search bar, click the film you want to view and find out infomation about it, what other people think about it and add your own review.</p>
     </div>
+    <!--Slideshow--->
     <div class="col-lg-7">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -14,16 +16,7 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <div class="carousel-item carousel-item-6 active">
-                </div>
-                <div class="carousel-item carousel-item-7">
-                </div>
-                <div class="carousel-item carousel-item-8">
-                </div>
-                <div class="carousel-item carousel-item-9">
-                </div>
-                <div class="carousel-item carousel-item-10">
-                </div>
+                {% include 'components/filmslide.html' %}   
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>

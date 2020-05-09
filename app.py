@@ -26,13 +26,13 @@ def viewmovies():
     return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
 
 #Add review
-@app.route('/review/add')
+@app.route('/review/add', methods=['GET'])
 def addreview():
     movies =  mongo.db.movies
     print(movies)
     return render_template("pages/addreview.html", movies=movies, TitlePage="Leave A Review")
 
-@app.route('/insertreview', methods=['GET','POST'])
+@app.route('/insertreview', methods=['POST'])
 def insertreview():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())

@@ -60,13 +60,13 @@ def viewreviews():
     return render_template("pages/viewallreviews.html", reviews=reviews, TitlePage="View All Reviews")
 
 #Edit films
-@app.route('/user/movies/edit', methods=["GET"])
+@app.route('/user/movies/edit', methods=['GET'])
 def editmovies():
     movies = mongo.db.movies.find()
     print(movies)
     return render_template("pages/edit.html", movies=movies, TitlePage="Edit/Delete Movies")
 
-@app.route('/user/movies/edit/<movie_id>', methods=["POST"])
+@app.route('/user/movies/edit/<movie_id>', methods=['GET','POST'])
 def updatemovies(movies_id):
     mongo.db.movies.update( {'_id': ObjectId(movies_id)},
     {

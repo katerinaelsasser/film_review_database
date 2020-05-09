@@ -61,7 +61,7 @@ def viewreviews():
 
 @app.route('/user/movies/view/<review_id>')
 def removereview(review_id):
-    mongo.db.movies.remove({'_id': ObjectId(review_id)})
+    mongo.db.reviews.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('viewreviews'))
 
 #Edit films

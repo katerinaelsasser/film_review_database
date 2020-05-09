@@ -14,11 +14,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('viewmovies')}}">Movies</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url_for('addreview')}}">Reviews</a>
-                </li>
-
-                <li class="nav-item">
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reviews</a>
+                        <div class="dropdown-menu" aria-labelledby="navdrop">
+                        <a class="dropdown-item" href="{{url_for('addreview')}}">Add Review</a>
+                        <a class="dropdown-item" href="{{url_for('viewreviews')}}">View Reviews</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link" href="{{url_for('login')}}">Login</a>
                     </li>
             </ul>

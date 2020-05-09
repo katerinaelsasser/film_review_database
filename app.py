@@ -28,7 +28,7 @@ def viewmovies():
 #Add review
 @app.route('/review/add', methods=['GET'])
 def addreview():
-    movies =  mongo.db.movies
+    movies =  mongo.db.movies.find()
     print(movies)
     return render_template("pages/addreview.html", movies=movies, TitlePage="Leave A Review")
 

@@ -62,6 +62,11 @@ padding: 15px;
     color: #fefefe;
 }
 
+.fa-check {
+    padding: 15px;
+    font-size: 50px;
+}
+
 /*-- footer ---*/
 footer {
     padding: 15px;

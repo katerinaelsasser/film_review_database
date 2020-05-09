@@ -26,7 +26,7 @@ def viewmovies():
     return render_template("pages/viewfilms.html", movies=movies, TitlePage="Find A Movie")
 
 #Add review
-@app.route('/review/add', methods=['GET'])
+@app.route('/reviews/add', methods=['GET'])
 def addreview():
     movies =  mongo.db.movies.find()
     print(movies)
@@ -38,23 +38,31 @@ def insertreview():
     reviews.insert_one(request.form.to_dict())
     return redirect(url_for('reviewsubmited'))
 
-@app.route('/review/add/submitted')
+@app.route('/reviews/add/submitted')
 def reviewsubmited():
     return render_template("pages/submitedrev.html", TitlePage="Leave A Review")
 
-#login page   
+#View Reviews page
+@app.route('/reviews/view', methods=['GET'])
+def viewreviews():
+    reviews = mongo.db.movies.find()
+    print(reviews)
+    return render_template("pages/viewfilms.html", reviews=reviews, TitlePage="Find A Movie")
+
+
+#Login page   
 @app.route('/login')
 def login():
     return render_template("pages/login.html", TitlePage="Login")
     
-#user home page
+#(User) Home page
 @app.route('/user')
 def userhome():
     return render_template("pages/userhome.html", TitlePage="Admin")
 
-#View/Delete Reviews
+#(User) View/Delete Reviews
 @app.route('/user/review/view', methods=['GET','POST'])
-def viewreviews():
+def userreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/deletereviews.html", reviews=reviews, TitlePage="View All Reviews")
@@ -62,9 +70,9 @@ def viewreviews():
 @app.route('/user/movies/view/<review_id>')
 def removereview(review_id):
     mongo.db.reviews.remove({'_id': ObjectId(review_id)})
-    return redirect(url_for('viewreviews'))
+    return redirect(url_for('usersreviews'))
 
-#Edit films
+#(User) Edit films
 @app.route('/user/movies/edit', methods=['GET'])
 def editmovies():
     movies = mongo.db.movies.find()
@@ -90,7 +98,7 @@ def removemovie(movie_id):
     mongo.db.movies.remove({'_id': ObjectId(movie_id)})
     return redirect(url_for('editmovies'))
 
-#Add Movies
+#(User) Add Movies
 @app.route('/user/movies/add')
 def addmovie():
     return render_template("pages/addfilm.html", TitlePage="Add Movie")

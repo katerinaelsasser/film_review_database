@@ -59,6 +59,11 @@ def viewreviews():
     print(reviews)
     return render_template("pages/deletereviews.html", reviews=reviews, TitlePage="View All Reviews")
 
+@app.route('/user/movies/view/<review_id>')
+def removereview(review_id):
+    mongo.db.movies.remove({'_id': ObjectId(review_id)})
+    return redirect(url_for('viewreviews'))
+
 #Edit films
 @app.route('/user/movies/edit', methods=['GET'])
 def editmovies():

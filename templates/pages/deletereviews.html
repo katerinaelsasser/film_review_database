@@ -43,9 +43,9 @@
   <tbody>
   {% for review in reviews %}
     <tr class="table-light">
-      <th scope="row">{{review.film_name}}</th>
-      <td>{{review.film_star}}</td>
-      <td>{{review.film_review}}</td>
+      <th scope="row">{{review.movieName}}</th>
+      <td>{{review.movieStar}}</td>
+      <td>{{review.movieReview}}</td>
       <td><a href="{{url_for('removereview', review_id=review._id)}}" class="btn btn-danger">Delete</a></td>
     </tr>
     {% endfor %}

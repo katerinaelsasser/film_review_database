@@ -91,7 +91,6 @@ footer {
 
 .carousel-item {
   height: 100%;
-  min-height: 350px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -313,4 +312,9 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
 
 .intro-text {
     padding-top: 50px;
+}
+
+/*--------modals-----*/
+.modal-body {
+    padding: 0;
 }

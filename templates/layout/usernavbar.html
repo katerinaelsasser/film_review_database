@@ -11,18 +11,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url_for('homepage')}}">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{url_for('viewmovies')}}">Movies</a>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movies</a>
+                        <div class="dropdown-menu" aria-labelledby="navdrop">
+                    <a class="nav-link" href="{{url_for('viewmovies')}}">View</a>
+                    <a class="nav-link" href="{{url_for('addmovie')}}">Add</a>
+                    <a class="nav-link" href="{{url_for('editmovies')}}">Edit/Delete</a>
+
                 </li>
                 <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Reviews</a>
                         <div class="dropdown-menu" aria-labelledby="navdrop">
                         <a class="dropdown-item" href="{{url_for('addreview')}}">Add</a>
-                        <a class="dropdown-item" href="{{url_for('viewreviews')}}">View All</a>
+                        <a class="dropdown-item" href="{{url_for('userreviews')}}">Delete</a>
+                        <a class="dropdown-item" href="{{url_for('userreviews')}}">View All</a>
+
                         </div>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="{{url_for('login')}}">Login</a>
                     </li>
             </ul>
         </div>

@@ -45,7 +45,7 @@ def reviewsubmited():
 #View Reviews page
 @app.route('/reviews/view', methods=['GET'])
 def viewreviews():
-    reviews = mongo.db.movies.find()
+    reviews = mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/viewfilms.html", reviews=reviews, TitlePage="Find A Movie")
 

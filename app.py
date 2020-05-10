@@ -103,7 +103,7 @@ def removemovie(movie_id):
 def addmovie():
     return render_template("pages/addfilm.html", TitlePage="Add Movie")
 
-@app.route('/user/movies/add/', methods=['POST'])
+@app.route('/insertmovies', methods=['POST'])
 def insertmovies():
     movies =  mongo.db.movies
     movies.insert_one(request.form.to_dict())

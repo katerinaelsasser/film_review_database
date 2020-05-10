@@ -86,7 +86,7 @@ footer {
 }
 
 .carousel-inner {
-    height: 800px;
+    width: auto;
 }
 
 .carousel-item {

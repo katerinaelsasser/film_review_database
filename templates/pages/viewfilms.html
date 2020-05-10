@@ -1,21 +1,7 @@
 {% extends 'layout/base.html' %} {% block content %}
-<div class="row align-items-center border-bottom">
-<!--Intro--->
-    <div class="col-lg-5 text-spacing text-center">
-        <h1 class="header-style"><strong>Find A Film</strong></h1>
-        <p class="header-style">Scroll down to see our full range of movies. Check out infomation about each of the movies available.</p>
-    </div>
     <!--Slideshow--->
-    <div class="col-lg-7">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
                 {% include 'components/filmslide.html' %}   
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -28,8 +14,11 @@
             </a>
         </div>
     </div>
-</div>
-
+<!--Intro--->
+    <div class="col-lg-5 text-spacing text-center">
+        <h1 class="header-style"><strong>Find A Film</strong></h1>
+        <p class="header-style">Scroll down to see our full range of movies. Check out infomation about each of the movies available.</p>
+    </div>
 <!---Movie Catalogue---->
 <div class="container">
     <div class="row">
@@ -51,19 +40,19 @@
 <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title" id="{{movie._id}}-Label">{{movie.title}} ({{movie.year}})</h2>
+        <h2 class="modal-title text-center col-12" id="{{movie._id}}-Label">{{movie.title}} ({{movie.year}})</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <div class="row modal-padding">
-              <div class="col-7">
+              <div class="col-md-7">
                 <h4 class="modal-text">Rating: {{movie.rated}}</h4>
                 <h4 class="modal-text">Genre: {{movie.genre}}</h4>
                 <h4 class="modal-text">{{movie.plot}}</h4>
               </div>
-              <div class="col-5">
+              <div class="col-md-5">
               <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
               </div>
         </div>

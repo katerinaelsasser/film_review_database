@@ -1,23 +1,6 @@
 {% extends 'layout/base.html' %} {% block content %}
-<div class="row align-items-center">
-<!--Intro--->
-    <div class="col-lg-5 text-spacing text-center">
-        <h1 class="header-style"><strong>Welcome!</strong></h1>
-                <p class="header-style">FRATES is the website where millions of film lovers find films to watch and rate them for other film lovers to see! Head over to our movie page to search a movie and leave a review.</p>
-<a class="btn btn-success btn-block text-center" href="{{url_for('viewmovies')}}"><h4 class="btn-text">View All Films</h4></a>
-<a class="btn btn-info btn-block text-center" href="{{url_for('addreview')}}"><h4 class="btn-text">Leave A Review</h4></a>
-<a class="btn btn-warning btn-block text-center" href="{{url_for('viewreviews')}}"><h4 class="btn-text">View Review</h4></a>
-    </div>
-    <!--Slideshow--->
-    <div class="col-lg-7">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    </ol>
+<!---Slideshow-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
 {% include 'components/indexslide.html' %}    
 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -31,8 +14,17 @@
   </div>
 
 </div>
-</div>
-<div class="text-center footer-padding">
+<!--Intro--->
+    <div class="container text-spacing text-center">
+        <h1 class="header-style"><strong>Welcome!</strong></h1>
+                <p class="header-style">FRATES is the website where millions of film lovers find films to watch and rate them for other film lovers to see! Head over to our movie page to search a movie and leave a review.</p>
+<div class="row">
+<a class="col-md-4 btn btn-success text-center" href="{{url_for('viewmovies')}}"><h4 class="btn-text">View All Films</h4></a>
+<a class="col-md-4 btn btn-info text-center" href="{{url_for('addreview')}}"><h4 class="btn-text">Leave A Review</h4></a>
+<a class="col-md-4 btn btn-warning text-center" href="{{url_for('viewreviews')}}"><h4 class="btn-text">View Review</h4></a>
+    </div>
+    </div>
+    <div class="text-center footer-padding">
 <h4 class="footer-padding">About Us</h4>
 <p>Created in 2019, FRATES is a about designed for all movie lovers. Find movies as well as viewing what movie lovers think and check out what they have reviviewed and add a review of your own. We have all the movies under the sun as well as all the information about the movies. All that you have to do is head over to our movie page and search a movie of your choice.</p>
 </div>

@@ -60,13 +60,13 @@ def userhome():
     return render_template("pages/userhome.html", TitlePage="Admin")
 
 #(User) View/Delete Reviews
-@app.route('/user/review/view', methods=['GET','POST'])
+@app.route('/user/reviews/view', methods=['GET','POST'])
 def userreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/deletereviews.html", reviews=reviews, TitlePage="View/Delete Reviews")
 
-@app.route('/user/movies/view/<review_id>')
+@app.route('/user/reviews/view/<review_id>')
 def removereview(review_id):
     mongo.db.reviews.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('userreviews'))
@@ -92,7 +92,7 @@ def updatemovies(movies_id):
     })
     return redirect(url_for('editmovies'))
 
-@app.route('/user/movies/edit/<movie_id>')
+@app.route('/user/movies/edit/delete/<movie_id>')
 def removemovie(movie_id):
     mongo.db.movies.remove({'_id': ObjectId(movie_id)})
     return redirect(url_for('editmovies'))

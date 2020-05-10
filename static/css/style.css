@@ -298,6 +298,10 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
     padding: 15px;
 }
 
+.modal-padding {
+    padding: 15px;
+}
+
 .modal-body {
     padding: 0;
 }

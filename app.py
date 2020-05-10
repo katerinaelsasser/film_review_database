@@ -47,7 +47,7 @@ def reviewsubmited():
 def viewreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
-    return render_template("pages/viewallreviews.html", reviews=reviews, TitlePage="Find A Movie")
+    return render_template("pages/viewallreviews.html", reviews=reviews, TitlePage="View Reviews")
 
 #Login page   
 @app.route('/login')
@@ -64,7 +64,7 @@ def userhome():
 def userreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
-    return render_template("pages/deletereviews.html", reviews=reviews, TitlePage="View All Reviews")
+    return render_template("pages/deletereviews.html", reviews=reviews, TitlePage="View/Delete Reviews")
 
 @app.route('/user/movies/view/<review_id>')
 def removereview(review_id):

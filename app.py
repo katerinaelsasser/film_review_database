@@ -111,7 +111,7 @@ def insertmovies():
 
 @app.route('/user/movies/add/submitted')
 def moviesubmited():
-    return render_template("pages/submitedrev.html", TitlePage="Leave A Review")
+    return render_template("pages/submitedmov.html", TitlePage="Leave A Review")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',

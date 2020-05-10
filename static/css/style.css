@@ -299,7 +299,11 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
 }
 
 .modal-padding {
-    padding: 50px;
+    padding: 15px;
+}
+
+.modal-body {
+    padding: 0;
 }
 
 /*-----login-----*/
@@ -315,6 +319,3 @@ background-image: url('https://raw.githubusercontent.com/katerinaelsasser/film_r
 }
 
 /*--------modals-----*/
-.modal-body {
-    padding: 0;
-}

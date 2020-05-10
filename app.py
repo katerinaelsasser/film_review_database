@@ -47,8 +47,7 @@ def reviewsubmited():
 def viewreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
-    return render_template("pages/viewfilms.html", reviews=reviews, TitlePage="Find A Movie")
-
+    return render_template("pages/viewallreviews.html", reviews=reviews, TitlePage="Find A Movie")
 
 #Login page   
 @app.route('/login')

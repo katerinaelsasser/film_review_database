@@ -3,43 +3,51 @@
 FRATES is a website created for movie lovers to find movies to watch and to also leave a review for movies so other users of the website can see what others think of the movie.
 The aim of the website should hold data of of movies/reviews as well as being easy to use and to add to the database.
 
+## UX
+
+### Goals
 Users of the website can browser information about these movies/reviews and also can add reviews to the movies.
 The site owner must be able to adjust data that is shown on the website easily. Meaning if they see reviews/movies that they don't want on the website, they can easily remove if needed. As well as this, they must be able to edit movie information if there is an error in the cluser of infomation.
 
-## UX
-### Surface
-I put together mock ups of what the database would look like. For the two mockups I have created two versions: a mobile and a laptop version. The first mockup is of what the main page containing the database of the movies. In the second mockups, this is for the page where users can input info to the database.
+This website should be suitable, easy to use and visually appealing for both user and site owner. The navigation should be able to access all pages (one navbar for all users of the website and the other for the site owner to use when accessing the whole database).
 
-#### wireframes
-### Page 1
-[Mobile Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/mobile_mockup_1.jpg)
+The data that the site owner has access to must be easy to use, easy to add/remove/update if required. The data is the main part of the website which means the website must always have a direction to a page that has the data on. For example: If a user leaves a review, they must be redirected to a page where they can access to see the movies or see/add reviews on the website.
 
-[Laptop Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/laptop_mockup_1.jpg)
+The whole site has to be responsive when adjusted to all devices (small, medium and large). This means that when created, all devices must thought about when adding features and should be adaptable. 
 
-### Page 2
-[Mobile Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/mobile_mockup_2.jpg)
+### Research
+When researching similar websites that contain movie/review data (such as RottenTomato and IMDB), I noticed that the website was appealing to look at and was easy to use. The data was displayed clear and was easy to read/access. Having this research in my mind, all the data throughout the website needs to be the exact same. If the website isn't users won't want to use it. The website needs to have imagergy that would be appealing for users, instead of having a plan website.
 
-[Laptop Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/laptop_mockup_2.jpg)
-
-### Strategy
-The aim of this website is so users can find movies and the site owner can earn money from users buying the movies. The information and the images that will be on the page must link to the movies in the database. The infomation in the database must be inform the user about the movies.
-
-### Structure
-The website will be structured so there is a link between two pages which will both be linked to the database. The website must be structured so that users can buy the movies.
-
-### Skeleton
-The database will be the skeleton of this website as both pages will link to the database as this is what the site owner wants the website to have the main focus on it.
-
-### Scope
-Before creating the website, I put together all the infomation that the site owner wants to be din the database. I also found images of the movie posters that will be the icon of the movies.
+### Data 
+Before thinking about what the website is going to look like, I need to think about what data is going to be put on the website. The main things that is required is data about the movies (which includes poster, title, plot, year, etc) and the review data (this would be gradually added by users of the website). 
 
 ### User Stories
 As a user, I want to be able to navigation between the pages easily.
 As a user, I want to see a clean layout of all the information.
-As a user, I want to see images of the movies.
+As a user, I want to see images of the movies as well as the posters.
 As a user, I want to see information about the movies.
-As a user, I want to be able to review the movies.
-As a user, I want to be able to buy the movie.
+As a user, I want to be able to review movies.
+As a user, I want to be able to view other reviews that other users have added.
+As a site owner, I want to be able to access data on the website that other users cannot.
+As a site owner, I want to have access to add and editing movies.
+As a site owner, I want to be able to delete movies and reviews if needed.
+
+### Flow Chart
+Taking the goals in mind of what the website should be, i started to plan out a flow chart of the whole of the website. The flow chart became would help create the website as this would show me what i would need to include on pages and how i would display some of the pages. For example: if a form when submited would send a user to a page that would have buttons leading to other pages on the website. So when creating the website, I would need to create buttons linking to other pages.
+
+Click here to view the flow chart.
+
+### Visuals
+Other than data, visuals will be a big part of the website as this will be encouraging users to use the website. Posters of movies will be features on the website and as well as this, imagergy from movie scenes will also be featured throughout the website. 
+
+### Wireframes
+After finding the goals, research and having a flow chart, I started to put together wireframs for the website. I created multiple versions of them (one for mobile view and the other for medium/laptop view). This would help when creating it as I would follow this as guidelines.
+
+wireframes
+* Main pages
+* forms
+* Modals
+
 
 ## Features
 

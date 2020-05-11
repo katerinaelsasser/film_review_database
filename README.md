@@ -91,26 +91,6 @@ Other time users will use the website more and the site owner will add more data
 * Movie Review Page - A page for each movie will have the infomation and all the reviews collected and displayed on it.
 * Filters - Filters can be added to both movie/review pages so users can filter down on the collection. For example: if users want to see reviews for a specific movie, they would click on a button which will filter down all the reviews for that movie.
 
-## Technologies Used
-HTML
-CSS
-Python
-Javascript
-MongoDB
-Flask
-Python
-Bootswatch
-GitPod
-PyMongo
-## Testing
-The user stories that I have made at the beginning will help with testing as well as being a check list.
-
-### Tests Done To Create Website
-Test the code
-Add " around the data and the title of the rows
-Testing the code
-Data appears on the map
-
 ## Information Architecture
 The information collected and stored in this website database. I have used MongoDB which holds data for reviews and movies that has been submitted. 
 
@@ -132,6 +112,26 @@ The information collected and stored in this website database. I have used Mongo
 |Review     |movie_review|                      |string|
 |Nickname   |nickname   |                      |      |
 
+
+## Technologies Used
+HTML
+CSS
+Python
+Javascript
+MongoDB
+Flask
+Python
+Bootswatch
+GitPod
+PyMongo
+## Testing
+The user stories that I have made at the beginning will help with testing as well as being a check list.
+
+### Tests Done To Create Website
+Test the code
+Add " around the data and the title of the rows
+Testing the code
+Data appears on the map
 
 ## Deployment
 The website was deployed from the master branch and has been hosted on the GitHub pages. When I add a new commit to this master website, it will be automatically updated. I deployed it by doing the following steps:

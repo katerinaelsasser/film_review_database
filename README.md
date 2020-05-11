@@ -56,6 +56,7 @@ wireframes
 ### Home Page
 * Buttons - The buttons on the home page take the user/site owner to use to access other pages on the website.
 * About - There is a section at the bottom of the page that talks about the website and why it was made.
+* Login Form - This form is for the site owner so they can access the admin side of the website. They access pages user of the website cannot access. I put this on the index page so the site owner can go straight to the admin side if they want to edit, add or delete data.
 ### View movies
 * Data - The data on this page is the data of the movies. This is linked to the mongodb collection called "movies". This collection holds the infomation of each movie.
 * Film Cards - The film cards display the poster and the title of the each movie that is in the collection. This is a preview for the user to click on. This is linked to mongodb.
@@ -64,24 +65,24 @@ wireframes
 * Data - The data on this page is the data of the reviews that users have submitted. This is linked to the mongodb collection called "reviews". This collection holds the infomation of each review (which includes star rating and the text review).
 * Button - There is a button on the reviews that encourages users to go to the add review.
 ### Add reviews
-* add review form
-### submitted reviews/movies
-* btns 
+* Form - The review form is connected to the mongodb collection called "reviews". When a user submits a review, it will be sent to the collection and the user will be sent to the submit page. The form is also linked to the "movies" collection on the dropdown, this is so users can find the movie that they want to review.
 ### Login
-* Login Form
-* About
+* Login Form - This form is for the site owner so they can access the admin side of the website. They access pages user of the website cannot access.
+* About - There is a section at the bottom of the page that talks about the website and why it was made.
 ### User Home
-*btns
+* Buttons - The dashboard on the user page acts as another navbar, all pages of the admin side are displayed here and linked to. 
 ### Add movies
-* film form
+* Form - The movie form is connected to the mongodb collection called "movies". When the site owner submits a movie, the data will be sent to the collection and the site owner will be sent to the submit page.
+### Submit Pages (Reviews/Movies)
+* Buttons - When the user/site owner submits data to mongodb, they will be sent to the subtmit page. This is where they will be given an option to use/go to other parts of the website. When the user send a review, they will given a choice if they want to see other movies, view other reviews or add another review. When the site owner submits a movie, they will be given a choice of viewing the movies, add another movie, add a review or view the reviews.
 ### Edit/Delete movies
 * Data - The data on this page is the data of the movies. This is linked to the mongodb collection called "movies". This collection holds the infomation of each movie.
-* delete btn
-* film cards
-* modals
+* Button - The delete button is connected to the mongodb collection "movies", this is used for when the site owner wanted to delete a movie. The edit button is linked to the modal on the page so the site owner can adjust the data if they have made an error.
+* Film Cards - The film cards display the poster and the title of the each movie that is in the collection. This is a preview for the site owner to click on. This is linked to mongodb.
+* Modals - The modal is linked to mongodb and displays infomation of the movies in a form. This is so they can adjust the data. 
 ### Delete reviews
-* review data
-* delete btn
+* Data - All the reviews are displayed on the page, showing all the data from each review.
+* Button - The delete button is connected to the mongodb collection "reviews", this is used for when the site owner wanted to delete a review.
 
 ### Features Left To Implement
 features that can be added in the future.

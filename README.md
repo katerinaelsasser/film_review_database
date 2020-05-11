@@ -1,9 +1,10 @@
-# FRATES - Data Centric Development
+# FRATES - Data Centric Development Project
 
-FRATES is a website that is created for users to find films and to review them.
+FRATES is a website created for movie lovers to find movies to watch and to also leave a review for movies so other users of the website can see what others think of the movie.
+The aim of the website should hold data of of movies/reviews as well as being easy to use and to add to the database.
 
-This project is a website database full of information about films. Users of this website can browser information about these films and also can add reviews to the films.
-External Users must be able to find films and the site owner must be able to earn money on each film purchased.
+Users of the website can browser information about these movies/reviews and also can add reviews to the movies.
+The site owner must be able to adjust data that is shown on the website easily. Meaning if they see reviews/movies that they don't want on the website, they can easily remove if needed. As well as this, they must be able to edit movie information if there is an error in the cluser of infomation.
 
 ## UX
 ### Surface
@@ -11,34 +12,34 @@ I put together mock ups of what the database would look like. For the two mockup
 
 #### wireframes
 ### Page 1
-[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/mobile_mockup_1.jpg)
+[Mobile Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/mobile_mockup_1.jpg)
 
-[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/laptop_mockup_1.jpg)
+[Laptop Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/laptop_mockup_1.jpg)
 
 ### Page 2
-[Mobile Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/mobile_mockup_2.jpg)
+[Mobile Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/mobile_mockup_2.jpg)
 
-[Laptop Version](https://github.com/katerinaelsasser/film_review_database/blob/master/images/mockups/laptop_mockup_2.jpg)
+[Laptop Version](https://github.com/katerinaelsasser/movie_review_database/blob/master/images/mockups/laptop_mockup_2.jpg)
 
 ### Strategy
-The aim of this website is so users can find films and the site owner can earn money from users buying the films. The information and the images that will be on the page must link to the films in the database. The infomation in the database must be inform the user about the films.
+The aim of this website is so users can find movies and the site owner can earn money from users buying the movies. The information and the images that will be on the page must link to the movies in the database. The infomation in the database must be inform the user about the movies.
 
 ### Structure
-The website will be structured so there is a link between two pages which will both be linked to the database. The website must be structured so that users can buy the films.
+The website will be structured so there is a link between two pages which will both be linked to the database. The website must be structured so that users can buy the movies.
 
 ### Skeleton
 The database will be the skeleton of this website as both pages will link to the database as this is what the site owner wants the website to have the main focus on it.
 
 ### Scope
-Before creating the website, I put together all the infomation that the site owner wants to be din the database. I also found images of the movie posters that will be the icon of the films.
+Before creating the website, I put together all the infomation that the site owner wants to be din the database. I also found images of the movie posters that will be the icon of the movies.
 
 ### User Stories
 As a user, I want to be able to navigation between the pages easily.
 As a user, I want to see a clean layout of all the information.
 As a user, I want to see images of the movies.
-As a user, I want to see information about the films.
+As a user, I want to see information about the movies.
 As a user, I want to be able to review the movies.
-As a user, I want to be able to buy the film.
+As a user, I want to be able to buy the movie.
 
 ## Features
 
@@ -80,9 +81,9 @@ The information collected and stored in this website database. I have used Mongo
 |-----------|:---------:|:--------------------:|:---------:|
 |_id        |_id        |None                  |Object Id  |
 |IMDB_id    |imdb_id    |                      |
-|Film Title |film_name  |                      |string     |
-|Star Rating|film_star  |                      |           |
-|Review     |film_review|                      |string|
+|movie Title |movie_name  |                      |string     |
+|Star Rating|movie_star  |                      |           |
+|Review     |movie_review|                      |string|
 |Nickname   |nickname   |                      |      |
 
 

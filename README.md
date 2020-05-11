@@ -243,7 +243,7 @@ This code was for cloning my repository to my local machine.
 
 This code was for when I deployed changes of my website. I would use *git add .* , followed by *git commit -m ""*  (in the quotation marks, I would put in a snippet of what I did), then I would put in *git push heroku master* (this would be sent to both my git repository as well being sent to heroku).
 
-When I add a new commit to this master website, it will be automatically updated. I deployed it by doing the following steps:
+When I add a new commit to this master website, it will be automatically updated.
 
 ## Credits
 ### Content

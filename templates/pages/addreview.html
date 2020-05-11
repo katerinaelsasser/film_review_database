@@ -10,14 +10,13 @@
 <!--Intro--->
 <div class="container-fluid text-spacing text-center">
         <h1 class="header-style"><strong>Submit Your Thoughts</strong></h1>
-<p class="header-style">We would love to hear your feedback about a film that we have in our database. Fill in the form below and submit your thoughts.</p>
+<p class="header-style">We would love to hear your feedback about a film that we have in our database. Select a movie from the dropdown and fill in the form below and submit a review. Join the other people who have reviewed movies.</p>
     </div>
 
 <div class="container review-container">
-      <h1 class="mb-3">Leave A Review</h1>
       <form action="/insertreview" method="POST">
-          <div class="col-md-12 mb-3 review-form">
-            <label for="movieName"><h4 class="text-center">Movie Title</h4></label>
+          <div class="col-md-12 mb-3 review-form text-center">
+            <label for="movieName"><h4>Movie Title</h4></label>
             <select class="custom-select d-block w-100" name="movieName" id="movieName" required="">
               <option value="">Select Movie Title</option>
     {% for movie in movies %}
@@ -28,15 +27,15 @@
               Please select a movie.
             </div>
         </div>
-        <div class="mb-3 review-form">
-          <label for="movieReview"><h4 class="text-center">Review</h4></label>
+        <div class="col-md-12 mb-3 review-form text-center">
+          <label for="movieReview"><h4>Review</h4></label>
           <input type="text" class="form-control" name="movieReview" id="ReviewText" placeholder="" required="">
           <div class="invalid-feedback">
             Please leave a review.
           </div>
         </div>
-        <div class="mb-3 review-form">
-            <label for="movieStar"><h4 class="text-center">Star Rating</h4></label>
+        <div class="col-md-12 mb-3 review-form text-center">
+            <label for="movieStar"><h4>Star Rating</h4></label>
             <select class="custom-select d-block w-100" name="movieStar" id="movieStar" required="">
               <option value="">Choose A Star Rating</option>
               <option>5 Stars</option>

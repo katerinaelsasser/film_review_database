@@ -1,15 +1,15 @@
 {% extends 'layout/userbase.html' %} {% block content %}
 <!---Slideshow-->
 <div class="w3-content w3-section contain-fluid">
-  <img class="movie-header" src="/static/images/headers/header-36.jpg">
-  <img class="movie-header" src="/static/images/headers/header-37.jpg">
-  <img class="movie-header" src="/static/images/headers/header-38.jpg">
-  <img class="movie-header" src="/static/images/headers/header-39.jpg">
-  <img class="movie-header" src="/static/images/headers/header-40.jpg">
+  <img class="movie-header" src="/static/images/headers/header-16.jpg">
+  <img class="movie-header" src="/static/images/headers/header-17.jpg">
+  <img class="movie-header" src="/static/images/headers/header-18.jpg">
+  <img class="movie-header" src="/static/images/headers/header-19.jpg">
+  <img class="movie-header" src="/static/images/headers/header-20.jpg">
 </div>
 
 <!--Intro--->
-    <div class="col-lg-5 text-spacing text-center">
+    <div class="container-fluid text-spacing text-center">
         <h1 class="font-weight-light">View All Reviews</h1>
         <p>Search any and every film there is. If there is a film that you have seen, click the button and add a review.</p>
     </div>
@@ -24,7 +24,7 @@
                 <h3 class="text-center">{{review.movieName}}</h3>
                 <h4 class="text-center text-muted">{{review.movieStar}}</h4>
                 <p class="card-text text-center">{{review.movieReview}}</p>
-                <a href="{{url_for('removereview', review_id=review._id)}}" class="btn btn-danger">Delete</a>
+                <a href="{{url_for('removereview', review_id=review._id)}}" class="btn btn-danger text-spacing">Delete</a>
 
             </div>
         </div>

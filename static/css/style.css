@@ -80,10 +80,6 @@ footer {
     padding: 15px;
 }
 
-/*--- index page---*/
-.index-review {
-    font-size: 50px;
-}
 /*----slideshows---*/
 .movie-header {
     width: 100%;
@@ -104,16 +100,6 @@ footer {
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
     }
-
-.film-title {
-    padding: 10px;
-}
-
-/*-----review----*/
-
-.review-form {
-    padding: 5px;
-}
 
 /*-----modal-----*/
 
@@ -176,5 +162,3 @@ footer {
 .intro-text {
     padding-top: 50px;
 }
-
-/*--------modals-----*/

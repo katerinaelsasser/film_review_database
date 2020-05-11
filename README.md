@@ -45,8 +45,14 @@ After finding the goals, research and having a flow chart, I started to put toge
 
 wireframes
 * Main pages
-* forms
+* * [Laptop version]()
+* * [Mobile Version]()
+* Forms
+* * [Laptop version]()
+* * [Mobile Version]()
 * Modals
+* * [Laptop version]()
+* * [Mobile Version]()
 
 
 # Features

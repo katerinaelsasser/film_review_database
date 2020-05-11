@@ -25,7 +25,7 @@
                 <h4 class="text-center film-title">{{movie.title}}</h4>
                 <div class="row container">
                     <div class="input-group-append col-6">
-                        <button class="btn btn-secondary" data-toggle="modal" data-target="#infoModal-{{movie._id}}">Edit</button>
+                        <button class="btn btn-info" data-toggle="modal" data-target="#infoModal-{{movie._id}}">Edit</button>
                     </div>
                     <div class="input-group-append col-6">
                         <a href="{{url_for('removemovie', movie_id=movie._id)}}" class="btn btn-danger">Delete</a>

@@ -247,10 +247,11 @@ When I add a new commit to this master website, it will be automatically updated
 
 ## Credits
 ### Content
-Information about movies, 
+Information about movies in the database were sourced from [IMDB](https://www.imdb.com/) and reviews in the database were created by myself.
 ### Media
-All images were taken from IMDB.
+All images were taken from [IMDB](https://www.imdb.com/).
 
 ### Acknowledgements
 
+This website was inspired by [IMDB](https://www.imdb.com/) and [Rotten Tomatoes](https://www.rottentomatoes.com/). Movies that were included on my page were the movies that I have watched over the last year. My mentor, Simen Daehlin, inspired the movie infomation to be connected to the view movie page.
 #### Please note that this is for educational use only.

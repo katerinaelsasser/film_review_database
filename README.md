@@ -3,7 +3,7 @@
 FRATES is a website created for movie lovers to find movies to watch and to also leave a review for movies so other users of the website can see what others think of the movie.
 The aim of the website should hold data of of movies/reviews as well as being easy to use and to add to the database.
 
-## UX
+# UX
 
 ### Goals
 Users of the website can browser information about these movies/reviews and also can add reviews to the movies.
@@ -49,10 +49,29 @@ wireframes
 * Modals
 
 
-## Features
-
+# Features
 ### Existing Features
+Home Page
+View movies
+View reviews
+Add reviews
+submitted reviews
+Login
+User Home
+Add movies
+submitted movies
+Edit/Delete movies
+Delete reviews
+
 ### Features Left To Implement
+features that can be added in the future.
+* add Login
+* more data about the movies
+* more movies added
+* filter features on movie/review pages
+* more features added to the forms
+As the website gets used more, the website will grow over time. features above will be gradually added. 
+
 ## Technologies Used
 HTML
 CSS

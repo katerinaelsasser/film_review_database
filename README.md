@@ -1,7 +1,7 @@
 # FRATES - Data Centric Development Project
 
 FRATES is a website created for movie lovers to find movies to watch and to also leave a review for movies so other users of the website can see what others think of the movie.
-The aim of the website should hold data of of movies/reviews as well as being easy to use and to add to the database.
+The aim of the website should hold data of of movies/reviews as well as being easy to use and to add to the database. The site owner of the website wants the user to review movies that are in the database.
 
 # UX
 
@@ -24,7 +24,7 @@ Before thinking about what the website is going to look like, I need to think ab
 ### User Stories
 * As a user, I want to be able to navigation between the pages easily.
 * As a user, I want to see a clean layout of all the information.
-* As a user, I want to see images of the movies as well as the posters.
+* As a user, I want to see images of the movies including the posters.
 * As a user, I want to see information about the movies.
 * As a user, I want to be able to review movies.
 * As a user, I want to be able to view other reviews that other users have added.
@@ -92,70 +92,164 @@ Other time users will use the website more and the site owner will add more data
 * Filters - Filters can be added to both movie/review pages so users can filter down on the collection. For example: if users want to see reviews for a specific movie, they would click on a button which will filter down all the reviews for that movie.
 
 ## Information Architecture
-The information collected and stored in this website database. I have used MongoDB which holds data for reviews and movies that has been submitted. 
+For this website, I have collected infomation and have stored in a database. I have used MongoDB to be the database that stores this. Throughout this website, there are two collections that have been used, Movies and Reviews. 
 
-### User Collection
+### Movie Collection
 
 | Title	    | Key in db | form validation type | Data type |
 |-----------|:---------:|:--------------------:|:---------:|
-|Username   |username   |                      |           |
-|Password   |password   |                      |
+|_id        |_id        | None                 |Object Id  |
+|Movie Title|  title    |  text                |string     |
+|Year Release|  year    |   text               |string     |
+|Age Rating |  rated    |  dropdown            |string     |
+|Genre      |  genre    |  text                |string     |
+|Director   | director  |  text                |string     |
+|Movie Plot |  plot     |text                  |string     |
+|Movie Poster| poster   |  text                |string     |
+
 
 ### Review Collection
 
 | Title	    | Key in db | form validation type | Data type |
 |-----------|:---------:|:--------------------:|:---------:|
 |_id        |_id        |None                  |Object Id  |
-|IMDB_id    |imdb_id    |                      |
-|movie Title |movie_name  |                      |string     |
-|Star Rating|movie_star  |                      |           |
-|Review     |movie_review|                      |string|
-|Nickname   |nickname   |                      |      |
+|Movie Title|movieName  |dropdown              |string     |
+|Star Rating|movieStar  |  dropdown            | string    |
+|Review     |movieReview|text                  |string     |
 
 
-## Technologies Used
+# Technologies Used
+Throughout the website, I have used lots of tools and libaries to help create the features on the website. Below is the list of all the things I have used.
+
 HTML
 CSS
 Python
-Javascript
-MongoDB
 Flask
-Python
+Heroku
+JavaScript
+JQuery
+MongoDB
+Jasmine
 Bootswatch
-GitPod
+Bootstrap
+Git
 PyMongo
-## Testing
-The user stories that I have made at the beginning will help with testing as well as being a check list.
+Jshint
 
+# Testing
+When I was testing the website, there were different things I have checking. The user stories that I created at the beginning of this project as a big part of the testing as this was the goal of the whole website and was expected from users and the site owner. The other way I was testing was checking the code was vaildated. Below is how I did the test for the whole of this project.
+
+## User Stories
+The user stories that I have made at the beginning will help with testing as well as being a check list for the website.
+### Users of FRATES
+> As a user, I want to be able to navigation between the pages easily.
+
+I have created two navigation bars (one for the user and one for the site owner) which links for the appropriate user. Both navigation bars are linked to the appropriate pages and are located at the top of the website. The nav bar for the site owner was created so that they can have full access to pages for the admin (for example: when adding/editing/deleting data that the site owner doesn't want a user to be able to access).
+
+> As a user, I want to see a clean layout of all the information.
+
+All information has been present clearly by not bunching it up together. I have broken down information so that users can understand it. The colour scheme was also taken into account as this would also be a way of creating clear infomation. 
+
+> As a user, I want to see images of the movies as well as the posters.
+
+Through out the website, I have used images from movies including the posters. The posters are presented on the view movies page as well as the edit/delete movies page. On all pages, I have used images from movies in a slideshow. 
+
+> As a user, I want to see information about the movies.
+
+The infomation about the movies have been used in a modal as I thought that was a clear way of displaying this data. As well as this, data has been used for previews for users to click on it access the modals.
+
+> As a user, I want to be able to review movies.
+
+I have created a page that has a review form. The form is linked to the Review collection and is also connected to the Movie collection (this is so users can click on the movie title they would like to review). Throughout the website, there are buttons that link the users to the review page as this is what the site owner wants the aim of this website to be.
+
+> As a user, I want to be able to view other reviews that other users have added.
+
+I have created a view all review page which can be accessed on pages as well as in the navigation bar.
+
+### Admin of FRATES
+> As a site owner, I want to be able to access data on the website that other users cannot.
+
+I have created a seperate section (after logging in) for the site owner to access pages that users wouldn't be able to access. These are the add/edit/delete movies pages and the delete reviews page.
+
+> As a site owner, I want to have access to add and editing movies.
+
+I have created two pafes for this (Add Movies and Edit/Delete Movies). I wanted to keep them seperate so I can make this easy for the site owner to understand and read. The Add Movies is a page with a form (similar layout to the review) and the Edit/Delete Movies has a edit button which is a link to a modal. On the modal, I have presented it in the Add Movie form as I thought this would be a clear way of showing the data.
+
+> As a site owner, I want to be able to delete movies and reviews if needed.
+
+I have created two pages for these features (Edit/Delete Movies and View/Delete Movies). I have create a red delete button for these features, the buttons are connected to the two collections so they will be removed from them.
+
+## Code Testing
+I have used websites to test the data to see if there any errors in it. I have used them frequently throughout the process of the website. I have used three services that have helped with the HTML, CSS, Python and JavaScript.
+### HTML/CSS
+The HTML and CSS code have been texted on the W3C Markup Validation (for the HTML code) and W3C CSS Validation (for the CSS code). When errors have come up, I have adjusted where it is needed.
+### Python
+For testing the python that I had throughout the pages, I used PythonBuddy. When I put in my code, it would say where the errors I had, I then would adjust if necessary.
+### JavaScript
+My JavaScript has been tested JSHint and Jasmine. As this project wasn't based on my JavaScript, I didn't want to have a lot of JS code. This meant that I didn't have a lot to test. Like the other code vailidators, if a error came up, I adjusted where it was needed.
 ### Tests Done To Create Website
 Test the code
 Add " around the data and the title of the rows
 Testing the code
 Data appears on the map
 
-## Deployment
-The website was deployed from the master branch and has been hosted on the GitHub pages. When I add a new commit to this master website, it will be automatically updated. I deployed it by doing the following steps:
+# Deployment
+## Deploying to Heroku
+The website was deployed and hosted through Heroku. I have connected this through my terminal. I have used code that has been supplied by heroku on their 'Deploy' tab. 
 
-Going on to my GitHub page
-Clicking on the repository that I would like to deploy
-Clicking on the tab called Settings
-Scrolling all the way down to the section on settings called GitHub Pages
-Clicking the dropdown button that has the title Source
-Change the source from None to Master Branch
-## How to run this project locally
-The following steps are how you can clone this project from GitHub.
+These were the steps that I took:
 
-Head over to the repsositpory for the project. In this case it would be this link.
-Underneath the name of the repository, there is a coloured button called Clone or Download.
-When this button is clicked it will pop up with a link. Copy the URL for the repository.
-In the local IDE open Git Bash
-Where the clone directory is to be made, change the current working directory.
-Type in the git clone and then insert the URL that has been copied.
+* A `requirement.txt` file was created using the command on my terminal `pip freeze > requirement.txt`
+* I then created a `Procfile` which as was also created on my terminal using `echo web: python app.py > Procfile`
+* Putting `git add` followed by `git commit` and then `git push` to put my new files on GitHub
+* On my Heroku account, press the **New** located on the dashboard. Give it a name and select the region to be **Europe**
+* When this is created, go to the **Delpoy** tab. Under the section **Deployment method**, select out of the three options **GitHub**. 
+* Choose the link to your GitHub repository. In this case, it would be this [link](https://github.com/katerinaelsasser/film_review_database).
+* After this is connected, head over to the **Settings** tab.
+* Go to the section called **Reveal Config Vars**.
+* Fill in the following into the correct fields.
+
+| Key	    | Value | 
+|-----------|:---------:|
+|IP     |  0.0.0.0      |
+|MONGO_DBNAME|#`INSERT NAME OF DATABASE OF MONGODDB`#  |
+|MONGO_URI|#`INSERT URI OF MONGODDB`#|
+|PORT|8080|
+
+The `MONGO_DBNAME` and `MONGO_URI` are supplied through MongoDB account (under `connect` on your MongoDB database).
+
+* In the heroku dashboard, click **Deploy**. Under the **Manual Deployment** section, select the branch that you want to connect to.
+* Once selected click on the button **Deploy Branch**
+
+When these steps have been followed, the website will be successfully deployed.
+
+#### Deploying Changes To My Website
+
+>$ heroku login
+
+This is code that links to my account on heroku. When this is added to the terminal, I put in my login details.
+
+> $ heroku git:clone -a films-and-reviews
+
+>$ cd films-and-reviews
+
+This code was for cloning my repository to my local machine.
+
+>$ git add .
+
+>$ git commit -m "##########"
+
+>$ git push heroku master
+
+This code was for when I deployed changes of my website. I would use *git add .* , followed by *git commit -m ""*  (in the quotation marks, I would put in a snippet of what I did), then I would put in *git push heroku master* (this would be sent to both my git repository as well being sent to heroku).
+
+When I add a new commit to this master website, it will be automatically updated. I deployed it by doing the following steps:
+
 ## Credits
 ### Content
-
+Information about movies, 
 ### Media
-All images were taken from Pixabay and Unsplash.
+All images were taken from IMDB.
 
 ### Acknowledgements
 

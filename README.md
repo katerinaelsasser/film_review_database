@@ -50,22 +50,42 @@ wireframes
 
 
 # Features
-### Existing Features
-Home Page
-View movies
-View reviews
-Add reviews
-submitted reviews
-Login
-User Home
-Add movies
-submitted movies
-Edit/Delete movies
-Delete reviews
+## Existing Features
+### All Pages
+ * Slideshow - Throughout the website, there is a carousel of images. This is for the visual side of the website as this is appealing for users. The images used are images from scenes of movies that are in the database.
+### Home Page
+* Buttons - The buttons on the home page take the user/site owner to use to access other pages on the website.
+* About - There is a section at the bottom of the page that talks about the website and why it was made.
+### View movies
+* Data - The data on this page is the data of the movies. This is linked to the mongodb collection called "movies". This collection holds the infomation of each movie.
+* Film Cards - The film cards display the poster and the title of the each movie that is in the collection. This is a preview for the user to click on. This is linked to mongodb.
+* Modals - The modal is linked to mongodb and displays infomation of the movies. This also has buttons at the bottom that link to other pages that encourages users to either view reviews that have been submitted or add reviews. 
+### View reviews
+* Data - The data on this page is the data of the reviews that users have submitted. This is linked to the mongodb collection called "reviews". This collection holds the infomation of each review (which includes star rating and the text review).
+* Button - There is a button on the reviews that encourages users to go to the add review.
+### Add reviews
+* add review form
+### submitted reviews/movies
+* btns 
+### Login
+* Login Form
+* About
+### User Home
+*btns
+### Add movies
+* film form
+### Edit/Delete movies
+* Data - The data on this page is the data of the movies. This is linked to the mongodb collection called "movies". This collection holds the infomation of each movie.
+* delete btn
+* film cards
+* modals
+### Delete reviews
+* review data
+* delete btn
 
 ### Features Left To Implement
 features that can be added in the future.
-* add Login
+* add user Logins
 * more data about the movies
 * more movies added
 * filter features on movie/review pages

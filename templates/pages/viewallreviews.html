@@ -1,33 +1,31 @@
 {% extends 'layout/base.html' %} {% block content %}
 <!--Slideshow--->
 <div class="w3-content w3-section contain-fluid">
-  <img class="movie-header" src="/static/images/headers/header-16.jpg">
-  <img class="movie-header" src="/static/images/headers/header-17.jpg">
-  <img class="movie-header" src="/static/images/headers/header-18.jpg">
-  <img class="movie-header" src="/static/images/headers/header-19.jpg">
-  <img class="movie-header" src="/static/images/headers/header-20.jpg">
+	<img class="movie-header" src="/static/images/headers/header-16.jpg">
+	<img class="movie-header" src="/static/images/headers/header-17.jpg">
+	<img class="movie-header" src="/static/images/headers/header-18.jpg">
+	<img class="movie-header" src="/static/images/headers/header-19.jpg">
+	<img class="movie-header" src="/static/images/headers/header-20.jpg">
 </div>
-
 <!--Intro--->
-    <div class="container-fluid text-spacing text-center">
-        <h1 class="font-weight-light">View All Reviews</h1>
-        <p>View what other people think of films you have seen.</p>
-    </div>
-    
+<div class="container-fluid text-spacing text-center">
+	<h1 class="font-weight-light">View All Reviews</h1>
+	<p>View what other people think of films you have seen.</p>
+</div>
 <!----collection of reviews---->
 <div class="row">
 <!-----individual review---->
-    {% for review in reviews %}
-    <div class="col-md-3">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-                <h3 class="text-center">{{review.movieName}}</h3>
-                <h4 class="text-center text-muted">{{review.movieStar}}</h4>
-                <p class="card-text text-center review-text">{{review.movieReview}}</p>
-                <a class="btn btn-success container" href="{{url_for('addreview')}}" data-dismiss="modal">Add Review</a>
-
-            </div>
-        </div>
-    </div>
+   {% for review in reviews %}
+		<div class="col-md-3">
+			<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+				<div class="col p-4 d-flex flex-column position-static">
+					<h3 class="text-center">{{review.movieName}}</h3>
+					<h4 class="text-center text-muted">{{review.movieStar}}</h4>
+					<p class="card-text text-center review-text">{{review.movieReview}}</p>
+					<a class="btn btn-success container" href="{{url_for('addreview')}}" data-dismiss="modal">Add Review</a>
+				</div>
+			</div>
+		</div>
     {% endfor %}
-</div>{% endblock %}
+</div>
+{% endblock %}

@@ -1,66 +1,66 @@
 {% extends 'layout/base.html' %} {% block content %}
 <!----slideshow----->
 <div class="w3-content w3-section contain-fluid">
-  <img class="movie-header" src="/static/images/headers/header-6.jpg">
-  <img class="movie-header" src="/static/images/headers/header-7.jpg">
-  <img class="movie-header" src="/static/images/headers/header-8.jpg">
-  <img class="movie-header" src="/static/images/headers/header-9.jpg">
-  <img class="movie-header" src="/static/images/headers/header-10.jpg">
+	<img class="movie-header" src="/static/images/headers/header-6.jpg">
+	<img class="movie-header" src="/static/images/headers/header-7.jpg">
+	<img class="movie-header" src="/static/images/headers/header-8.jpg">
+	<img class="movie-header" src="/static/images/headers/header-9.jpg">
+	<img class="movie-header" src="/static/images/headers/header-10.jpg">
 </div>
 <!--Intro--->
-    <div class="col-12 text-spacing text-center">
-        <h1 class="header-style"><strong>Find A Film</strong></h1>
-        <p class="header-style">Scroll down to see our full range of movies. Check out infomation about each of the movies available.</p>
-    </div>
+<div class="col-12 text-spacing text-center">
+	<h1 class="header-style">
+		<strong>Find A Film</strong>
+	</h1>
+	<p class="header-style">Scroll down to see our full range of movies. Check out infomation about each of the movies available.</p>
+</div>
 <!---Movie Catalogue---->
 <div class="container">
-    <div class="row">
-    
-    <!---film----->
+	<div class="row">
+        <!---film----->
         {% for movie in movies %}
-        <div class="col-md-3 film-card film-effect">
-            <div class="card border-0 shadow">
-                <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
-                <h4 class="text-center modal-title">{{movie.title}}</h4>
-                    <div class="container">
-                        <button class="btn btn-outline-secondary col-12" data-toggle="modal" data-target="#infoModal-{{movie._id}}">Info</button>
-                    </div>  
-            </div>     
-        </div>
-
-<!-- Modal -->
-<div class="modal fade" id="infoModal-{{movie._id}}" tabindex="-1" role="dialog" aria-labelledby="{{movie._id}}-Label" aria-hidden="true" data-backdrop="false">
-<div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title text-center col-12" id="{{movie._id}}-Label">{{movie.title}} ({{movie.year}})</h2>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-              <div class="col-md-7">
-                <h4 class="modal-text text-center">Rating:</h4><p class="text-center"> {{movie.rated}}</p>
-                <h4 class="modal-text text-center">Genre:</h4><p class="text-center"> {{movie.genre}}</p>
-                <h4 class="modal-text text-center">Plot:</h4><p class="text-center">{{movie.plot}}</p>
-              </div>
-              <div class="col-md-5 modal-padding">
-              <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
-              </div>
-        </div>
-      </div>
-      <div class="row modal-text">
-          <a class="btn btn-info col-md-6" href="{{url_for('viewreviews')}}">View Reviews</a>
-          <a class="btn btn-success col-md-6" href="{{url_for('addreview')}}">Add Review</a>
-          </div>
-        <div class="modal-footer">
-          <button class="btn btn-danger col-12" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
+			<div class="col-md-3 film-card film-effect">
+				<div class="card border-0 shadow">
+		    		<img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+					<h4 class="text-center modal-title">{{movie.title}}</h4>
+					<div class="container">
+						<button class="btn btn-outline-secondary col-12" data-toggle="modal" data-target="#infoModal-{{movie._id}}">Info</button>
+					</div>
+				</div>
+			</div>
+		    <!-- Modal -->
+		    <div class="modal fade" id="infoModal-{{movie._id}}" tabindex="-1" role="dialog" aria-labelledby="{{movie._id}}-Label" aria-hidden="true" data-backdrop="false">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title text-center col-12" id="{{movie._id}}-Label">{{movie.title}} ({{movie.year}})</h2>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-7">
+									<h4 class="modal-text text-center">Rating:</h4>
+									<p class="text-center"> {{movie.rated}}</p>
+									<h4 class="modal-text text-center">Genre:</h4>
+									<p class="text-center"> {{movie.genre}}</p>
+								    <h4 class="modal-text text-center">Plot:</h4>
+									<p class="text-center">{{movie.plot}}</p>
+								</div>
+								<div class="col-md-5 modal-padding">
+									<img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+								</div>
+							</div>
+						</div>
+						<div class="row modal-text">
+						    <a class="btn btn-info col-md-6" href="{{url_for('viewreviews')}}">View Reviews</a>
+							<a class="btn btn-success col-md-6" href="{{url_for('addreview')}}">Add Review</a>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-danger col-12" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+            </div>
+        {% endfor %}
+	</div>
 </div>
-  {% endfor %}
-
-
-  </div>  
-</div>
-
 {% endblock %}

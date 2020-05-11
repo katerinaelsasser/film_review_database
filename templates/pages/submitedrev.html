@@ -1,22 +1,24 @@
 {% extends 'layout/base.html' %} {% block content %}
 <!---Slideshow-->
 <div class="w3-content w3-section contain-fluid">
-  <img class="movie-header" src="/static/images/headers/header-16.jpg">
-  <img class="movie-header" src="/static/images/headers/header-17.jpg">
-  <img class="movie-header" src="/static/images/headers/header-18.jpg">
-  <img class="movie-header" src="/static/images/headers/header-19.jpg">
-  <img class="movie-header" src="/static/images/headers/header-20.jpg">
-</div>
-<!--Intro--->
-<div class="container-fluid text-spacing text-center">
-<i class="fa fa-check"></i>
-        <h1 class="header-style"><strong>Thank You For Your Review</strong></h1>
-<p class="header-style">Thank you so much for adding a review, why not leave another review? Click the button below. </p>
-<div class="row">
-<a href="{{url_for('addreview')}}" class="col-12 btn btn-outline-danger">Add Another Review</a>
-<a href="{{url_for('viewmovies')}}" class="col-6 btn btn-outline-warning">View Movies</a>
-<a href="{{url_for('viewreviews')}}" class="col-6 btn btn-outline-info">View Reviews</a>
-</div>
-    </div>
+	<img class="movie-header" src="/static/images/headers/header-16.jpg">
+		<img class="movie-header" src="/static/images/headers/header-17.jpg">
+			<img class="movie-header" src="/static/images/headers/header-18.jpg">
+				<img class="movie-header" src="/static/images/headers/header-19.jpg">
+					<img class="movie-header" src="/static/images/headers/header-20.jpg">
+					</div>
+					<!--Intro--->
+					<div class="container-fluid text-spacing text-center">
+						<i class="fa fa-check"></i>
+						<h1 class="header-style">
+							<strong>Thank You For Your Review</strong>
+						</h1>
+						<p class="header-style">Thank you so much for adding a review, why not leave another review? Click the button below. </p>
+						<div class="row">
+							<a href="{{url_for('addreview')}}" class="col-12 btn btn-outline-danger">Add Another Review</a>
+							<a href="{{url_for('viewmovies')}}" class="col-6 btn btn-outline-warning">View Movies</a>
+							<a href="{{url_for('viewreviews')}}" class="col-6 btn btn-outline-info">View Reviews</a>
+						</div>
+					</div>
 
 {% endblock %}

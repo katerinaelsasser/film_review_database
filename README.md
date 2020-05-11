@@ -22,15 +22,15 @@ When researching similar websites that contain movie/review data (such as Rotten
 Before thinking about what the website is going to look like, I need to think about what data is going to be put on the website. The main things that is required is data about the movies (which includes poster, title, plot, year, etc) and the review data (this would be gradually added by users of the website). 
 
 ### User Stories
-As a user, I want to be able to navigation between the pages easily.
-As a user, I want to see a clean layout of all the information.
-As a user, I want to see images of the movies as well as the posters.
-As a user, I want to see information about the movies.
-As a user, I want to be able to review movies.
-As a user, I want to be able to view other reviews that other users have added.
-As a site owner, I want to be able to access data on the website that other users cannot.
-As a site owner, I want to have access to add and editing movies.
-As a site owner, I want to be able to delete movies and reviews if needed.
+* As a user, I want to be able to navigation between the pages easily.
+* As a user, I want to see a clean layout of all the information.
+* As a user, I want to see images of the movies as well as the posters.
+* As a user, I want to see information about the movies.
+* As a user, I want to be able to review movies.
+* As a user, I want to be able to view other reviews that other users have added.
+* As a site owner, I want to be able to access data on the website that other users cannot.
+* As a site owner, I want to have access to add and editing movies.
+* As a site owner, I want to be able to delete movies and reviews if needed.
 
 ### Flow Chart
 Taking the goals in mind of what the website should be, i started to plan out a flow chart of the whole of the website. The flow chart became would help create the website as this would show me what i would need to include on pages and how i would display some of the pages. For example: if a form when submited would send a user to a page that would have buttons leading to other pages on the website. So when creating the website, I would need to create buttons linking to other pages.
@@ -85,19 +85,18 @@ wireframes
 * Button - The delete button is connected to the mongodb collection "reviews", this is used for when the site owner wanted to delete a review.
 
 ### Features Left To Implement
-features that can be added in the future.
-* add user Logins
-* more data about the movies
-* more movies added
-* filter features on movie/review pages
-* more features added to the forms
-As the website gets used more, the website will grow over time. features above will be gradually added. 
+Other time users will use the website more and the site owner will add more data to the collection. Over this time, the website can develop more.
+* User Logins - A user login can be created so users can have a collection of review that have added and names/nicknames can be shown on the reviews.
+* Movie data - As the collection of movies grows, more data for each of the movies can be added to it. Such as actors, writers, pictures from the movie.
+* Movie Review Page - A page for each movie will have the infomation and all the reviews collected and displayed on it.
+* Filters - Filters can be added to both movie/review pages so users can filter down on the collection. For example: if users want to see reviews for a specific movie, they would click on a button which will filter down all the reviews for that movie.
 
 ## Technologies Used
 HTML
 CSS
+Python
 Javascript
-JQuery
+MongoDB
 Flask
 Python
 Bootswatch
@@ -107,14 +106,13 @@ PyMongo
 The user stories that I have made at the beginning will help with testing as well as being a check list.
 
 ### Tests Done To Create Website
-Add fetch code on the js file that will link to the JSON.
 Test the code
 Add " around the data and the title of the rows
 Testing the code
 Data appears on the map
 
 ## Information Architecture
-The information collected and stored in this website database. I have used MongoDB which holds data for reviews that has been submitted. 
+The information collected and stored in this website database. I have used MongoDB which holds data for reviews and movies that has been submitted. 
 
 ### User Collection
 

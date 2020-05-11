@@ -17,6 +17,11 @@
 <a class="col-md-4 btn btn-info text-center" href="{{url_for('addreview')}}"><h4 class="btn-text">Leave A Review</h4></a>
 <a class="col-md-4 btn btn-warning text-center" href="{{url_for('viewreviews')}}"><h4 class="btn-text">View Review</h4></a>
     </div>
+<div class="text-spacing">
+<h3 class="header-style">Login In</h3> 
+{% include 'components/loginform.html' %} 
+</div>
+
     </div>
 <!---about--->
 {% include 'components/about.html' %} 

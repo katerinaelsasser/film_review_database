@@ -80,7 +80,7 @@ def editmovies():
 
 @app.route('/user/movies/edit/update/<movie_id>', methods=['GET','POST'])
 def updatemovies(movies_id):
-    mongo.db.movies.update( {'_id': ObjectId(movies_id)},
+    mongo.db.movies.update( {'_id': ObjectId(movie_id)},
     {
         'title':request.form.get('title'),
         'director': request.form.get('director'),

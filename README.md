@@ -127,20 +127,19 @@ For this website, I have collected infomation and have stored in a database. I h
 # Technologies Used
 Throughout the website, I have used lots of tools and libaries to help create the features on the website. Below is the list of all the things I have used.
 
-HTML
-CSS
-Python
-Flask
-Heroku
-JavaScript
-JQuery
-MongoDB
-Jasmine
-Bootswatch
-Bootstrap
-Git
-PyMongo
-Jshint
+* HTML
+* CSS
+* Python
+* Flask
+* Heroku
+* JavaScript
+* JQuery
+* MongoDB
+* Bootswatch
+* Bootstrap
+* Git
+* PyMongo
+* Jshint
 
 # Testing
 When I was testing the website, there were different things I have checking. The user stories that I created at the beginning of this project as a big part of the testing as this was the goal of the whole website and was expected from users and the site owner. The other way I was testing was checking the code was vaildated. Below is how I did the test for the whole of this project.
@@ -192,12 +191,79 @@ The HTML and CSS code have been texted on the W3C Markup Validation (for the HTM
 ### Python
 For testing the python that I had throughout the pages, I used PythonBuddy. When I put in my code, it would say where the errors I had, I then would adjust if necessary.
 ### JavaScript
-My JavaScript has been tested JSHint and Jasmine. As this project wasn't based on my JavaScript, I didn't want to have a lot of JS code. This meant that I didn't have a lot to test. Like the other code vailidators, if a error came up, I adjusted where it was needed.
+My JavaScript has been tested JSHint. As this project wasn't based on my JavaScript, I didn't want to have a lot of JS code. This meant that I didn't have a lot to test. Like the other code vailidators, if a error came up, I adjusted where it was needed.
 ### Tests Done To Create Website
-Test the code
-Add " around the data and the title of the rows
-Testing the code
-Data appears on the map
+
+#### Review/Movie Catelogue & Movie Modal
+ 1. Add Python code
+2. Add HTML code for the display of the data 
+3. Add Python code to HTML
+4. Style code with CSS
+5. Upload the code to the website
+6. Check the data is coming frmo the right collection
+7. Check the data is displayed correctly
+8. adjust where needed, fixing any errors that pop up
+9. Upload code again to website
+10. Check the data and the display on the website
+
+#### Add Review/ Add Movie Forms
+
+1. Add Python code
+2. Add HTML code for form imputs
+3. Add CSS styling for form
+4. Upload to the website
+5. Check the layout of the form is correct
+6. Link collection in Python and HTML code
+7. Upload code to the website
+8. Fill in form as if submitting data
+9. Click submit
+10. Check database has recieved data
+11. Adjust if code needs changing to connect/submit correct data
+12. Upload code again to website
+13. Try to submit data in the form
+14. Check database has revieved the data
+
+#### Edit Modal 
+
+1. Add Python code
+2. Add HTML for modal and form
+3. Style the code with CSS
+4. Connect Python code to HTML
+5. Upload to the website
+5. Check the button is connected to modal
+6. Check form is works on the modal
+7. Adjust data in form 
+8. Submit the adjusted data
+9. Click submit
+10. Check database has recieved data
+11. Adjust if code needs changing to connect/submit correct data
+12. Upload code again to website
+13. Try to submit data in the form
+14. Check database has revieved the data
+
+#### Movie/Review Delete Button
+1. Add Python code
+2. Add HTML for button
+3. Style with CSS
+4. Connect Python code to HTML
+5. Upload to the website
+5. Check the button is connected to the database and removes data
+6. If the code does not connect, adjust the python code
+7. Reupload the page with adjusted code
+8. Click the delete button
+9. Data is removed from the database
+
+#### Slideshow
+1. Add images to the folder
+2. Add code for the slideshow in HTML and JavaScript
+3. Upload page to wher the carousel
+4. Check to see if the images rotate
+5. Check sizing of images work on all screens
+6. Check if all images are showing
+7. Adjust if there is error in the carousel 
+8. Upload the code to the website
+9. Check carousel is rotating around and all images work
+
 
 # Deployment
 ## Deploying to Heroku

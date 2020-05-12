@@ -1,65 +1,41 @@
-html,
-p {
-    padding: 0;
-    margin: 0;
-}
-
-h2 {
-    margin: 0;
-}
-
-div {
-    padding: 0;
-}
-
-
-img {
-    padding: 0;
-    margin: 0;
-}
-
 .container-fluid{
 padding: 0;
 }
 
 .container{
-padding: 15px;
+padding: 0.9375rem;
 }
 
-.card,
-.card-deck,
-.row {
-    margin: 0;
-}
+
 
 /*---navbar ----*/
 .navbar-brand {
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .nav-link {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .usericon {
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .border-bottom {
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
 }
 
 .btn-dashboard {
-    margin: 15px;
+    margin: 0.9375rem;
 }
 /*---header----*/
 
 .header-style {
-    margin: 15px;
+    margin: 0.9375rem;
 }
 
 .text-spacing {
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .btn-text {
@@ -67,17 +43,17 @@ padding: 15px;
 }
 
 .fa-check {
-    padding: 15px;
-    font-size: 50px;
+    padding: 0.9375rem;
+    font-size: 3.125rem;
 }
 
 /*-- footer ---*/
 footer {
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .footer-padding {
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 /*----slideshows---*/
@@ -91,7 +67,7 @@ footer {
       -webkit-filter: grayscale(1);
       -webkit-transition: all .8s ease-in-out; 
       max-width: auto;
-      margin-bottom: 15px;
+      margin-bottom: 0.9375rem;
       height: 80%;
     }
 
@@ -100,6 +76,12 @@ footer {
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
     }
+
+.card,
+.card-deck,
+.row {
+    margin: 0;
+}
 
 /*-----modal-----*/
 
@@ -120,7 +102,7 @@ footer {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
   border: 1px solid #888;
   width: 80%;
 }
@@ -128,7 +110,7 @@ footer {
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 
@@ -140,11 +122,11 @@ footer {
 }
 
 .modal-text {
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .modal-padding {
-    padding: 15px;
+    padding: 0.9375rem;
 }
 
 .modal-body {
@@ -160,10 +142,10 @@ footer {
 /*-----dashboard-----*/
 
 .intro-text {
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
 /*-----review-----*/
 .review-text {
-    padding: 15px;
+    padding: 0.9375rem;
 }

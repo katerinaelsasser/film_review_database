@@ -32,7 +32,7 @@ def addreview():
     print(movies)
     return render_template("pages/addreview.html", movies=movies, TitlePage="Leave A Review")
 
-@app.route('/insertreview', methods=['POST'])
+@app.route('/reviews/insert', methods=['POST'])
 def insertreview():
     reviews =  mongo.db.reviews
     reviews.insert_one(request.form.to_dict())
@@ -43,7 +43,7 @@ def reviewsubmited():
     return render_template("pages/submitedrev.html", TitlePage="Leave A Review")
 
 #View Reviews page
-@app.route('/reviews/view', methods=['GET'])
+@app.route('/reviews', methods=['GET'])
 def viewreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
@@ -55,30 +55,30 @@ def login():
     return render_template("pages/login.html", TitlePage="Login")
     
 #(User) Home page
-@app.route('/user')
+@app.route('/admin')
 def userhome():
     return render_template("pages/userhome.html", TitlePage="Admin")
 
 #(User) View/Delete Reviews
-@app.route('/user/reviews/view', methods=['GET','POST'])
+@app.route('/admin/reviews/view', methods=['GET','POST'])
 def userreviews():
     reviews = mongo.db.reviews.find()
     print(reviews)
     return render_template("pages/deletereviews.html", reviews=reviews, TitlePage="View/Delete Reviews")
 
-@app.route('/user/reviews/view/<review_id>')
+@app.route('/admin/reviews/view/<review_id>')
 def removereview(review_id):
     mongo.db.reviews.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('userreviews'))
 
 #(User) Edit films
-@app.route('/user/movies/edit', methods=['GET'])
+@app.route('/admin/movies/edit', methods=['GET'])
 def editmovies():
     movies = mongo.db.movies.find()
     print(movies)
     return render_template("pages/edit.html", movies=movies, TitlePage="Edit/Delete Movies")
 
-@app.route('/user/movies/edit/<movie_id>', methods=['GET','POST'])
+@app.route('/admin/movies/edit/<movie_id>', methods=['GET','POST'])
 def updatemovies(movie_id):
     mongo.db.movies.update( {'_id': ObjectId(movie_id)},
     {
@@ -92,23 +92,23 @@ def updatemovies(movie_id):
     })
     return redirect(url_for('editmovies'))
 
-@app.route('/user/movies/edit/delete/<movie_id>')
+@app.route('/admin/movies/edit/delete/<movie_id>')
 def removemovie(movie_id):
     mongo.db.movies.remove({'_id': ObjectId(movie_id)})
     return redirect(url_for('editmovies'))
 
 #(User) Add Movies
-@app.route('/user/movies/add')
+@app.route('/admin/movies/add')
 def addmovie():
     return render_template("pages/addfilm.html", TitlePage="Add Movie")
 
-@app.route('/insertmovies', methods=['POST'])
+@app.route('/admin/movies/insert', methods=['POST'])
 def insertmovies():
     movies =  mongo.db.movies
     movies.insert_one(request.form.to_dict())
     return redirect(url_for('moviesubmited'))  
 
-@app.route('/user/movies/add/submitted')
+@app.route('/admin/movies/add/submitted')
 def moviesubmited():
     return render_template("pages/submitedmov.html", TitlePage="Leave A Review")
 

@@ -35,7 +35,7 @@ Before thinking about what the website is going to look like, I need to think ab
 ### Flow Chart
 Taking the goals in mind of what the website should be, i started to plan out a flow chart of the whole of the website. The flow chart became would help create the website as this would show me what i would need to include on pages and how i would display some of the pages. For example: if a form when submited would send a user to a page that would have buttons leading to other pages on the website. So when creating the website, I would need to create buttons linking to other pages.
 
-Click here to view the flow chart.
+[Click here](https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/wireframes/flow-chart-data-centric-2020.jpg) to view the flow chart.
 
 ### Visuals
 Other than data, visuals will be a big part of the website as this will be encouraging users to use the website. Posters of movies will be features on the website and as well as this, imagergy from movie scenes will also be featured throughout the website. 
@@ -45,14 +45,14 @@ After finding the goals, research and having a flow chart, I started to put toge
 
 wireframes
 * Main pages
-* * [Laptop version]()
-* * [Mobile Version]()
+* * [Laptop version](https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/wireframes/main-page-laptop.jpg)
+* * [Mobile Version](https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/wireframes/main-page-mobile.jpg)
 * Forms
-* * [Laptop version]()
-* * [Mobile Version]()
+* * [Laptop version](https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/wireframes/form-laptop.jpg)
+* * [Mobile Version](https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/wireframes/form-mobile.jpg)
 * Modals
-* * [Laptop version]()
-* * [Mobile Version]()
+* * [Laptop version](https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/wireframes/modal-laptop.jpg)
+* * [Mobile Version](https://raw.githubusercontent.com/katerinaelsasser/film_review_database/master/wireframes/modal-mobile.jpg)
 
 
 # Features

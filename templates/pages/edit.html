@@ -89,23 +89,15 @@
                         </div>
                         <!--Movie Age Rating-->
                         <div class="col-md-4 mb-3">
-                            <h4 class="text-center modal-text"><label for="rated">Age Rating</label></h4>
-                            <select class="custom-select d-block w-100" id="rated" name="rated" required="" value="{{movie.rated}}">
-                                <option >{{movie.rated}}</option>
-                                <option value="U">U</option>
-                                <option value="PG">PG</option>
-                                <option value="12A">12A</option>
-                                <option value="12">12</option>
-                                <option value="15">15</option>
-                                <option value="18">18</option>
-                            </select>
+                            <h4 class="text-center modal-text"><label for="rating">Age Rating</label></h4>
+                            <input type="text" class="form-control" id="rating" name="rating" placeholder="" value="{{movie.rated}}" required="">
                             <div class="invalid-feedback">
-                                Please select from the dropdown.
+                                Valid age rating is required.
                             </div>
                         </div>
                         <!--Movie poster-->
                         <div class="col-md-4 mb-3">
-                            <h4 class="text-center modal-text"><label for="poster">Poster</label></h4>
+                            <h4 class="text-center modal-text"><label for="poster">Poster (.jpg)</label></h4>
                             <input type="text" class="form-control" id="poster" name="poster" placeholder="" value="{{movie.poster}}" required="">
                             <div class="invalid-feedback">
                                 Valid year of release is required.

@@ -1,11 +1,11 @@
 {% extends 'layout/userbase.html' %} {% block content %}
 <!---Slideshow-->
 <div class="w3-content w3-section contain-fluid">
-  <img class="movie-header" src="/static/images/headers/header-36.jpg">
-  <img class="movie-header" src="/static/images/headers/header-37.jpg">
-  <img class="movie-header" src="/static/images/headers/header-38.jpg">
-  <img class="movie-header" src="/static/images/headers/header-39.jpg">
-  <img class="movie-header" src="/static/images/headers/header-40.jpg">
+  <img class="movie-header" src="/static/images/headers/header-36.jpg" alt="header-36">
+  <img class="movie-header" src="/static/images/headers/header-37.jpg" alt="header-37">
+  <img class="movie-header" src="/static/images/headers/header-38.jpg" alt="header-38">
+  <img class="movie-header" src="/static/images/headers/header-39.jpg" alt="header-39">
+  <img class="movie-header" src="/static/images/headers/header-40.jpg" alt="header-40">
 </div>
 
 <div class="container-fluid text-spacing text-center">
@@ -21,7 +21,7 @@
         {% for movie in movies %}
         <div class="col-sm-12 col-md-6 col-lg-3 film-card film-effect">
             <div class="card border-0 shadow">
-                <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+                <img src="{{movie.poster}}" class="card-img-top" alt="movie-poster-{{movie-title}}">
                 <h4 class="text-center modal-title">{{movie.title}}</h4>
                 <div class="row container">
                     <div class="input-group-append col-6">

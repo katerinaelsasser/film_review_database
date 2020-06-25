@@ -1,11 +1,11 @@
 {% extends 'layout/base.html' %} {% block content %}
 <!----slideshow----->
 <div class="w3-content w3-section contain-fluid">
-	<img class="movie-header" src="/static/images/headers/header-6.jpg">
-	<img class="movie-header" src="/static/images/headers/header-7.jpg">
-	<img class="movie-header" src="/static/images/headers/header-8.jpg">
-	<img class="movie-header" src="/static/images/headers/header-9.jpg">
-	<img class="movie-header" src="/static/images/headers/header-10.jpg">
+	<img class="movie-header" src="/static/images/headers/header-6.jpg"> alt="header-6">
+	<img class="movie-header" src="/static/images/headers/header-7.jpg"> alt="header-7">
+	<img class="movie-header" src="/static/images/headers/header-8.jpg"> alt="header-8">
+	<img class="movie-header" src="/static/images/headers/header-9.jpg"> alt="header-9">
+	<img class="movie-header" src="/static/images/headers/header-10.jpg"> alt="header-10">
 </div>
 <!--Intro--->
 <div class="col-12 text-spacing text-center">
@@ -21,7 +21,7 @@
         {% for movie in movies %}
 			<div class="col-sm-12 col-md-6 col-lg-3 film-card film-effect">
 				<div class="card border-0 shadow">
-		    		<img src="{{movie.poster}}" class="card-img-top" alt="movie-poster">
+		    		<img src="{{movie.poster}}" class="card-img-top" alt="movie-poster-{{movie.title}}">
 					<h4 class="text-center modal-title">{{movie.title}}</h4>
 					<div class="container">
 						<button class="btn btn-outline-secondary col-12" data-toggle="modal" data-target="#infoModal-{{movie._id}}">Info</button>

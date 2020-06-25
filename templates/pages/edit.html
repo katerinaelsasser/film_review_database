@@ -90,7 +90,15 @@
                         <!--Movie Age Rating-->
                         <div class="col-md-4 mb-3">
                             <h4 class="text-center modal-text"><label for="rating">Age Rating</label></h4>
-                            <input type="text" class="form-control" id="rating" name="rating" placeholder="" value="{{movie.rated}}" required="">
+                            <select class="custom-select d-block w-100" id="rating" name="rated" required="" value="{{movie.rating}}">
+                                <option >{{movie.rating}}</option>
+                                <option value="U">U</option>
+                                <option value="PG">PG</option>
+                                <option value="12A">12A</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                                <option value="18">18</option>
+                            </select>
                             <div class="invalid-feedback">
                                 Valid age rating is required.
                             </div>
